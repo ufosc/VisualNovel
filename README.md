@@ -1,2 +1,2 @@
-# CodingDatingSim
+# VisualNovel
 Antons dream project
