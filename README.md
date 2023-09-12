@@ -5,8 +5,8 @@ Website for the UF Open Source Club. Started in the Fall semester 2022, this web
 
 ## Table of Contents
 - [Install](#install)
+- [Usage](#usage)
 - [Maintainers](#maintainers)
-- [Usage] (#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
