@@ -1,7 +1,7 @@
 # UF Visual Novel
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)  ![GitHub issues](https://img.shields.io/github/issues/ufosc/VisualNovel)  ![GitHub](https://img.shields.io/github/license/ufosc/VisualNovel) 
 <br/>
-Website for the UF Open Source Club. Started in the Fall semester 2022, this website is built and maintained by club members to serve as a hub of information for the club.
+Visual novel for Open Source Club. Started in the Fall semester 2023, this video game is built and maintained by club members.
 
 ## Table of Contents
 - [Install](#install)
