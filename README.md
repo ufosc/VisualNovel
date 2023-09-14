@@ -20,9 +20,9 @@ git clone https://github.com/ufosc/Visual_Novel
 Now you are all set!
 
 ## Usage
-Starting the game: Run renpy in renpy-8.1.1-sdk press (name pending) then launch project.
+Starting the game: Run renpy in renpy-8.1.1-sdk press UFOSC then launch project.
 
-Editing game files: Open scripts.py in the (name pending) folder.
+Editing game files: Open scripts.py in the UFOSC folder.
 
 ## Maintainers
 Maintained by the UF Open Source Club, can be contacted via [Discord](https://discord.gg/j9g5dqSVD8)
