@@ -13,10 +13,8 @@ Visual novel for Open Source Club. Started in the Fall semester 2023, this video
 ## Install
 This project requires [Python](https://www.python.org/downloads/) and [Ren'Py](https://www.renpy.org/). 
 
-Clone the repository into renpy-8.1.1-sdk:
-```
-git clone https://github.com/ufosc/VisualNovel
-```
+Clone the repository into renpy-8.1.1-sdk after forking it:
+
 Now you are all set!
 
 ## Usage
