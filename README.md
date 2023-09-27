@@ -6,6 +6,7 @@ Visual novel for Open Source Club. Started in the Fall semester 2023, this video
 ## Table of Contents
 - [Install](#install)
 - [Usage](#usage)
+- [Resources](#resources) 
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
@@ -24,6 +25,12 @@ If the UFOSC project is not showing up go to preferences then set the Projects D
 
 Editing game files: Open scripts.py in the UFOSC folder.
 
+### Resources
+Here are some additional resources for using and contributing to the project:
+
+- [Script Writing](https://docs.google.com/document/d/1i41f_Va-mtQBUK8WtmamFDHiAGSQRPkJX-eKWFzjwBw/edit)
+- [Ren'py Cheat Sheet](https://docs.google.com/document/d/15tTWFoevrGnxqZxlg1_bZifPYbWIxpm_45jp-FGTpGA/edit)
+
 ## Maintainers
 Maintained by the UF Open Source Club, can be contacted via [Discord](https://discord.gg/j9g5dqSVD8)
 
@@ -33,5 +40,6 @@ Current Maintainers:
 
 ## Contributing
 All contributions are welcome and appreciated, so long as they adhere to the [license](#license).
+
 ## License
 [AGPL 2.0](LICENSE.md) <br/>
