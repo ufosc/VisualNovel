@@ -12,6 +12,9 @@ image bg lecturehall = "backgrounds/bg lecturehall.jpg"
 label start:
 
     show bg lecturehall
+    
+    $ player name = renpy.input("Your name: ").strip()
 
+    "Your name is [player_name]."
     
     return
