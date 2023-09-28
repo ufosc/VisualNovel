@@ -2,6 +2,7 @@
 define python = Character("Python")
 
 #Backgrounds
+image bg lecturehall = "backgrounds/bg lecturehall.jpg"
 
 #Audio
 
@@ -10,7 +11,9 @@ define python = Character("Python")
 
 label start:
 
-    $ player_name = renpy.input("Your name: ").strip()
+    show bg lecturehall
+
+    $ player name = renpy.input("Your name: ").strip()
 
     "Your name is [player_name]."
 
