@@ -2,6 +2,7 @@
 define python = Character("Python")
 
 #Backgrounds
+image bg lecturehall = "backgrounds/bg lecturehall.jpg"
 
 #Audio
 
@@ -10,4 +11,7 @@ define python = Character("Python")
 
 label start:
 
+    show bg lecturehall
+
+    
     return
