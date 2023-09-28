@@ -10,4 +10,8 @@ define python = Character("Python")
 
 label start:
 
+    $ player_name = renpy.input("Your name: ").strip()
+
+    "Your name is [player_name]."
+
     return
