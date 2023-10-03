@@ -13,8 +13,8 @@ label start:
 
     show bg lecturehall
 
-    $ player_name = renpy.input("Your name: ").strip()
-    
+    $ player name = renpy.input("Your name: ").strip()
+
     "Your name is [player_name]."
 
     return
