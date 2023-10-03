@@ -1,34 +1,536 @@
-Thu Sep 14 19:44:34 2023
+Tue Oct  3 18:35:23 2023
 Windows-10-10.0.22621
-Ren'Py 8.1.1.23060707
+Ren'Py 8.1.3.23091805
  
 
-Bootstrap to the start of init.init. took 0.03s
+Bootstrap to the start of init.init. took 0.07s
 Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.09s
+Loader init. took 0.04s
+Loading error handling. took 0.08s
+Loading script. took 1.44s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
+
+File "game/script.rpy", line 16: expected statement.
+    player name = renpy.input("Your name: ").strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.22s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(2560, 1440) drawable=(2560, 1440)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 882.69s
+Early init. took 0.00s
+Loader init. took 0.03s
+Loading error handling. took 0.03s
+Loading script. took 0.17s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: invalid syntax
+    player name = renpy.input("Your name: ").strip()
+            ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 890.47s
+Early init. took 0.00s
+Loader init. took 0.03s
+Loading error handling. took 0.03s
+Loading script. took 0.19s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.09s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
+Reloading save slot metadata. took 0.02s
 Index archives took 0.00s
-Dump and make backups. took 0.06s
+Backing up script files to 'C:\\Users\\kanie\\AppData\\Roaming/RenPy/backups\\UFOSC':
+Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.500000
+Initial gc. took 0.03s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+ok 1.31s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    player name = renpy.input("Your name: ").strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(2560, 1440) drawable=(2560, 1440)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 113.49s
+Early init. took 0.00s
+Loader init. took 0.02s
+Loading error handling. took 0.09s
+Loading script. took 1.42s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    player name = renpy.input("Your name: ").strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Number of texture units: 32
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+Screen sizes: virtual=(1280, 720) physical=(2560, 1440) drawable=(2560, 1440)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init. took 119.36s
+Early init. took 0.00s
+Loader init. took 0.03s
+Loading error handling. took 0.07s
+Loading script. took 1.36s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.26s
+Loading analysis data. took 0.05s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\kanie\\AppData\\Roaming/RenPy/backups\\UFOSC':
+Dump and make backups. took 0.10s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.02s
+Save screen analysis took 0.05s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 152.11s
+Early init. took 0.00s
+Loader init. took 0.03s
+Loading error handling. took 0.03s
+Loading script. took 0.23s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    player name = renpy.input("Your name: ")
+                ^
+
+File "game/script.rpy", line 17: expected statement.
+    name.strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 185.59s
+Early init. took 0.00s
+Loader init. took 0.04s
+Loading error handling. took 0.03s
+Loading script. took 0.23s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    name = renpy.input("Your name: ")
+         ^
+
+File "game/script.rpy", line 17: expected statement.
+    name = name.strip()
+         ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 200.98s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.07s
+Loading script. took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    player_name = renpy.input("Your name: ").strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 204.44s
+Early init. took 0.00s
+Loader init. took 0.04s
+Loading error handling. took 0.05s
+Loading script. took 0.16s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    player_name = renpy.input("Your name: ").strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 207.48s
+Early init. took 0.00s
+Loader init. took 0.03s
+Loading error handling. took 0.03s
+Loading script. took 0.16s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    player_name = renpy.input("Your name: ").strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 212.01s
+Early init. took 0.00s
+Loader init. took 0.04s
+Loading error handling. took 0.04s
+Loading script. took 0.18s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    player_name = renpy.input("Your name: ").strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 222.10s
+Early init. took 0.00s
+Loader init. took 0.04s
+Loading error handling. took 0.03s
+Loading script. took 0.15s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    player_name = renpy.input("Your name: ").strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 222.78s
+Early init. took 0.00s
+Loader init. took 0.05s
+Loading error handling. took 0.04s
+Loading script. took 0.16s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: expected statement.
+    player_name = renpy.input("Your name: ").strip()
+                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 263.77s
+Early init. took 0.00s
+Loader init. took 0.03s
+Loading error handling. took 0.03s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: invalid syntax
+    player name = renpy.input("Your name: ").strip()
+            ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 265.15s
+Early init. took 0.00s
+Loader init. took 0.04s
+Loading error handling. took 0.03s
+Loading script. took 0.19s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: invalid syntax
+    player name = renpy.input("Your name: ").strip()
+            ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 268.11s
+Early init. took 0.00s
+Loader init. took 0.04s
+Loading error handling. took 0.03s
+Loading script. took 0.15s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 16: invalid syntax
+    player name = renpy.input("Your name: ").strip()
+            ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.3889'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2634, 1482) drawable=(2634, 1482)
+Maximum texture size: 4096x4096
