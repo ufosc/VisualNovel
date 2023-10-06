@@ -3,6 +3,7 @@ define python = Character("Python")
 
 #Backgrounds
 image bg lecturehall = "backgrounds/bg lecturehall.jpg"
+image bg black = "backgrounds/bg black.jpg"
 
 #Audio
 
@@ -11,7 +12,7 @@ image bg lecturehall = "backgrounds/bg lecturehall.jpg"
 
 label start:
 
-    show bg lecturehall
+    show bg black
 
     $ player_name = renpy.input("Your name: ").strip()
 
@@ -22,14 +23,10 @@ label start:
     return
 
 label test_menu:
-
-    show bg lecturehall
-
+    show screen hello_world
     "Hi [player_name]"
 
-screen hello_world():
-    tag example
-    zorder 1
-    modal false
 
-    text "Hello World"
+screen hello_world:
+
+    text "Void PlaceMines(int totalSquares, int minesToPlace)" yalign 0.5 xalign 0.5
