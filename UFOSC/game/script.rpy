@@ -22,7 +22,7 @@ label start:
     "Your name is [mc]."
 
     # FOR DEBUGGIN SCENES
-    
+
     show bg lecturehall with fade
 
     # TODO: Add audio of class room noises
@@ -58,13 +58,13 @@ label start:
 
     "You recall the events last night..."
 
-
-label mine_sweeper:
     show bg lecturehall
 
     "[mc]" "Alright, time to edit this code."
     
     "[mc]" "All I have to do is create these mines."
+
+    # TODO: Add details about the minesweeper project
 
     show screen code_editor
 
@@ -75,6 +75,40 @@ label mine_sweeper:
             "You choose line 1"
         "Line 2":
             "You choose line 2"
+    
+    show bg lecturehall with fade
+
+    "[p]" "... And when you start the game, you want to unconver all the squares."
+
+    "[p]" "Like this ..."
+
+    "[p]" "Uhhhh, not like that."
+
+    "[p]" "Let me try that again."
+
+    "[p]" "No, No, no don't do that"
+
+    "Python looks concered"
+
+    # Show concern from python
+
+    "[p]" "Sorry guys, I don't know why this is happening..."
+
+    # Show cpp
+
+    "[c]" "Ugh. Let me do it."
+
+    "C++ takes the computer and clicks again."
+
+    "The program throws the same issue."
+
+    "C++ tries another time."
+
+    "[c]" "This can't be happening!"
+
+    "[c]" "Is every square a bomb!?"
+
+    # Show java and mc 
 
 
 
