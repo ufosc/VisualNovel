@@ -22,8 +22,7 @@ label start:
     "Your name is [mc]."
 
     # FOR DEBUGGIN SCENES
-    jump mine_sweeper
-
+    
     show bg lecturehall with fade
 
     # TODO: Add audio of class room noises
