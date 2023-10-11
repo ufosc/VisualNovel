@@ -53,8 +53,6 @@ The program and games file can be edited in the ```scripts.py``` file in the UFO
 Here are some additional resources for using and contributing to the project:
 
 - [Script Writing](https://docs.google.com/document/d/1i41f_Va-mtQBUK8WtmamFDHiAGSQRPkJX-eKWFzjwBw/edit)
-- [Writing Visual Novels](https://fuwanovel.net/2015/01/a-guide-to-making-visual-novels/)
-- [Python Documentation](https://www.python.org/doc/)
 - [Ren'py Cheat Sheet](https://docs.google.com/document/d/15tTWFoevrGnxqZxlg1_bZifPYbWIxpm_45jp-FGTpGA/edit)
 - [Ren'Py Documenation](https://www.renpy.org/doc/html/index.html)
 
