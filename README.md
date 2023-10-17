@@ -55,6 +55,7 @@ Here are some additional resources for using and contributing to the project:
 - [Script Writing](https://docs.google.com/document/d/1i41f_Va-mtQBUK8WtmamFDHiAGSQRPkJX-eKWFzjwBw/edit)
 - [Ren'py Cheat Sheet](https://docs.google.com/document/d/15tTWFoevrGnxqZxlg1_bZifPYbWIxpm_45jp-FGTpGA/edit)
 - [Ren'Py Documenation](https://www.renpy.org/doc/html/index.html)
+- [Mood Board](https://www.figma.com/file/71HjcR1MImeYLqvirhFNO9/MOOD-BOARD-ANIME-GAME?type=design&node-id=0%3A1&mode=design&t=lBhCu8ZOLgnEFp4m-1)
 - [Miro Board](https://miro.com/welcomeonboard/QnRybW9VRlpCQU5nT3R4UGIxejlrRG12ZzdDalFlM01RN2R6MHFlclg0RmRaUzI0UmhZdXBMREZCUGRVU215eXwzNDU4NzY0NTE3ODI5MjgwMjEwfDI=?share_link_id=384176755076)
 
 ## Maintainers
