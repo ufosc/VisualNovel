@@ -27,7 +27,7 @@ label start:
 
     # TODO: Add audio of class room noises
     
-    "Professor" "Today is the day we are presenting the project every group has been working on for the past month."
+    "Professor" "Today, we are presenting the project every group has been working on for the past month."
 
     "Professor" "First we have [mc]'s group."
 
@@ -76,6 +76,8 @@ label start:
         "Line 2":
             "You choose line 2"
     
+    hide screen code_editor
+
     show bg lecturehall with fade
 
     "[p]" "... And when you start the game, you want to unconver all the squares."
@@ -102,13 +104,32 @@ label start:
 
     "The program throws the same issue."
 
-    "C++ tries another time."
+    "C++ tries again."
 
     "[c]" "This can't be happening!"
 
     "[c]" "Is every square a bomb!?"
 
-    # Show java and mc 
+    "C++ and Python stare at you, sending a shiver down your spine."
+
+    # Show Java concerned
+    "[j]" "I think [mc] wrote the code to display the bombs..."
+
+    "[j]" "But I'm sure he did a great job!"
+
+    # Switch back to cpp who is mad. Add tense music 
+
+    "[c]" "[mc], I though you said you spent all night debugging this code?"
+
+    "[c]" "You said it was working!!!"
+
+    "[mc] is really worried now"
+
+    # Switch back to cpp. She is mad.
+
+    
+
+
 
 
 
