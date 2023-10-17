@@ -127,6 +127,60 @@ label start:
 
     # Switch back to cpp. She is mad.
 
+    "[c]" "I knew I shouldn't have let you come over last night!"
+
+    "[c]"  "You worthless, good for nothing, mac-using, assembly coding by preference, internshipless, no comment making, no whitespace-using loser!!"
+
+    "Python looks disappointed."
+
+    "[p]" "[mc], you went to her house last night?"
+
+    "[p]" "Right after you left my house??"
+
+    "[p]" "That is not cool!"
+
+    "[p]" "I can't believe you would do this!"
+
+    "Java steps in to defend you."
+
+    "[j]" "I'm sure [mc] didn't mean any harm!"
+
+    # Camera switches to C++
+
+    "[p]" "Yea!"
+
+    "[p]"  "Like what were you guys even doing there??"
+
+    "You open your mouth hesitantly."
+
+    "[mc]" "Uhhhh... paired programming?"
+
+    # Fades to black and intro ends and title "Bytes of Love" shows
+
+    "[mc]" "Welp, I definitely messed up the project for the group, I wonder if I should call someone to apologize."
+
+    menu:
+
+        "Java":
+            jump java
+
+        # Add more menu options
+
+
+label java:
+
+    "You decide to call Java."
+
+    "[mc]" "Hey Java."
+
+    "[mc]" "I'm sorry about yesterday, I-"
+
+    "[j]" "It's okay my little meatball, I understand."
+
+    "[j]" "It actually kind of reminded me of my kid!"
+
+
+
     
 
 
