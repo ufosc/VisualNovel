@@ -66,7 +66,7 @@ label start:
 
     # TODO: Add details about the minesweeper project
 
-    show screen code_editor
+    show mine_sweeper
 
     menu:
         "Which line should I change?"
