@@ -1,4 +1,4 @@
-﻿# Characters
+# Characters
 define p = Character("Python")
 define c = Character("C++")
 define j = Character("Java")
@@ -14,8 +14,22 @@ image mine_sweeper = "images/mine_sweeper.png"
 
 # The game starts here.
 
+
+
 label start:
     # PROLOUGUE
+
+    screen user_interaction_screen():
+
+        window:
+            xpadding 500
+            xalign 0.3
+            yalign 0.5
+            vbox:
+
+                text "// func to place mines on the map, continue while the numMines to place isn't 0\nVoid PlaceMines (int totalSquaresOnBoard, int numMinesToPlace) {{\n	// variable to keep track of how many more mines we need to place\n	Int numMines = totalSquaresOnBoard - numMinesToPlace;	\n	While (numMines > 0) {{	            // while numMines isn’t 0 yet\n		GenerateMineOnMap();		// generate a mine on the map\n		numMines -= 1;	            	// decrement the while loop"
+
+    call screen user_interaction_screen
 
     $ mc = renpy.input("Your name: ").strip()
 
