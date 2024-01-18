@@ -63,7 +63,7 @@ Maintained by the UF Open Source Club, can be contacted via [Discord](https://di
 
 Current Maintainers: 
 - Nicolas Valiente @nickv779
-- Mathew Alangadan @malangadan
+- Wilson Goins @WilsonGoins
 - Anton Salvador @antoncsalvador
 
 ## Contributing
