@@ -52,7 +52,7 @@ The program and games file can be edited in the ```scripts.py``` file in the UFO
 ## Resources
 Here are some additional resources for using and contributing to the project:
 
-- [Script Writing](https://docs.google.com/document/d/1i41f_Va-mtQBUK8WtmamFDHiAGSQRPkJX-eKWFzjwBw/edit)
+- [Bytes of Love Documentation](https://docs.google.com/document/d/1UAgixK7u0OdSegyYB6ZlITFe23ok7GV4MDUKGovdals/edit?usp=sharing)
 - [Ren'py Cheat Sheet](https://docs.google.com/document/d/15tTWFoevrGnxqZxlg1_bZifPYbWIxpm_45jp-FGTpGA/edit)
 - [Ren'Py Documenation](https://www.renpy.org/doc/html/index.html)
 - [Mood Board](https://www.figma.com/file/71HjcR1MImeYLqvirhFNO9/MOOD-BOARD-ANIME-GAME?type=design&node-id=0%3A1&mode=design&t=lBhCu8ZOLgnEFp4m-1)
@@ -68,6 +68,8 @@ Current Maintainers:
 
 ## Contributing
 All contributions are welcome and appreciated, so long as they adhere to the [license](#license).
+
+To contribute, check out the issues for anything that you think you can work on. As always, reach out to any of the maintainers for permission to tackle the issue before working on it. Feel free to ask for any help in setting up the coding environment and for any clarification on issues.
 
 ## License
 [AGPL 2.0](LICENSE.md) <br/>
