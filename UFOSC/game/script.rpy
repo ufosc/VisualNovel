@@ -17,6 +17,13 @@ image mine_sweeper = "images/mine_sweeper.png"
 label start:
     # PROLOUGUE
 
+    "Welcome to Bytes of Love! A visual novel currently being developed by the University of Florida's Open Source Club!"
+
+    "This is an educational dating simulator where you romance programming languages that are represented as anime-style characters while learning about multiple programming languages."
+
+    "If you have any questions or comments about the project, please reach out to anyone in the \"Maintainers\" section of the GitHub!"
+    
+
     $ mc = renpy.input("Your name: ").strip()
 
     "Your name is [mc]."
