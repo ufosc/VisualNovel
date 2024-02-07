@@ -1,0 +1,3 @@
+label start:
+
+    jump prolouge

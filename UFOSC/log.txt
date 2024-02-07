@@ -1,55 +1,52 @@
-Mon Feb  5 19:52:03 2024
-Windows-10-10.0.22621
-Ren'Py 8.1.3.23091805
- 
+2024-02-07 02:39:46 UTC
+Windows-10-10.0.19045
+Ren'Py 8.2.0.24012702
 
-Bootstrap to the start of init.init. took 0.02s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.02s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
+Early init took 0.08s
+Loading error handling took 0.04s
+Loading script took 0.15s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\olive\\AppData\\Roaming/RenPy/backups\\UFOSC':
-Dump and make backups. took 0.03s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.01s
-DPI scale factor: 1.250000
+Backing up script files to 'C:\\Users\\Jake\\AppData\\Roaming/RenPy/backups\\UFOSC':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 2.250000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.16s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.00s
 Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
+Interface start took 0.15s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 2048, 1152)
+primary display bounds: (0, 0, 3456, 2160)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3080 Ti Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 536.23'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4502'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Screen sizes: virtual=(1920, 1080) physical=(3344, 1881) drawable=(3344, 1881)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2048, 1063) drawable=(2048, 1063)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2048, 1152) drawable=(2048, 1152)
-Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
