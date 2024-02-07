@@ -14,7 +14,7 @@ image mine_sweeper = "images/mine_sweeper.png"
 
 # The game starts here.
 
-label prolouge:
+label start:
     # PROLOUGUE
 
     "Welcome to Bytes of Love! A visual novel currently being developed by the University of Florida's Open Source Club!"
