@@ -6,3 +6,5 @@ label nextWeek:
     #structure that we have decided to go with
 
     jump day7
+
+    return

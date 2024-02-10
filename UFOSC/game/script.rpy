@@ -1,34 +1,38 @@
-﻿# Characters
-define p = Character("Python")
-define c = Character("C++")
-define j = Character("Java")
-
-# Backgrounds
-image bg lecturehall = "backgrounds/bg lecturehall.jpg"
-image bg black = "backgrounds/bg black.jpg"
-
-# Screens
-image mine_sweeper = "images/mine_sweeper.png"
-
-#Audio
+﻿#Audio
 
 # The game starts here.
 
 label start:
-    # PROLOUGUE
+    # PROLOGUE
 
     "Welcome to Bytes of Love! A visual novel currently being developed by the University of Florida's Open Source Club!"
 
     "This is an educational dating simulator where you romance programming languages that are represented as anime-style characters while learning about multiple programming languages."
 
     "If you have any questions or comments about the project, please reach out to anyone in the \"Maintainers\" section of the GitHub!"
-    
 
     $ mc = renpy.input("Your name: ").strip()
 
     "Your name is [mc]."
 
-    # FOR DEBUGGIN SCENES
+    "Before we begin the demo, let's test out some of the new scripts in the actual game!"
+
+    menu:
+        "Should I increase my relationship with Python?"
+
+        "Yes":
+            $ p_rel += 10
+            "Good choice!"
+        "No":
+            "Aww okay, maybe next time."
+
+    "Now my relationship with Python is at [p_rel]!"
+
+    "Let's try the call command now."
+
+    call begin
+
+    # FOR DEBUGGING SCENES
 
     show bg lecturehall with fade
 
@@ -87,25 +91,25 @@ label start:
 
     show bg lecturehall with fade
 
-    "[p]" "... And when you start the game, you want to unconver all the squares."
+    p "... And when you start the game, you want to unconver all the squares."
 
-    "[p]" "Like this ..."
+    p "Like this ..."
 
-    "[p]" "Uhhhh, not like that."
+    p "Uhhhh, not like that."
 
-    "[p]" "Let me try that again."
+    p "Let me try that again."
 
-    "[p]" "No, No, no don't do that"
+    p "No, No, no don't do that"
 
     "Python looks concered"
 
     # Show concern from python
 
-    "[p]" "Sorry guys, I don't know why this is happening..."
+    p "Sorry guys, I don't know why this is happening..."
 
     # Show cpp
 
-    "[c]" "Ugh. Let me do it."
+    c "Ugh. Let me do it."
 
     "C++ takes the computer and clicks again."
 
@@ -113,50 +117,50 @@ label start:
 
     "C++ tries again."
 
-    "[c]" "This can't be happening!"
+    c "This can't be happening!"
 
-    "[c]" "Is every square a bomb!?"
+    c "Is every square a bomb!?"
 
     "C++ and Python stare at you, sending a shiver down your spine."
 
     # Show Java concerned
-    "[j]" "I think [mc] wrote the code to display the bombs..."
+    j "I think [mc] wrote the code to display the bombs..."
 
-    "[j]" "But I'm sure he did a great job!"
+    j "But I'm sure he did a great job!"
 
     # Switch back to cpp who is mad. Add tense music 
 
-    "[c]" "[mc], I though you said you spent all night debugging this code?"
+    c "[mc], I though you said you spent all night debugging this code?"
 
-    "[c]" "You said it was working!!!"
+    c "You said it was working!!!"
 
     "[mc] is really worried now"
 
     # Switch back to cpp. She is mad.
 
-    "[c]" "I knew I shouldn't have let you come over last night!"
+    c "I knew I shouldn't have let you come over last night!"
 
-    "[c]"  "You worthless, good for nothing, mac-using, assembly coding by preference, internshipless, no comment making, no whitespace-using loser!!"
+    c "You worthless, good for nothing, mac-using, assembly coding by preference, internshipless, no comment making, no whitespace-using loser!!"
 
     "Python looks disappointed."
 
-    "[p]" "[mc], you went to her house last night?"
+    p "[mc], you went to her house last night?"
 
-    "[p]" "Right after you left my house??"
+    p "Right after you left my house??"
 
-    "[p]" "That is not cool!"
+    p "That is not cool!"
 
-    "[p]" "I can't believe you would do this!"
+    p "I can't believe you would do this!"
 
     "Java steps in to defend you."
 
-    "[j]" "I'm sure [mc] didn't mean any harm!"
+    j "I'm sure [mc] didn't mean any harm!"
 
     # Camera switches to C++
 
-    "[p]" "Yea!"
+    p "Yea!"
 
-    "[p]"  "Like what were you guys even doing there??"
+    p "Like what were you guys even doing there??"
 
     "You open your mouth hesitantly."
 
@@ -182,9 +186,11 @@ label java:
 
     "[mc]" "I'm sorry about yesterday, I-"
 
-    "[j]" "It's okay my little meatball, I understand."
+    j "It's okay my little meatball, I understand."
 
-    "[j]" "It actually kind of reminded me of my kid!"
+    j "It actually kind of reminded me of my kid!"
+
+    return
 
 
 

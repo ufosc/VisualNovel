@@ -18,3 +18,5 @@ label begin:
     c "this is dialogue from the character C++"
 
     jump nextWeek #this jump statement will take the game state and move it to the "nextWeek" label in "w1_d1" in the "week1" folder
+
+    return
