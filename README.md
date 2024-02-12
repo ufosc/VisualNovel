@@ -45,7 +45,7 @@ HTTP
 
         git clone https://github.com/user/VisualNovel.git
 
-You can start up the Ren'Py launcher by launching ```renpy.exe``` in the ```renpy.8.1.1-sdk``` directory. If you are a Mac user, launch via ```renpy``` instead of ```renpy.exe```. Once the launcher opens, the project should show up in the projects tab as UFOSC.
+You can start up the Ren'Py launcher by launching ```renpy.exe``` in the ```renpy.8.1.1-sdk``` directory. If you are a Mac user, launch via ```renpy``` instead of ```renpy.exe```. On Linux, launch via ```renpy.sh```. Once the launcher opens, the project should show up in the projects tab as UFOSC.
 
 If the project is not showing up you need to set the project directory manually. This is done by navigating to ``` preferences``` located under the Launch Project button on the botton right. 
 
