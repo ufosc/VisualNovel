@@ -1,31 +1,37 @@
-# UF Visual Novel
+# Bytes of Love
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)  ![GitHub issues](https://img.shields.io/github/issues/ufosc/VisualNovel)  ![GitHub](https://img.shields.io/github/license/ufosc/VisualNovel) 
 <br/>
-A visual novel developed by the UF Open Source Club. Started in the Fall semester 2023, this video game is built and maintained by club members.
+
+A visual novel developed by the UF Open Source Club. Started in the Fall 2023, this game is built and maintained by club members.
 
 ## Table of Contents
-- [UF Visual Novel](#uf-visual-novel)
-  - [Table of Contents](#table-of-contents)
-  - [Maintainers](#maintainers)
-  - [Installation](#installation)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-  - [Resources](#resources)
-  - [Contributing](#contributing)
-  - [License](#license)
+- [Team Members](#team-members)
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+- [Resources](#resources)
+- [Contributing](#contributing)
+- [License](#license)
  
-## Maintainers
-Maintained by the UF Open Source Club, can be contacted via [Discord](https://discord.gg/j9g5dqSVD8)
+## Team Members
+The project is currently maintained by the UF Open Source Club, can be contacted via [Discord](https://discord.gg/j9g5dqSVD8).
 
-Current Maintainers: 
-- Nicolas Valiente @nickv779
-- Wilson Goins @WilsonGoins
-- Anton Salvador @antoncsalvador
+The lead team members in charge of the project are as follows. Reach out to any of them via Discord with questions regarding the project. Click the names of the Tech Leads if you wish to send an email as your preferred form of communication.
+
+Tech Leads: 
+- (@WilsonGoins) [Wilson Goins](mailto:wilson.goins@ufl.edu), Script Writer
+- (@RyderKeeny) [Ryder Keeny](mailto:ryder.keeny@ufl.edu), Story Lead
+- (@nickv779) [Nicolas Valiente](mailto:nvaliente@ufl.edu), Product Manager
+
+Lead Contributors:
+- (@Xa-el) Xael Font, Ren'Py Developer
+- (@JMalegni) Joseph Malegni, Product Manager
+- (@Myrtte) Edward Roshko, Script Writer
 
 ## Installation
 
 ### Prerequisites 
-This project requires [Python](ttps://www.python.org/downloads/) and the [Ren'Py](https://www.renpy.org/) SDK to run. You can install them from here
+This project requires [Python](ttps://www.python.org/downloads/) and the [Ren'Py](https://www.renpy.org/) SDK to run. You can install them from here:
 - Python (Latest): https://www.python.org/downloads/
 - Ren'Py (8.1.1 or greater): https://www.renpy.org/latest.html
 
@@ -65,7 +71,9 @@ Here are some additional resources for using and contributing to the project:
 ## Contributing
 All contributions are welcome and appreciated, so long as they adhere to the [license](#license).
 
-To contribute, check out the issues for anything that you think you can work on. As always, reach out to any of the maintainers for permission to tackle the issue before working on it. Feel free to ask for any help in setting up the coding environment and for any clarification on issues.
+To contribute, check out the issues for anything that you think you can work on. As always, reach out to any of the Tech Leads or Lead Contributors for permission to tackle the issue before working on it. Feel free to ask for any help in setting up the coding environment and for any clarification on issues.
+
+Review the Bytes of Love Documentation for any information regarding the game's ideas, progress, and next steps. For edit access, reach out to Nicolas Valiente for approval; you must request the access in person during Casual Coding sessions.
 
 ## License
 [AGPL 2.0](LICENSE.md) <br/>
