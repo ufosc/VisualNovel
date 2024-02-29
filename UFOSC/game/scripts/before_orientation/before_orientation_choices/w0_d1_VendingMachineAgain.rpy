@@ -1,6 +1,8 @@
 label w0_d1_VendingMachineAgain:
-    "*[mc] walks downstairs to go to find a vending machine*"
+    image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
+    scene w0_d1_vending
 
+    "*[mc] walks downstairs to go to find a vending machine*"
     menu w0_d1_Rust:
         "[r]" "“Hey there! My name is Rust! Do you go to UB?”"
 
