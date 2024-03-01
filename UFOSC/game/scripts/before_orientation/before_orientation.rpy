@@ -1,4 +1,6 @@
 label w0_d1:
+    image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
+    scene w0_d1_hotel
     "[mc]" "Man, I can't believe it, I'm really starting my first day at University of Byteborough!"
     "[mc]" "I can't wait for everything I'm going to experience, all the parties, friends, clubs, and ladies! (...if i can even talk to them), my real college life starts tomorrow!!"
     "[mc]" "I'm tired from the drive here, 4 hours was brutal."
