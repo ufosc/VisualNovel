@@ -1,6 +1,6 @@
 label w0_d1:
-    image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
-    scene w0_d1_hotel
+    #image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
+    #scene w0_d1_hotel
     "[mc]" "Man, I can't believe it, I'm really starting my first day at University of Byteborough!"
     "[mc]" "I can't wait for everything I'm going to experience, all the parties, friends, clubs, and ladies! (...if i can even talk to them), my real college life starts tomorrow!!"
     "[mc]" "I'm tired from the drive here, 4 hours was brutal."
@@ -34,10 +34,10 @@ label w0_d1:
             jump w0_d1_DoorDash
   
     label w0_d1_End:
-        scene w0_d1_hotel with fade
+        #scene w0_d1_hotel with fade
         "[mc]" "Man that hit the spot. What am I going to do with the rest of my night?"
         "[mc]" "I know I will play some valorant, I have been grinding to go from silver to gold."
-        scene w0_d1_hotel with fade
+        #scene w0_d1_hotel with fade
         "*Time passes it is now 11:30*"
         "[mc]" "Now I am Silver III! I just have to win a few more games to push to gold!"
 
