@@ -1,6 +1,6 @@
 label w0_d1_VendingMachineAgain:
-    #image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
-    #scene w0_d1_vending
+    image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
+    scene w0_d1_vending
 
     "*[mc] walks downstairs to go to find a vending machine*"
     menu w0_d1_Rust:
