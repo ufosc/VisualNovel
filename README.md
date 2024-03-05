@@ -24,7 +24,7 @@ Tech Leads:
 - (@nickv779) [Nicolas Valiente](mailto:nvaliente@ufl.edu), Product Manager
 
 Lead Contributors:
-- (@Xa-el) Xael Font, Ren'Py Developer
+- (@Xa-el) Xael Font, Lead Ren'Py Developer
 - (@JMalegni) Joseph Malegni, Product Manager
 - (@Myrtte) Edward Roshko, Script Writer
 

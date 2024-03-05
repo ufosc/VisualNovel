@@ -17,6 +17,9 @@ label w0_d1_RoomService:
             $ food_item = "pizza"
 
     "[mc]" "Yeah, I have to get [food_item], you can't go wrong with that."
+    #scene "bg black.jpg"
+    pause 1
+    scene w0_d1_hotel with Dissolve(2.0)
     "*5 minutes pass*"
     "[mc]" "I hope this doesn't take too long I am getting pretty hungry here"
     "*Knock on door*"
