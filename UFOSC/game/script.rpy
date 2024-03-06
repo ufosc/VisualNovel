@@ -1,4 +1,7 @@
-﻿# Characters
+﻿# Transitions
+define fadehold = Fade(0.5, 1.0, 0.5)
+
+# Characters
 define r = Character("Rust")
 define p = Character("Python")
 define c = Character("C++")

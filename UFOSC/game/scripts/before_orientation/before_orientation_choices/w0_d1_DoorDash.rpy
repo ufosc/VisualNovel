@@ -3,14 +3,14 @@ label w0_d1_DoorDash:
     "*15 minutes later*"
     "[mc]" "This driver sucks! I ordered this 30 minutes ago and he still hasn't picked it up!!!"
     "*20 minutes later*"
-    "[mc]" "Uuuugggghhhhh. I'm so hungry. Can this loser hurry up? It isn't that hard to deliver food"
+    "[mc]" "Uuuugggghhhhh. I'm so hungry. Can this loser hurry up? It isn't that hard to deliver food."
     "*20 more minutes later, there is a knock at the door*"
     "[u]" "Here you go."
-    "[mc]" "*Upset/Annoyed/Stern* What took you so long"
-    "[u]" "*Sigh* Orientation is tomorrow, everyone is ordering food"
+    "[mc]" "*Upset/Annoyed/Stern* What took you so long."
+    "[u]" "*Sigh* Orientation is tomorrow, everyone is ordering food."
 
     menu w0_d1_DoorDashTip:
-        "[mc]" "Whatever, at least you finally got here"
+        "[mc]" "Whatever, at least you finally got here."
 
         "Tip driver":
             "[u]" "Your total is $30."
@@ -27,8 +27,8 @@ label w0_d1_DoorDash:
             "[mc]" "Here"   
             "[u]" "What? No tip? Are you kidding me?"
             "[mc]" "You took eight years to get me my food."
-            "[mc]" "Get lost old man"
-            "[mc]" "*Closes the door."
+            "[mc]" "Get lost old man."
+            "[mc]" "*Closes the door*"
             
     "[mc]" "*Looks inside the chipotle bag*"
     "[mc]" "*Shocked and angry* WHERE ARE MY CHIPS AND QUESO????"
