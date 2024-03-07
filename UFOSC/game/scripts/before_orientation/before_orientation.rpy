@@ -24,7 +24,7 @@ label w0_d1:
     label w0_d1_End:
         scene w0_d1_hotel with longer_fade
         mc "Man that hit the spot. What am I going to do with the rest of my night?"
-        mc "I know I will play some valorant, I have been grinding to go from silver to gold."
+        mc "I know I will play some Valorant, I have been grinding to go from silver to gold."
         scene w0_d1_hotel with longer_fade
         "*Time passes it is now 11:30*"
         mc "Now I am Silver III! I just have to win a few more games to push to gold!"
