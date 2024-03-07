@@ -23,10 +23,9 @@ label w0_d1_VendingMachine:
             r "I am computer science if you were wondering."
             mc "Oh thanks, I wasn't"
             r "Jeez you don't have to be mean about it, man."
-            mc "I need to get going."
-            r "Jeez you don't have to be mean about it, man."
-            mc "Sorry I need to get going. Excuse me."
-            hide rust_angry with fade
+            mc "Whatever."
+            hide rust_angry with dissolve
+            "*Rust leaves*"
 
         "Nice response":
             mc "Yeah I do, my name is [mc], nice to meet you! What major are you?"
@@ -38,7 +37,7 @@ label w0_d1_VendingMachine:
             r "Yeah I am excited to become better friends with you."
             r "Well anyway, I have to get back to my room so I can get a good night's sleep."
             r "It was nice to meet you, see you in class!"
-            hide rust_normal with fade
+            hide rust_normal with dissolve
 
     "*[mc] stands at the vending machine, thinking about what he wants*"
     mc "Hmm they don't have Doritos, I guess I am only getting a Snickers bar tonight."
