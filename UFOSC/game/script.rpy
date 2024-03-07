@@ -1,5 +1,6 @@
 ﻿# Transitions
-define fadehold = Fade(0.5, 1.0, 0.5)
+define longer_fade = Fade(0.5, 1.0, 0.5)
+define shorter_fade = Fade(0.5, 0.5, 0.5)
 
 # Characters
 define r = Character("Rust", color="#FFA500")
