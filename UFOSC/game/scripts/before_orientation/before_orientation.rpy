@@ -1,5 +1,4 @@
 label w0_d1:
-    image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
     scene w0_d1_hotel
 
     "[mc]" "Man, I can't believe it, I'm really starting my first day at University of Byteborough!"
