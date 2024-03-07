@@ -14,7 +14,7 @@ label w0_d1_VendingMachineAgain:
             "[r]" "I could see us becoming really good friends!"
             "[mc]" "Hm, yeah I'm glad you think that."
             hide rust_normal 
-            show rust_angry at right with fade
+            show rust_angry at right with dissolve
             "[r]" "Jeez you don't have to be mean about it, man."
             "[mc]" "Sorry I need to get going. Excuse me."
             hide rust_angry with fade
