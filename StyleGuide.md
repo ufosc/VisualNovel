@@ -9,7 +9,7 @@ Welcome to the "Bytes of Love" Ren'Py programming guide. This document aims to p
 
 ## Script Structure
 
-- **Weekly Cycle:** Structure your script based on the week day cycle. For example, to edit events on day 1 of week 0, use `w0_d1_...` as a naming convention.
+- **Weekly Cycle:** Structure your script based on the week day cycle. For example, to edit events on day 1 of week 0, use `w0_d1_[Location]` as a naming convention.
 - **Labels:** Use labels to mark the beginning of a scene. Labels work similarly to functions in programming, allowing you to "jump" to different parts of the script. Example:
   ```renpy
   label start:
