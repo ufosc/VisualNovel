@@ -71,9 +71,11 @@ Here are some additional resources for using and contributing to the project:
 ## Contributing
 All contributions are welcome and appreciated, so long as they adhere to the [license](#license).
 
+ALL Script Contribution/Style Guide questions should refer to [style guide](StyleGuide.md).
+
 To contribute, check out the issues for anything that you think you can work on. As always, reach out to any of the Tech Leads or Lead Contributors for permission to tackle the issue before working on it. Feel free to ask for any help in setting up the coding environment and for any clarification on issues.
 
-Review the Bytes of Love Documentation for any information regarding the game's ideas, progress, and next steps. For edit access, reach out to Nicolas Valiente for approval; you must request the access in person during Casual Coding sessions.
+Review the Bytes of Love Documentation for any information regarding the gam's ideas, progress, and next steps. For edit access, reach out to Nicolas Valiente for approval; you must request the access in person during Casual Coding sessions.
 
 ## License
 [AGPL 2.0](LICENSE.md) <br/>
