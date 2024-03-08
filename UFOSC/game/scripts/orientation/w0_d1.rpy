@@ -21,12 +21,13 @@ label w1_d1:
     "*Car starts, [mc] sighs from relief, speeds off*"
     mc "And I don't even know where I’m going. This city is all new to me!"
     mc "I am going to be so late."
-    #"*Scene fades to the lecture hall.*"
+    #"*Scene fades to the lecture hall.*" Current one is temporary
     scene w1_d1_lecturehall with longer_fade
     "*Bursts through the doors into a nearly empty auditorium, looks around frantically, notices Java.*"
 
     #about to meet java on the script document
-     
+    "*Walks up to Java*"
+
 
 
 jump w1_d2
