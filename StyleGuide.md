@@ -55,7 +55,7 @@ Welcome to the "Bytes of Love" Ren'Py programming guide. This document aims to p
 
 - **Beginner Tips:** Start small and gradually add more complexity to your game as you become more comfortable with Ren'Py's scripting language.
 - **Testing:** Regularly test your game to catch and fix errors early in the development process.
-- **Community Resources:** Don't hesitate to seek help from the UFOSC Discord! Specifically Lazzy, Anton, Ryder, or Mathew!
+- **Community Resources:** Don't hesitate to seek help from the [UFOSC Discord](https://discord.gg/THrZYamTGH)! Specifically the Bytes of Love Channel. For people, refer to our main developers: [Lazzy](https://github.com/Xa-el), [Anton](https://github.com/antoncsalvador), [Jason](https://github.com/jasonlin15), or [Mathew](https://github.com/jasonlin15)!
 
 This guide is designed to help beginners navigate the basics of Ren'Py scripting for the "Bytes of Love" project. By adhering to these principles, you'll create a more organized and enjoyable visual novel. Happy coding!
 
