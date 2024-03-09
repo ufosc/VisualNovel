@@ -16,9 +16,15 @@ image rust_angry = "rustv1Angry.png"
 # Backgrounds
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
 image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
+image w1_d1_sunnyhotel = "backgrounds/w1_d1_sunnyhotel.webp"
+image w1_d1_lecturehall = "backgrounds/w1_d1_lecturehall.jpg"
+
+image w1_d1_insidecar = "backgrounds/w1_d1_insidecar.webp"
+image w1_d1_urgentcar = "backgrounds/w1_d1_urgentcar.webp"
 
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
+image black = "backgrounds/bg black.jpg"
 
 #Audio
 
