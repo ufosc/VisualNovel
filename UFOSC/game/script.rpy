@@ -4,7 +4,7 @@ define shorter_fade = Fade(0.5, 0.5, 0.5)
 
 # Characters
 define r = Character("Rust", color="#FFA500")
-define p = Character("Python")
+define p = Character("Python", color="#7DC23B")
 define c = Character("C++")
 define j = Character("Java", color="#964000")
 define u = Character("???")
@@ -12,6 +12,15 @@ define u = Character("???")
 #Rust
 image rust_normal = "rustv2Normal.png"
 image rust_angry = "rustv1Angry.png"
+
+#Java
+image java_temp = "tempJava.png"
+
+#CPP
+image cpp_temp = "tempCPP.png"
+
+#Python
+image python_temp = "tempPython.png"
 
 # Backgrounds
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
@@ -41,3 +50,4 @@ label start:
     "Your name is [mc]."
 
     jump w0_d1
+
