@@ -22,6 +22,9 @@ image cpp_temp = "tempCPP.png"
 #Python
 image python_temp = "tempPython.png"
 
+#Javascript
+image java_temp = "tempJS.png"
+
 # Backgrounds
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
 image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
