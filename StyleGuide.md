@@ -29,16 +29,15 @@ Welcome to the "Bytes of Love" Ren'Py programming guide. This document aims to p
   - Changing character expressions within choices is allowed. Use the `show` statement with a transition (e.g., `with dissolve`) for visual effects.
   - Example of presenting choices:
 	```renpy
-    "Before making a choice, the protagonist thinks:"
   	menu w0_d1_Rust:
- 		"Before making a choice, the [mc] thinks:"
+          "Before making a choice, the [mc] thinks:" #this is shown under the choices in a text box
 
           "Mean response":
         		mc "You suck."
 	        	show rust_angry with dissolve
 	    	"Nice response":
 	        	mc "Nice to meet you."
-	        	show rust_happy with dissolvei
+	        	show rust_happy with dissolve
 	```
   - **Error Troubleshooting:** If you encounter an `EXPECTED MENU ITEM` error, ensure that commands are placed **inside** the options, similar to the `show` command in the example.
 
