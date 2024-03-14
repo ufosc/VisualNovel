@@ -25,11 +25,14 @@ Welcome to the "Bytes of Love" Ren'Py programming guide. This document aims to p
 
 - **Declaring Characters:** When declaring a new character, add their definition to `VisualNovel/UFOSC/game/script.rpy`.
 - **Menus for Choices:** Use the `menu` statement to present choices to the player. Follow each `menu` statement with text-only options.
+  - **Note:** You can precede the choices with a line of dialogue, which will be displayed alongside the options, to add context or emotion to the decision-making process.
   - Changing character expressions within choices is allowed. Use the `show` statement with a transition (e.g., `with dissolve`) for visual effects.
   - Example of presenting choices:
 	```renpy
   	menu w0_d1_Rust:
- 		"Mean response":
+          "Before making a choice, the [mc] thinks:" #this is shown under the choices in a text box
+
+          "Mean response":
         		mc "You suck."
 	        	show rust_angry with dissolve
 	    	"Nice response":
@@ -50,6 +53,12 @@ Welcome to the "Bytes of Love" Ren'Py programming guide. This document aims to p
 	```renpy
 	mc "I want to eat [food_item]."
 	```
+
+## File Structure and Organization
+
+- **Big Choices:** For significant choices, create separate files within dedicated folders (e.g., `w1_d1_choices/`, containing `w1_d1_LunchJava`, `w1_d1_LunchPython`, etc.). This approach keeps your project organized and manageable.
+- **Small Choices:** Minor choices can be integrated directly into the main script file, avoiding unnecessary file fragmentation.
+
 
 ## Additional Tips
 

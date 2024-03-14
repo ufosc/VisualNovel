@@ -28,6 +28,9 @@ Lead Contributors:
 - (@JMalegni) Joseph Malegni, Product Manager
 - (@Myrtte) Edward Roshko, Script Writer
 
+Mathew:
+- (@malangadan) Mathew Alangadan, Founding Father
+
 ## Installation
 
 ### Prerequisites 
