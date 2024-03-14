@@ -6,8 +6,9 @@ define shorter_fade = Fade(0.5, 0.5, 0.5)
 define r = Character("Rust", color="#FFA500")
 define p = Character("Python", color="#7DC23B")
 define c = Character("C++")
-define j = Character("Java", color="#964000")
+define j = Character("JavaScript", color="#964000")
 define u = Character("???")
+define bsl = Character("Breakout Session Leader")
 
 #Rust
 image rust_normal = "rustv2Normal.png"
