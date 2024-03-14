@@ -51,6 +51,12 @@ Welcome to the "Bytes of Love" Ren'Py programming guide. This document aims to p
 	mc "I want to eat [food_item]."
 	```
 
+## File Structure and Organization
+
+- **Big Choices:** For significant choices, create separate files within dedicated folders (e.g., `w1_d1_choices/`, containing `w1_d1_LunchJava`, `w1_d1_LunchPython`, etc.). This approach keeps your project organized and manageable.
+- **Small Choices:** Minor choices can be integrated directly into the main script file, avoiding unnecessary file fragmentation.
+
+
 ## Additional Tips
 
 - **Beginner Tips:** Start small and gradually add more complexity to your game as you become more comfortable with Ren'Py's scripting language.
