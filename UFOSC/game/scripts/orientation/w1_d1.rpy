@@ -45,12 +45,15 @@ label w1_d1:
     j "I am not sure, but you seem smart. I’m sure you will figure it out."
     j "Anyway I have to go, it was nice to meet you [mc]."
     j "*Winks before swiftly turning away and leaving*"
+    hide java_temp with fade
     mc "*shouts (still flustered)* Thank you!!"
     mc "Man, I hope all of my professors are as nice as her!"
     mc "So, where am I supposed to be…"
     mc "*looking a list* Room 283. Now to find room 283…"
     
     # Insert transition to breakout room - Lazzy
+    # currently put a temp one in - Anton
+    scene w1_d1_breakout with fade 
 
     mc "Jeez, everyone’s here already, where am I going to sit?"
     mc "Oh! There’s a seat! And the company is not that bad either…"
@@ -65,9 +68,9 @@ label w1_d1:
     p "I just moved here from Logicburg."
     p "I’m a computer science major."
     p "I really like playing tennis and reading books."
-    j "Oh my gosh, that is so cool, Python!"
-    j "I am actually from Syntax Springs, but I played tennis in high school!"
-    j "I’m also a computer science major, that’s really cool! Slay!"
+    js "Oh my gosh, that is so cool, Python!"
+    js "I am actually from Syntax Springs, but I played tennis in high school!"
+    js "I’m also a computer science major, that’s really cool! Slay!"
     c "*grossed out* Uhm, anyway… My name is C++."
     c "I’m a computer science major with a lot of experience."
     c "I did a lot of coding in high school so I’m probably a lot better than you guys."
@@ -95,16 +98,16 @@ label w1_d1:
     mc "Why do you guys want to do computer science?"
     c "My mom is a software developer for iClicker and my Dad is a software developer for MentiMeter, so you could say it’s in my blood."
     c "I have been coding for as long as I can remember."
-    j "Well aren’t you lucky."
-    j "My mom is the worst person in the world."
-    j "She is such a helicopter Mom, and won’t leave me alone."
-    j "Even though I’m in college now she still won’t butt out of my life."
-    j "She even came here with me."
+    js "Well aren’t you lucky."
+    js "My mom is the worst person in the world."
+    js "She is such a helicopter Mom, and won’t leave me alone."
+    js "Even though I’m in college now she still won’t butt out of my life."
+    js "She even came here with me."
     p "I mean at least you moved out of Syntax Springs, right?"
-    j "That’s just it! She’s here in Byteborough with me! UGH!!!"
-    j "Anyway that’s irrelevant, I’m in computer science because of its recent growth in popularity!"
-    j "I’m so excited to meet new people and make a lot of friends!"
-    j "What about you tennis queen?"
+    js "That’s just it! She’s here in Byteborough with me! UGH!!!"
+    js "Anyway that’s irrelevant, I’m in computer science because of its recent growth in popularity!"
+    js "I’m so excited to meet new people and make a lot of friends!"
+    js "What about you tennis queen?"
     p "Well it’s nice that your mom loves you that much. But I definitely get how that is."
     p "I think it is the future and I like learning new stuff."
     p "I’m not super passionate about a career in it but, I bet I will grow to love it."
@@ -116,7 +119,7 @@ label w1_d1:
             mc "Yeah, it is pretty annoying that your mom won’t leave you alone."
             mc "Parents can be so annoying."
             mc "I wish my mom had cared enough to come with me to orientation though."
-            j "Well actually…"
+            js "Well actually…"
 
         "Respond to Python":
             mc "Yeah I agree with Python, computer science definitely seems cool."
@@ -144,7 +147,7 @@ label w1_d1:
     c "You really think that someone like that is cool??"
     p "Oh, well I didn’t realize that…"
     c "Yeah, I wouldn’t expect someone like you to know something like that."
-    j "Well I thought he was cool looking too, it was just an honest mistake."
+    js "Well I thought he was cool looking too, it was just an honest mistake."
 
     # Insert statue choice didnt add because there was some things I wanted to bring up with script writers - Lazzy
 

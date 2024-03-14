@@ -6,7 +6,8 @@ define shorter_fade = Fade(0.5, 0.5, 0.5)
 define r = Character("Rust", color="#FFA500")
 define p = Character("Python", color="#7DC23B")
 define c = Character("C++")
-define j = Character("JavaScript", color="#964000")
+define j = Character("Java", color="#964000")
+define js = Character("JavaScript", color="#f7df1e")
 define u = Character("???")
 define bsl = Character("Breakout Session Leader")
 
@@ -24,7 +25,7 @@ image cpp_temp = "tempCPP.png"
 image python_temp = "tempPython.png"
 
 #Javascript
-image java_temp = "tempJS.png"
+image js_temp = "tempJS.png"
 
 # Backgrounds
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
@@ -34,6 +35,8 @@ image w1_d1_lecturehall = "backgrounds/w1_d1_lecturehall.jpg"
 
 image w1_d1_insidecar = "backgrounds/w1_d1_insidecar.webp"
 image w1_d1_urgentcar = "backgrounds/w1_d1_urgentcar.webp"
+
+image w1_d1_breakout = "backgrounds/breakoutRoom.webp"
 
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
