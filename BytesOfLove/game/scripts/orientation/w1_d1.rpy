@@ -59,15 +59,25 @@ label w1_d1:
     mc "Oh! There’s a seat! And the company is not that bad either…"
     mc "*Sits down at a table with 3 girls.*"
     mc "Sorry I’m late, I got lost on the wa-"
+    
+    show cpp_temp with easeinright #moves cpp in from the right to the middle 
+
     c "*interrupting* Shut up, did it ever occur to you that maybe everyone is quiet for a reason?"
     mc "*Obediently stops talking and sits down, flustered.*"
     bsl "Alright, it looks like everyone is here."
     bsl "Go ahead and take some time to introduce yourself to those around you."
+
+    show cpp_temp at left with move
+    show python_temp with dissolve
+
     p "Hi guys!"
     p "My name is Python."
     p "I just moved here from Logicburg."
     p "I’m a computer science major."
     p "I really like playing tennis and reading books."
+
+    show js_temp at right with easeinleft
+
     js "Oh my gosh, that is so cool, Python!"
     js "I am actually from Syntax Springs, but I played tennis in high school!"
     js "I’m also a computer science major, that’s really cool! Slay!"

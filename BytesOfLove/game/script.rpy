@@ -38,6 +38,8 @@ image w1_d1_urgentcar = "backgrounds/w1_d1_urgentcar.webp"
 
 image w1_d1_breakout = "backgrounds/breakoutRoom.webp"
 
+image w1_d1_cafeteria = "backgrounds/w1_d1_cafeteria.webp"
+
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
 image black = "backgrounds/bg black.jpg"
