@@ -159,19 +159,27 @@ label w1_d1:
     c "Yeah, I wouldn’t expect someone like you to know something like that."
     js "Well I thought he was cool looking too, it was just an honest mistake."
 
-    # Insert statue choice didnt add because there was some things I wanted to bring up with script writers - Lazzy
+    menu w1_d1_StatueChoice:
+        "Side with C++":
+            jump w1_d1_StatueC
+        
+        "Side with JavaScript":
+            jump w1_d1_StatueJS
+        
+        "Point out the cute girl across the street":
+            jump w1_d1_StatueDB
 
+label w1_d1_AfterStatue:
     bsl "Now we will be taking a breaking for lunch."
     bsl "The different food stations are around the room."
     bsl "We will be meeting back in the classroom in one hour."
     bsl "Feel free to sit wherever you want."
     mc "Oh jeez, I was going to the bathroom and now everyone is already sitting with each other."
     mc "Where are the girls I was talking to earlier?"
-    mc "I hope they aren’t still mad at me."
+    mc "I hope I didn’t hurt anyone’s feelings."
     mc "I really don’t want to sit alone at orientation."
     "[mc] sees 3 tables. One is Python and C++, another is just JavaScript, and the last is a table of one guy."
 
-    # NOT COMPLETED - Lazzy
     menu w1_d1_LunchChoice:
         mc "Who should I sit with?"
 
@@ -181,10 +189,24 @@ label w1_d1:
         "JavaScript":
             jump w1_d1_LunchJava
 
-
-
-
-
+label w1_d1_AfterLunch:
+    bsl "Okay guys, lunch is over."
+    bsl "Everyone, make sure you are back in the original room in 10 minutes."
+    bsl "Okay guys, we are now going to be playing a game to get to know each other better."
+    bsl "We are going to be splitting the room up into groups of 2."
+    bsl "The game we will be playing is…"
+    bsl "TRIVIA!"
+    bsl "Since The University of ByteBorough is renowned for its CS program,"
+    bsl "all of the trivia will be related to computer science!"
+    bsl "The teams you are on for this will be whoever you are sitting with right now."
+    bsl "Everybody ready?"
+    mc "Okay guys, I am really good at trivia"
+    mc "And we are team 1, and one is my lucky number."
+    mc "I don’t know much about computer science stuff yet, but I am really good at guessing."
+    c "Well, we definitely won’t be guessing."
+    c "We want to win, not get by with luck."
+    js "I’m sure we won’t need luck, we all seem pretty smart!"
+    bsl "Okay here is the first question"
 
 
 jump w1_d2
