@@ -143,12 +143,19 @@ label w0_d2:
             c "Maybe you could show me the ropes sometime..?"
     
     bsl "Alright now, we’re gonna wrap up these conversations and start our guided tour of campus!"
+     
+    #tour just started put scene change
+
     "*The group tours campus as the guide talks about random trivia*"
     bsl "And if you look to your left you will see the Half-A-Century Tower…"
     c "Gosh this is so boring."
     c "Who doesn’t know all of this stuff already?"
     c "I mean did anybody really come to this school without already taking a tour."
     p "Wow this is interesting, I am enjoying this tour."
+
+    #insert statuev1
+    scene w0_d2_statue with fade
+
     p "Look at that cool statue over there."
     p "Don’t you guys think he looks cool?"
     c "Oh? You think that’s cool?"
@@ -174,6 +181,11 @@ label w0_d2:
 
 label w0_d2_AfterStatue:
     bsl "Now we will be taking a breaking for lunch."
+
+    #change scene to cafeteria
+    scene w0_d2_cafeteria with longer_fade 
+
+
     bsl "The different food stations are around the room."
     bsl "We will be meeting back in the classroom in one hour."
     bsl "Feel free to sit wherever you want."

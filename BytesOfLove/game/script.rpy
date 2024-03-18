@@ -45,7 +45,7 @@ image w0_d2_breakout = "backgrounds/w1_d1_breakoutroom.webp"
 
 image w0_d2_cafeteria = "backgrounds/w1_d1_cafeteria.webp"
 
-image statuev1 = "backgrounds/statuev1.webp"
+image w0_d2_statue = "backgrounds/statuev1.webp"
 
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
