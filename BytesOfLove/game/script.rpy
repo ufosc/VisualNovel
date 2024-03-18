@@ -14,18 +14,23 @@ define bsl = Character("Breakout Session Leader")
 #Rust
 image rust_normal = "rustv2Normal.png"
 image rust_angry = "rustv1Angry.png"
+default rust_rep = 0
 
 #Java
 image java_temp = "tempJava.png"
+default java_rep = 0
 
 #CPP
 image cpp_temp = "tempCPP.png"
 
+
 #Python
 image python_temp = "tempPython.png"
 
+
 #Javascript
 image js_temp = "tempJS.png"
+
 
 # Backgrounds
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
