@@ -1,5 +1,5 @@
-label w1_d1_LunchFlirt:
-    menu w1_d1_LunchFlirtC:
+label w0_d2_LunchFlirt:
+    menu w0_d2_LunchFlirtC:
         # I added this line can be removed - Lazzy
         mc "Hmmm who should I flirt with?"
 
@@ -33,4 +33,4 @@ label w1_d1_LunchFlirt:
     mc "Hmm, I thought that would go differently."
     mc "Can’t blame me, shooters gotta shoot…"
 
-    jump w1_d1_AfterLunch
+    jump w0_d2_AfterLunch

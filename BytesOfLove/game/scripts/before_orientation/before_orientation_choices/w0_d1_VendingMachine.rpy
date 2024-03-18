@@ -20,7 +20,7 @@ label w0_d1_VendingMachine:
             show rust_angry at right with dissolve
 
             r "Damn, I was just wondering."
-            r "I am computer science if you were wondering."
+            r "I am computer science, in case you wanted to know mine."
             mc "Oh thanks, I wasn't"
             r "Jeez you don't have to be mean about it, man."
             mc "Whatever."

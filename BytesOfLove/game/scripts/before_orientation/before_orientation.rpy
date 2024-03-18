@@ -6,7 +6,7 @@ label w0_d1:
     mc "I'm tired from the drive here, 4 hours was brutal."
     mc "I'm glad I didn't have to fly here though, I definitely don't have the money for that."
     mc "I am super grateful my parents gave me this car to take to college, I would be lost without it."
-    mc "They also gave me $50 to get through the weekend."
+    mc "They also gave me 50 Bytecoin to get through the weekend."
     mc "*Stomach rumbles* Oh man I'm hungry, I guess being on the road all day will do that to you."
 
     menu w0_d1_BeforeFood:
@@ -43,4 +43,4 @@ label w0_d1:
                 mc "*Shift, turn, shift,..,roll* Jeez, I can't seem to get comfy enough to get some sleep."
                 mc "Maybe I'll watch some YouTube until I feel tired…"
 
-jump w1_d1
+jump w0_d2

@@ -1,4 +1,4 @@
-label w1_d1_StatueDB:
+label w0_d2_StatueDB:
     mc "*Distracted* Wait, guys. Look at that girl over there."
     mc "She is actually so hot, should I go talk to her?"
     p "What are you even talking about, [mc]?"
@@ -6,19 +6,19 @@ label w1_d1_StatueDB:
     js "Were you even listening to the conversation we were having?"
     mc "What? Of course I was!"
 
-    menu w1_d1_GuessingConvo:
+    menu w0_d2_GuessingConvo:
         c "Okay, then what were we talking about?"
 
         "The Political and Economic State of The World":
-            jump w1_d1_StatueDBContinue
+            jump w0_d2_StatueDBContinue
 
         "One Piece":
-            jump w1_d1_StatueDBContinue
+            jump w0_d2_StatueDBContinue
 
         "The Seahawks should have ran the ball":
-            jump w1_d1_StatueDBContinue
+            jump w0_d2_StatueDBContinue
 
-label w1_d1_StatueDBContinue:
+label w0_d2_StatueDBContinue:
     c "See? That wasn’t even close to what we were talking about."
     js "I bet you didn’t know what we were talking about because you were too busy staring at that girl!"
     js "You are so into her!"
@@ -26,7 +26,7 @@ label w1_d1_StatueDBContinue:
     mc "Look at her, she’s a 10!"
     mc "When do you get to see girls THAT cute?"
 
-    menu w1_d1_CuteGroup:
+    menu w0_d2_CuteGroup:
         p "What? We aren’t cute enough?"
 
         "Say they're cute":
@@ -48,4 +48,4 @@ label w1_d1_StatueDBContinue:
     bsl "Could you try to keep it down?"
     mc "*Sad* Sorry…"
 
-    jump w1_d1_AfterStatue
+    jump w0_d2_AfterStatue

@@ -1,4 +1,4 @@
-label w1_d1_LunchPythonC:
+label w0_d2_LunchPythonC:
     mc "Hey Python and C++, what did you guys get for lunch?"
     p "*Says nothing*"
     mc "Look, I’m sorry about what happened earlier."
@@ -40,7 +40,7 @@ label w1_d1_LunchPythonC:
     c "She just does too much."
     c "She was always saying “slay” or “queen”"
     
-    menu w1_d1_JSAnnoying:
+    menu w0_d2_JSAnnoying:
         c "It got to be a little annoying."
 
         "Agree with C++":
@@ -61,4 +61,4 @@ label w1_d1_LunchPythonC:
     p "She is probably feeling lonely."
     p "And we shouldn’t be mean to someone who could be our new friend."
 
-    jump w1_d1_LunchApology
+    jump w0_d2_LunchApology

@@ -22,28 +22,28 @@ default java_rep = 0
 
 #CPP
 image cpp_temp = "tempCPP.png"
-
+default cpp_rep = 0
 
 #Python
 image python_temp = "tempPython.png"
-
+default python_rep = 0
 
 #Javascript
 image js_temp = "tempJS.png"
-
+default js_rep = 0
 
 # Backgrounds
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
 image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
-image w1_d1_sunnyhotel = "backgrounds/w1_d1_sunnyhotel.webp"
-image w1_d1_lecturehall = "backgrounds/w1_d1_lecturehall.jpg"
+image w0_d2_sunnyhotel = "backgrounds/w1_d1_sunnyhotel.webp"
+image w0_d2_lecturehall = "backgrounds/w1_d1_lecturehall.jpg"
 
-image w1_d1_insidecar = "backgrounds/w1_d1_insidecar.webp"
-image w1_d1_urgentcar = "backgrounds/w1_d1_urgentcar.webp"
+image w0_d2_insidecar = "backgrounds/w1_d1_insidecar.webp"
+image w0_d2_urgentcar = "backgrounds/w1_d1_urgentcar.webp"
 
-image w1_d1_breakout = "backgrounds/breakoutRoom.webp"
+image w0_d2_breakout = "backgrounds/breakoutRoom.webp"
 
-image w1_d1_cafeteria = "backgrounds/w1_d1_cafeteria.webp"
+image w0_d2_cafeteria = "backgrounds/w1_d1_cafeteria.webp"
 
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"

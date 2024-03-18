@@ -1,4 +1,4 @@
-label w1_d1_StatueJS:
+label w0_d2_StatueJS:
     mc "I agree with JavaScript and Python, you need to take a chill pill C++."
     mc "He does look cool, I didn’t realize that was the ‘Firewall’ Jackson either."
     c "Ugh whatever."
@@ -13,7 +13,7 @@ label w1_d1_StatueJS:
     c "Well [mc] is only agreeing with you because he thinks you are cute."
     mc "*flustered* Whoa whoa whoa, that is not what I said."
 
-    menu w1_d1_CuteJS:
+    menu w0_d2_CuteJS:
         js "Hm, so do you think I’m cute?"
 
         "Say she's cute":
@@ -44,4 +44,4 @@ label w1_d1_StatueJS:
             js "Excuse me!?"
             mc "I never said-"
     
-    jump w1_d1_StatueSexist
+    jump w0_d2_StatueSexist

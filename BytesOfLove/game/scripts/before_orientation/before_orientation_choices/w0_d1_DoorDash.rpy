@@ -13,8 +13,8 @@ label w0_d1_DoorDash:
         mc "Whatever, at least you finally got here."
 
         "Tip driver":
-            u "Your total is $30."
-            mc "*Hands over $35*"
+            u "Your total is 30 Bytecoin."
+            mc "*Hands over 35 Bytecoin*"
             mc "Keep the change I guess, have a good one."
             u "Mhm. *Leaves*"
             mc "*Shouts* You're welcome!"
@@ -22,8 +22,8 @@ label w0_d1_DoorDash:
             mc "*Closes the door*"
             
         "Don't tip driver":
-            u "Your total is $30."
-            mc "*Hands over $30*"
+            u "Your total is 30 Bytecoin."
+            mc "*Hands over 30 Bytecoin*"
             mc "Here"   
             u "What? No tip? Are you kidding me?"
             mc "You took eight years to get me my food."
