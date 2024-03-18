@@ -2,7 +2,7 @@ label w0_d2_StatueC:
     mc "Yep, I totally knew that. It’s pretty insensitive of Python to support someone like that."
     p "I seriously didn’t know, jeez…"
     p "You guys don’t need to be mean about it."
-    C "At least someone knows what they’re talking about, thank you [mc]."
+    c "At least someone knows what they’re talking about, thank you [mc]."
     js "There is no way you knew that!"
     js "And even if you did, C++ is being so mean."
     js "There is no need to be nasty!"
