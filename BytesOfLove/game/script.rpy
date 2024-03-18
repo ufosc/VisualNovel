@@ -8,8 +8,8 @@ define p = Character("Python", color="#7DC23B")
 define c = Character("C++", color="00599C")
 define j = Character("Java", color="#964000")
 define js = Character("JavaScript", color="#f7df1e")
-define u = Character("???")
-define bsl = Character("Breakout Session Leader")
+define u = Character("???", color="5c5f5d")
+define bsl = Character("Breakout Session Leader", color="5c5f5d")
 
 #Rust
 image rust_normal = "rustv2Normal.png"
