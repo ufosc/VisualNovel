@@ -1,5 +1,5 @@
-label w1_d1:
-    scene w1_d1_sunnyhotel with longer_fade
+label w0_d2:
+    scene w0_d2_sunnyhotel with longer_fade
     "*You wake up in your hotel room and look at the clock. It's 9:30, orientation started 15 minutes ago.*"
     mc "WHAT THE HELL?!?!?"
     "*Checks phone, sees that its dead*"
@@ -12,17 +12,17 @@ label w1_d1:
     mc "What was I thinking?!?!?"
     mc "Better late than never I guess, DANG IT!"
     "*Sprinting out the door to the car*"
-    scene w1_d1_urgentcar with shorter_fade
+    scene w0_d2_urgentcar with shorter_fade
     mc "What's my excuse, what's my excuse?"
     mc "I was sick? Family emergency? My car wouldn't start?"
     "*Turns key, car struggles*"
     mc "WAIT WAIT NOT ACTUALLY PLEASE START!!!"
-    scene w1_d1_insidecar with shorter_fade
+    scene w0_d2_insidecar with shorter_fade
     "*Car starts, [mc] sighs from relief, speeds off*"
     mc "And I don't even know where I’m going. This city is all new to me!"
     mc "I am going to be so late."
     #"*Scene fades to the lecture hall.*" Current one is temporary
-    scene w1_d1_lecturehall with longer_fade
+    scene w0_d2_lecturehall with longer_fade
     "*Bursts through the doors into a nearly empty auditorium, looks around frantically, notices Java.*" 
     #Java should not be known yet prob.
 
@@ -53,7 +53,7 @@ label w1_d1:
     
     # Insert transition to breakout room - Lazzy
     # currently put a temp one in - Anton
-    scene w1_d1_breakout with fade 
+    scene w0_d2_breakout with fade 
 
     mc "Jeez, everyone’s here already, where am I going to sit?"
     mc "Oh! There’s a seat! And the company is not that bad either…"
@@ -87,7 +87,7 @@ label w1_d1:
     c "What about you?"
     
     # Short interaction decided not to put in choices lmk if this is changed - Lazzy
-    menu w1_d1_LateReason:
+    menu w0_d2_LateReason:
         c "Why were you so late?"
 
         "Honest":
@@ -124,7 +124,7 @@ label w1_d1:
     p "I think it will be a good choice."
     
     # Another short interaction not worth seperating files. Temporarily named everything "Respond to X" since I didnt know what to put - Lazzy
-    menu w1_d1_BreakoutResponse1:
+    menu w0_d2_BreakoutResponse1:
         "Respond to Javascript":
             mc "Yeah, it is pretty annoying that your mom won’t leave you alone."
             mc "Parents can be so annoying."
@@ -158,18 +158,21 @@ label w1_d1:
     p "Oh, well I didn’t realize that…"
     c "Yeah, I wouldn’t expect someone like you to know something like that."
     js "Well I thought he was cool looking too, it was just an honest mistake."
+    js "There's no need to be so aggressive C++..."
 
-    menu w1_d1_StatueChoice:
+    menu w0_d2_StatueChoice:
+        js "Do you agree with what im saying [mc] or are you on C++’s side?"
+
         "Side with C++":
-            jump w1_d1_StatueC
+            jump w0_d2_StatueC
         
         "Side with JavaScript":
-            jump w1_d1_StatueJS
+            jump w0_d2_StatueJS
         
         "Point out the cute girl across the street":
-            jump w1_d1_StatueDB
+            jump w0_d2_StatueDB
 
-label w1_d1_AfterStatue:
+label w0_d2_AfterStatue:
     bsl "Now we will be taking a breaking for lunch."
     bsl "The different food stations are around the room."
     bsl "We will be meeting back in the classroom in one hour."
@@ -180,16 +183,16 @@ label w1_d1_AfterStatue:
     mc "I really don’t want to sit alone at orientation."
     "[mc] sees 3 tables. One is Python and C++, another is just JavaScript, and the last is a table of one guy."
 
-    menu w1_d1_LunchChoice:
+    menu w0_d2_LunchChoice:
         mc "Who should I sit with?"
 
         "Python and C++":
-            jump w1_d1_LunchPythonC
+            jump w0_d2_LunchPythonC
 
         "JavaScript":
-            jump w1_d1_LunchJava
+            jump w0_d2_LunchJava
 
-label w1_d1_AfterLunch:
+label w0_d2_AfterLunch:
     bsl "Okay guys, lunch is over."
     bsl "Everyone, make sure you are back in the original room in 10 minutes."
     bsl "Okay guys, we are now going to be playing a game to get to know each other better."
@@ -209,5 +212,5 @@ label w1_d1_AfterLunch:
     bsl "Okay here is the first question"
 
 
-jump w1_d2
+jump w0_d3
 

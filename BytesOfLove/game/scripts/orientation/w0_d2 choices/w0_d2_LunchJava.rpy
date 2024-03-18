@@ -1,4 +1,4 @@
-label w1_d1_LunchJava:
+label w0_d2_LunchJava:
     # I think this should increase JS affection, currently not in script - Lazzy
     mc "Hey JavaScript, I’m sorry for how I was acting earlier."
     mc "That was mean of me."
@@ -35,5 +35,5 @@ label w1_d1_LunchJava:
     mc "Actually, she kinda looked like you…"
     js "Hmm, yeah well actually-"
 
-    jump w1_d1_LunchApology
+    jump w0_d2_LunchApology
     

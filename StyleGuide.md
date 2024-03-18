@@ -54,11 +54,58 @@ Welcome to the "Bytes of Love" Ren'Py programming guide. This document aims to p
 	mc "I want to eat [food_item]."
 	```
 
+## Conditional Content and Choices
+
+### Using If Statements
+- **Purpose:** Utilize `if` statements to dynamically alter game content based on variable values. This is especially useful for conditional dialogue options, scene changes, or character interactions.
+- **Syntax and Example:**
+    ```renpy
+    if python_rep > 10:
+        # Conditional content here
+    ```
+- **Application in Choices:**
+    - To conditionally display choices, wrap the choice in an `if` statement within a `menu` block.
+    - **Example:**
+        ```renpy
+        menu:
+            "This choice always appears."
+
+            if python_rep > 10:
+                "This choice only appears if python_rep is greater than 10."
+        ```
+
+### Dynamic Choices Based on Variables
+- **Adjusting Choices:** Change the text and outcomes of choices dynamically by referencing variables.
+- **Example:** Using `python_rep` to influence dialogue options.
+    ```renpy
+    menu:
+        if python_rep < 5:
+            "Ask about basic Python concepts.":
+                # Outcome for low python_rep
+        elif python_rep >= 5:
+            "Discuss advanced Python topics.":
+                # Outcome for high python_rep
+    ```
+
 ## File Structure and Organization
 
 - **Big Choices:** For significant choices, create separate files within dedicated folders (e.g., `w1_d1_choices/`, containing `w1_d1_LunchJava`, `w1_d1_LunchPython`, etc.). This approach keeps your project organized and manageable.
 - **Small Choices:** Minor choices can be integrated directly into the main script file, avoiding unnecessary file fragmentation.
 
+## Advanced Variable Usage
+
+### Conditionally Modifying Game Flow
+- **Scenes and Character Displays:** Use variables like `python_rep` to make decisions about which scenes to display or how characters react.
+    ```renpy
+    if python_rep > 5:
+        scene special_python_classroom
+        show character_smiling
+    else:
+        scene regular_classroom
+        show character_neutral
+    ```
+
+- **Conditional Interactions:** In sections detailing character interactions, remind scriptwriters to consider the player's relationship status with characters, influenced by variables such as `python_rep`, to adjust dialogue and interactions accordingly.
 
 ## Additional Tips
 

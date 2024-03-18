@@ -1,9 +1,9 @@
-label w1_d1_StatueSexist:
+label w0_d2_StatueSexist:
     p "Everyone just shut up!"
     p "It’s not that important and you’re talking over the tour guide!"
     p "[mc]  was just having an opinion about the statue."
     
-    menu w1_d1_StatueSexistC:
+    menu w0_d2_StatueSexistC:
         p "He didn’t say that anybody was hot or ugly, so let’s all just relax."
 
         "Be sexist":
@@ -21,4 +21,4 @@ label w1_d1_StatueSexist:
     bsl "Could you try to keep it down?"
     mc "*Sad* Sorry…"
 
-    jump w1_d1_AfterStatue
+    jump w0_d2_AfterStatue

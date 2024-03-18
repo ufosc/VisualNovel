@@ -1,4 +1,4 @@
-label w1_d1_StatueC:
+label w0_d2_StatueC:
     mc "Yep, I totally knew that. It’s pretty insensitive of Python to support someone like that."
     p "I seriously didn’t know, jeez…"
     p "You guys don’t need to be mean about it."
@@ -12,7 +12,7 @@ label w1_d1_StatueC:
     mc "I can’t believe you would think I would change my mind based on a woman’s outward appearance."
     
     # Short choice decided other file was not neccessary - Lazzy
-    menu w1_d1_CuteC:
+    menu w0_d2_CuteC:
         c "Hm, so you don’t think I’m cute?"
 
         "Say she's cute":
@@ -44,4 +44,4 @@ label w1_d1_StatueC:
             c "Excuse me!?"
             mc "I never said-"
     
-    jump w1_d1_StatueSexist
+    jump w0_d2_StatueSexist
