@@ -41,9 +41,11 @@ image w0_d2_lecturehall = "backgrounds/w1_d1_lecturehall.jpg"
 image w0_d2_insidecar = "backgrounds/w1_d1_insidecar.webp"
 image w0_d2_urgentcar = "backgrounds/w1_d1_urgentcar.webp"
 
-image w0_d2_breakout = "backgrounds/breakoutRoom.webp"
+image w0_d2_breakout = "backgrounds/w1_d1_breakoutroom.webp"
 
 image w0_d2_cafeteria = "backgrounds/w1_d1_cafeteria.webp"
+
+image statuev1 = "backgrounds/statuev1.webp"
 
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
