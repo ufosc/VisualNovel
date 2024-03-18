@@ -28,7 +28,7 @@ Lead Contributors:
 - (@JMalegni) Joseph Malegni, Product Manager
 - (@Myrtte) Edward Roshko, Script Writer
 
-Mathew:
+Lead Mathew:
 - (@malangadan) Mathew Alangadan, Founding Father
 
 ## Installation
@@ -48,11 +48,11 @@ In the ```renpy.8.1.1-sdk``` folder.
 
 SSH
         
-        git clone git@github.com:user/VisualNovel.git 
+        git clone git@github.com:ufosc/VisualNovel.git 
 
 HTTP
 
-        git clone https://github.com/user/VisualNovel.git
+        git clone https://github.com/ufosc/VisualNovel.git 
 
 You can start up the Ren'Py launcher by launching ```renpy.exe``` in the ```renpy.8.1.1-sdk``` directory. If you are a Mac user, launch via ```renpy``` instead of ```renpy.exe```. Once the launcher opens, the project should show up in the projects tab as UFOSC.
 
