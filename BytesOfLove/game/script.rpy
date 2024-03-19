@@ -35,8 +35,9 @@ default cpp_rep = 0
 #Python
 image python_normal = "Python/Python_Base_1.png"
 image python_happy = "Python/Python_Base_2.png"
-image python_pocket = "Python/Python_Base_2.png"
+image python_pocket = "Python/Python_HandsPocket_1.png"
 image python_pocket_happy = "Python/Python_HandsPocket_2.png"
+
 
 image python_nojacket_normal = "Python/Python_Base_1.5.png"
 image python_nojacket_happy = "Python/Python_Base_2.5.png"
@@ -53,7 +54,7 @@ default js_rep = 0
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
 image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
 image w0_d2_sunnyhotel = "backgrounds/w1_d1_sunnyhotel.webp"
-image w0_d2_lecturehall = "backgrounds/w1_d1_lecturehall.jpg"
+image w0_d2_lecturehall = "backgrounds/w1_d1_lecturehall.webp"
 
 image w0_d2_insidecar = "backgrounds/w1_d1_insidecar.webp"
 image w0_d2_urgentcar = "backgrounds/w1_d1_urgentcar.webp"
