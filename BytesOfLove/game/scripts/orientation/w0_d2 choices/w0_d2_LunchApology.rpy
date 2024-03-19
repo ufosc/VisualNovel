@@ -1,7 +1,12 @@
 label w0_d2_LunchApology:
     p "Hey JavaScript!"
-    p "Is it if we join you?"
+    show js_temp at left with move
+    show python_happy with dissolve
+    p "Is it alright if we join you?"
     js "Yeah sure!"
+    hide python_happy
+    show python_pocket
+    show cpp_normal at right with dissolve
     mc "Lunch was good, I am glad that we got to eat some good food."
 
     menu w0_d2_LunchApologyC:

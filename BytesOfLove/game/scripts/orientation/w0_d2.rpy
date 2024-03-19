@@ -23,29 +23,31 @@ label w0_d2:
     mc "I am going to be so late."
     #"*Scene fades to the lecture hall.*" Current one is temporary
     scene w0_d2_lecturehall with longer_fade
-    "*Bursts through the doors into a nearly empty auditorium, looks around frantically, notices Java.*" 
+    "*Bursts through the doors into a nearly empty auditorium, looks around frantically, notices a friendly face.*" 
     #Java should not be known yet prob.
 
     #about to meet java on the script document
-    "*Walks up to Java*"
-    show java_temp at left with fade 
+    "*Walks up to the lady*"
+    show java_normal at right with dissolve 
 
     mc "Excuse me ma’am, I’m so sorry that I’m late but I don’t know where to go or what to do."
     mc "My car wouldn't start and I had a family emergency and I got lost and …"
-    j "Hey, it's okay. It's just orientation, calm down." 
+    hide java_normal
+    show java_happy at right
+    u "Hey, it's okay. It's just orientation, calm down." 
     mc "*Panicked* Yeah but it's my first day and I feel like I am already messing everything up. What am I going to do??"
-    j "Oh sweetie, don’t worry about it. Every journey has its own pace; being late doesn’t mean you won’t reach your destination."
+    u "Oh sweetie, don’t worry about it. Every journey has its own pace; being late doesn’t mean you won’t reach your destination."
     mc "*Stunned* Huh I guess you're right. Well, what'd I miss?"
-    j "Sure, well the dean came in and introduced themself to the students"
-    j "They said that everyone here was admitted because they are hard working, responsible, smart, and punctual."
+    u "Sure, well the dean came in and introduced themself to the students"
+    u "They said that everyone here was admitted because they are hard working, responsible, smart, and punctual."
     mc "Oh. Well that's just great"
-    j "And then he dismissed them to go to all the different rooms where their orientation breakout groups will meet."
-    j "You can go check on the list outside of the auditorium door to see what room you will be in."
+    u "And then he dismissed them to go to all the different rooms where their orientation breakout groups will meet."
+    u "You can go check on the list outside of the auditorium door to see what room you will be in."
     mc "Well how will I know where the room is? I don’t know anything about this school!"
-    j "I am not sure, but you seem smart. I’m sure you will figure it out."
-    j "Anyway I have to go, it was nice to meet you [mc]."
-    j "*Winks before swiftly turning away and leaving*"
-    hide java_temp with fade
+    u "I am not sure, but you seem smart. I’m sure you will figure it out."
+    u "Anyway I have to go, it was nice to meet you [mc]."
+    u "*Winks before swiftly turning away and leaving*"
+    hide java_happy with fade
     mc "*shouts (still flustered)* Thank you!!"
     mc "Man, I hope all of my professors are as nice as her!"
     mc "So, where am I supposed to be…"
@@ -60,15 +62,17 @@ label w0_d2:
     mc "*Sits down at a table with 3 girls.*"
     mc "Sorry I’m late, I got lost on the wa-"
     
-    show cpp_temp with easeinright #moves cpp in from the right to the middle 
+    show cpp_normal with easeinright #moves cpp in from the right to the middle 
 
+    hide cpp_normal
+    show cpp_talk
     c "*interrupting* Shut up, did it ever occur to you that maybe everyone is quiet for a reason?"
     mc "*Obediently stops talking and sits down, flustered.*"
     bsl "Alright, it looks like everyone is here."
     bsl "Go ahead and take some time to introduce yourself to those around you."
 
-    show cpp_temp at left with move
-    show python_temp with dissolve
+    show cpp_talk at left with move
+    show python_normal with dissolve
 
     p "Hi guys!"
     p "My name is Python."
@@ -143,20 +147,41 @@ label w0_d2:
             c "Maybe you could show me the ropes sometime..?"
     
     bsl "Alright now, we’re gonna wrap up these conversations and start our guided tour of campus!"
+     
+    #tour just started put scene change
+
     "*The group tours campus as the guide talks about random trivia*"
     bsl "And if you look to your left you will see the Half-A-Century Tower…"
     c "Gosh this is so boring."
     c "Who doesn’t know all of this stuff already?"
     c "I mean did anybody really come to this school without already taking a tour."
     p "Wow this is interesting, I am enjoying this tour."
+
+    #insert statuev1
+    scene w0_d2_statue with fade
+
+    show python_pocket_happy at left with dissolve
     p "Look at that cool statue over there."
     p "Don’t you guys think he looks cool?"
+    hide python_pocket_happy
+    show python_pocket at left
+    show cpp_talk with dissolve
     c "Oh? You think that’s cool?"
     c "That statue is actually Thomas ‘Firewall’ Jackson."
     c "He was a general in a huge war a while ago and he killed a lot of people."
     c "You really think that someone like that is cool??"
+    
+    hide cpp_talk
+    show cpp_normal
+
+    hide python_pocket
+    show python_pocket_happy at left
     p "Oh, well I didn’t realize that…"
+
+    hide cpp_normal
+    show cpp_talk
     c "Yeah, I wouldn’t expect someone like you to know something like that."
+    show js_temp at right with dissolve
     js "Well I thought he was cool looking too, it was just an honest mistake."
     js "There's no need to be so aggressive C++..."
 
@@ -174,6 +199,11 @@ label w0_d2:
 
 label w0_d2_AfterStatue:
     bsl "Now we will be taking a breaking for lunch."
+
+    #change scene to cafeteria
+    scene w0_d2_cafeteria with longer_fade 
+
+
     bsl "The different food stations are around the room."
     bsl "We will be meeting back in the classroom in one hour."
     bsl "Feel free to sit wherever you want."

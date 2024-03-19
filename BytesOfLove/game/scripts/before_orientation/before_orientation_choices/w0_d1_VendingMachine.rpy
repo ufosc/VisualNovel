@@ -17,7 +17,7 @@ label w0_d1_VendingMachine:
             mc "Wouldn't you like to know…"
             
             hide rust_normal 
-            show rust_angry at right with dissolve
+            show rust_angry at right
 
             r "Damn, I was just wondering."
             r "I am computer science, in case you wanted to know mine."
