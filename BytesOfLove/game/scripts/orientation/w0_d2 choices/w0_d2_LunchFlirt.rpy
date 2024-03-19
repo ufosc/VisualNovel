@@ -4,20 +4,20 @@ label w0_d2_LunchFlirt:
         mc "Hmmm who should I flirt with?"
 
         "Python":
-            mc "Especiially you, Python."
+            mc "Especiially you Python."
             mc "*winks*"
             p "Wow, way to ruin an apology."
             p "I expected nothing less."
             c "Typical man..."
         "C++":
-            mc "Especiially you, C++."
+            mc "Especiially you C++."
             mc "*winks*"
             c "Wow, way to ruin an apology."
             c "I expected nothing less."
             js "Typical man..."
 
         "JavaScript":
-            mc "Especiially you, JavaScript."
+            mc "Especiially you JavaScript."
             mc "*winks*"
             js "Wow, way to ruin an apology."
             js "I expected nothing less."
