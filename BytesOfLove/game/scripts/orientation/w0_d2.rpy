@@ -28,10 +28,12 @@ label w0_d2:
 
     #about to meet java on the script document
     "*Walks up to Java*"
-    show java_temp at left with fade 
+    show java_normal at right with fade 
 
     mc "Excuse me ma’am, I’m so sorry that I’m late but I don’t know where to go or what to do."
     mc "My car wouldn't start and I had a family emergency and I got lost and …"
+    hide java_normal
+    show java_happy at right
     j "Hey, it's okay. It's just orientation, calm down." 
     mc "*Panicked* Yeah but it's my first day and I feel like I am already messing everything up. What am I going to do??"
     j "Oh sweetie, don’t worry about it. Every journey has its own pace; being late doesn’t mean you won’t reach your destination."
@@ -45,7 +47,7 @@ label w0_d2:
     j "I am not sure, but you seem smart. I’m sure you will figure it out."
     j "Anyway I have to go, it was nice to meet you [mc]."
     j "*Winks before swiftly turning away and leaving*"
-    hide java_temp with fade
+    hide java_happy with fade
     mc "*shouts (still flustered)* Thank you!!"
     mc "Man, I hope all of my professors are as nice as her!"
     mc "So, where am I supposed to be…"
@@ -60,15 +62,17 @@ label w0_d2:
     mc "*Sits down at a table with 3 girls.*"
     mc "Sorry I’m late, I got lost on the wa-"
     
-    show cpp_temp with easeinright #moves cpp in from the right to the middle 
+    show cpp_normal with easeinright #moves cpp in from the right to the middle 
 
+    hide cpp_normal
+    show cpp_talk
     c "*interrupting* Shut up, did it ever occur to you that maybe everyone is quiet for a reason?"
     mc "*Obediently stops talking and sits down, flustered.*"
     bsl "Alright, it looks like everyone is here."
     bsl "Go ahead and take some time to introduce yourself to those around you."
 
-    show cpp_temp at left with move
-    show python_temp with dissolve
+    show cpp_talk at left with move
+    show python_normal with dissolve
 
     p "Hi guys!"
     p "My name is Python."

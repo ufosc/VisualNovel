@@ -12,20 +12,37 @@ define u = Character("???", color="5c5f5d")
 define bsl = Character("Breakout Session Leader", color="5c5f5d")
 
 #Rust
-image rust_normal = "rustv2Normal.png"
-image rust_angry = "rustv1Angry.png"
+image rust_normal = "Rust/Rust_Base_1.png"
+image rust_talk = "Rust/Rust_Base_2.png"
+image rust_angry = "Rust/Rust_Angry.png"
+image rust_confused = "Rust/Rust_ConfusedGlare.png"
 default rust_rep = 0
 
 #Java
-image java_temp = "tempJava.png"
+image java_normal = "Java/Java_Base_1.png"
+image java_happy = "Java/Java_Base_2.png"
+image java_uh = "Java/Java_MouthOpen.png"
+image java_wink = "Java/Java_Wink.png"
 default java_rep = 0
 
 #CPP
-image cpp_temp = "tempCPP.png"
+image cpp_normal = "C++/C++_Base_1.png"
+image cpp_happy = "C++/C++_Base_2.png"
+image cpp_talk = "C++/C++_Talking.png"
+
 default cpp_rep = 0
 
 #Python
-image python_temp = "tempPython.png"
+image python_normal = "Python/Python_Base_1.png"
+image python_happy = "Python/Python_Base_2.png"
+image python_pocket = "Python/Python_Base_2.png"
+image python_pocket_happy = "Python/Python_HandsPocket_2.png"
+
+image python_nojacket_normal = "Python/Python_Base_1.5.png"
+image python_nojacket_happy = "Python/Python_Base_2.5.png"
+
+
+
 default python_rep = 0
 
 #Javascript
