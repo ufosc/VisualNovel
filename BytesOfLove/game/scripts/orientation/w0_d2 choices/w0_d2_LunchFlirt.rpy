@@ -5,14 +5,14 @@ label w0_d2_LunchFlirt:
 
         "Python":
             $ p_rep = reputation(p_rep, -2)
-            mc "Especiially you Python."
+            mc "Especially you Python."
             mc "*winks*"
             p "Wow, way to ruin an apology."
             p "I expected nothing less."
             c "Typical man..."
         "C++":
             $ c_rep = reputation(c_rep, -2)
-            mc "Especiially you C++."
+            mc "Especially you C++."
             mc "*winks*"
             c "Wow, way to ruin an apology."
             c "I expected nothing less."
@@ -20,7 +20,7 @@ label w0_d2_LunchFlirt:
 
         "JavaScript":
             $ js_rep = reputation(js_rep, -2)
-            mc "Especiially you JavaScript."
+            mc "Especially you JavaScript."
             mc "*winks*"
             js "Wow, way to ruin an apology."
             js "I expected nothing less."
