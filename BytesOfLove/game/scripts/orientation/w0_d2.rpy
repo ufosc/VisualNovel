@@ -75,7 +75,7 @@ label w0_d2:
     bsl "Alright, it looks like everyone is here."
     bsl "Go ahead and take some time to introduce yourself to those around you."
 
-    show cpp_talk at left with move
+    hide cpp_talk
     show python_normal with dissolve
 
     p "Hi guys!"
@@ -84,11 +84,16 @@ label w0_d2:
     p "I’m a computer science major."
     p "I really like playing tennis and reading books."
 
-    show js_temp at right with easeinleft
+    hide python_normal
+    show js_temp with dissolve
 
     js "Oh my gosh, that is so cool, Python!"
     js "I am actually from Syntax Springs, but I played tennis in high school!"
     js "I’m also a computer science major, that’s really cool! Slay!"
+
+    hide js_temp
+    show cpp_talk with dissolve
+
     c "*grossed out* Uhm, anyway… My name is C++."
     c "I’m a computer science major with a lot of experience."
     c "I did a lot of coding in high school so I’m probably a lot better than you guys."
@@ -116,11 +121,17 @@ label w0_d2:
     mc "Why do you guys want to do computer science?"
     c "My mom is a software developer for iClicker and my Dad is a software developer for MentiMeter, so you could say it’s in my blood."
     c "I have been coding for as long as I can remember."
+
+    hide cpp_talk
+    show js_temp at left with easeinleft
+
     js "Well aren’t you lucky."
     js "My mom is the worst person in the world."
     js "She is such a helicopter Mom, and won’t leave me alone."
     js "Even though I’m in college now she still won’t butt out of my life."
     js "She even came here with me."
+
+    show python_normal at right with easeinright
     p "I mean at least you moved out of Syntax Springs, right?"
     js "That’s just it! She’s here in Byteborough with me! UGH!!!"
     js "Anyway that’s irrelevant, I’m in computer science because of its recent growth in popularity!"
@@ -156,6 +167,7 @@ label w0_d2:
     bsl "Alright now, we’re gonna wrap up these conversations and start our guided tour of campus!"
      
     #tour just started put scene change
+    scene w0_d2_statue with fade
 
     "*The group tours campus as the guide talks about random trivia*"
     bsl "And if you look to your left you will see the Half-A-Century Tower…"
@@ -164,8 +176,6 @@ label w0_d2:
     c "I mean did anybody really come to this school without already taking a tour."
     p "Wow this is interesting, I am enjoying this tour."
 
-    #insert statuev1
-    scene w0_d2_statue with fade
 
     show python_pocket_happy at left with dissolve
     p "Look at that cool statue over there."

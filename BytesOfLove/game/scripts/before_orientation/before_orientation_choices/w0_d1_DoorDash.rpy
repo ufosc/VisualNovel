@@ -1,9 +1,12 @@
 label w0_d1_DoorDash:
     mc "I passed Chipotle like fifteen times on the way here, I bet I can order some for delivery…"
+    scene w0_d1_hotel with shorter_fade
     "*15 minutes later*"
     mc "This driver sucks! I ordered this 30 minutes ago and he still hasn't picked it up!!!"
+    scene w0_d1_hotel with shorter_fade
     "*20 minutes later*"
     mc "Uuuugggghhhhh. I'm so hungry. Can this loser hurry up? It isn't that hard to deliver food."
+    scene w0_d1_hotel with shorter_fade
     "*20 more minutes later, there is a knock at the door*"
     u "Here you go."
     mc "*Annoyed* What took you so long."
