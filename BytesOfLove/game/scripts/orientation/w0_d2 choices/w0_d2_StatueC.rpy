@@ -34,7 +34,7 @@ label w0_d2_StatueC:
             c "[mc], be quiet. This isn’t even about you!"
 
         "Say she's not cute":
-             $ c_rep = reputation(c_rep, -2)
+            $ c_rep = reputation(c_rep, -2)
             mc "Don’t go fishing for a compliment just because I agreed with you."
             mc "I agree that Python shouldn’t go around calling statues cool without knowing what they represent."
             mc "That's it."
