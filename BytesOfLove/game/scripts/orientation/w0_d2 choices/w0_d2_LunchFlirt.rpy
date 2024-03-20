@@ -4,23 +4,35 @@ label w0_d2_LunchFlirt:
         mc "Hmmm who should I flirt with?"
 
         "Python":
+<<<<<<< HEAD
             $ p_rep = reputation(p_rep, -2)
             mc "Especiially you Python."
+=======
+            mc "Especially you Python."
+>>>>>>> 7d1a352b5ea7b682dd0afd501f94746cb3ae5be8
             mc "*winks*"
             p "Wow, way to ruin an apology."
             p "I expected nothing less."
             c "Typical man..."
         "C++":
+<<<<<<< HEAD
             $ c_rep = reputation(c_rep, -2)
             mc "Especiially you C++."
+=======
+            mc "Especially you C++."
+>>>>>>> 7d1a352b5ea7b682dd0afd501f94746cb3ae5be8
             mc "*winks*"
             c "Wow, way to ruin an apology."
             c "I expected nothing less."
             js "Typical man..."
 
         "JavaScript":
+<<<<<<< HEAD
             $ js_rep = reputation(js_rep, -2)
             mc "Especiially you JavaScript."
+=======
+            mc "Especially you JavaScript."
+>>>>>>> 7d1a352b5ea7b682dd0afd501f94746cb3ae5be8
             mc "*winks*"
             js "Wow, way to ruin an apology."
             js "I expected nothing less."
