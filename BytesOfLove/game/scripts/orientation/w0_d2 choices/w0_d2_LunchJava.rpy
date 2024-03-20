@@ -35,6 +35,8 @@ label w0_d2_LunchJava:
     mc "She definitely wasn’t a student, she looked too old to be anywhere near our age."
     mc "Actually, she kinda reminded me of you…"
     js "Hmm, yeah well actually-"
-
+    show js_temp at left with move
+    show python_happy with dissolve
+    show cpp_normal at right with dissolve
     jump w0_d2_LunchApology
     
