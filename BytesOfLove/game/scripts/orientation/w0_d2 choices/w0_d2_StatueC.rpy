@@ -1,4 +1,7 @@
 label w0_d2_StatueC:
+    $ c_rep = reputation(c_rep, 2)
+    $ p_rep = reputation(p_rep, -2)
+    $ js_rep = reputation(js_rep, -2)
     mc "Yep, I totally knew that. It’s pretty insensitive of Python to support someone like that."
     p "I seriously didn’t know, jeez…"
     p "You guys don’t need to be mean about it."
@@ -16,6 +19,7 @@ label w0_d2_StatueC:
         c "Hm, so you don’t think I’m cute?"
 
         "Say she's cute":
+            $ c_rep = reputation(c_rep, 2)
             mc "*flustered af*"
             mc "Well… that’s not what I was saying."
             mc "I do think you are kind of cute."
@@ -30,6 +34,7 @@ label w0_d2_StatueC:
             c "[mc], be quiet. This isn’t even about you!"
 
         "Say she's not cute":
+            $ c_rep = reputation(c_rep, -2)
             mc "Don’t go fishing for a compliment just because I agreed with you."
             mc "I agree that Python shouldn’t go around calling statues cool without knowing what they represent."
             mc "That's it."

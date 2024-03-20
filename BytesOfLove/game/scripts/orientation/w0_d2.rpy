@@ -130,21 +130,24 @@ label w0_d2:
     # Another short interaction not worth seperating files. Temporarily named everything "Respond to X" since I didnt know what to put - Lazzy
     menu w0_d2_BreakoutResponse1:
         "Respond to Javascript":
+            $ js_rep = reputation(js_rep, 2)
             mc "Yeah, it is pretty annoying that your mom won’t leave you alone."
             mc "Parents can be so annoying."
             mc "I wish my mom had cared enough to come with me to orientation though."
             js "Well actually…"
 
         "Respond to Python":
+            $ p_rep = reputation(p_rep, 2)
             mc "Yeah I agree with Python, computer science definitely seems cool."
             mc "I’m just like you, I don’t have much experience in programming, but I am definitely excited to learn."
             mc "I am also ready to make some money!!"
 
         "Respond to C++":
-            c "I think it’s really cool that your parents work for those companies, C++."
-            c "I have never heard of iClicker or Mentimeter."
-            c "I don’t know much when it comes to coding, but you sound really experienced."
-            c "Maybe you could show me the ropes sometime..?"
+            $ c_rep = reputation(c_rep, 2)
+            mc "I think it’s really cool that your parents work for those companies, C++."
+            mc "I have never heard of iClicker or Mentimeter."
+            mc "I don’t know much when it comes to coding, but you sound really experienced."
+            mc "Maybe you could show me the ropes sometime..?"
     
     bsl "Alright now, we’re gonna wrap up these conversations and start our guided tour of campus!"
      

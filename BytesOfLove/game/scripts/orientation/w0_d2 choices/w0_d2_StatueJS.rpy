@@ -1,4 +1,7 @@
 label w0_d2_StatueJS:
+    $ p_rep = reputation(p_rep, 2)
+    $ js_rep = reputation(js_rep, 2)
+    $ c_rep = reputation(c_rep, -2)
     mc "I agree with JavaScript and Python, you need to take a chill pill C++."
     mc "He does look cool, I didn’t realize that was the ‘Firewall’ Jackson either."
     c "Ugh whatever."
@@ -17,6 +20,7 @@ label w0_d2_StatueJS:
         js "Hm, so do you think I’m cute?"
 
         "Say she's cute":
+            $ js_rep = reputation(js_rep, 2)
             mc "*flustered af*"
             mc "Well… that’s not what I was saying."
             mc "I do think you are kind of cute."
@@ -30,6 +34,7 @@ label w0_d2_StatueJS:
             mc "Woah, I’m not superficial, I just think-"
 
         "Say she's not cute":
+            $ js_rep = reputation(js_rep, -2)
             mc "Don’t go fishing for a compliment just because I agreed with you."
             mc "I agree that Python shouldn’t go around calling statues cool without knowing what they represent."
             mc "That's it."

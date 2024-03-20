@@ -4,7 +4,7 @@ label w0_d1_VendingMachine:
 
     scene w0_d1_vending
 
-    "*[mc] walks downstairs to go to find a vending machine*"
+    "*[mc] walks downstairs to find a vending machine*"
 
     show rust_normal at right with fade
 
@@ -12,6 +12,7 @@ label w0_d1_VendingMachine:
 
     menu w0_d1_Rust:
         "Mean response":
+            $ r_rep = reputation(r_rep, -2)
             mc "Yeah, I do, my name is [mc]."
             r "Cool, you seem chill, what's your major?"
             mc "Wouldn't you like to know…"
@@ -21,26 +22,27 @@ label w0_d1_VendingMachine:
 
             r "Damn, I was just wondering."
             r "I am computer science, in case you wanted to know mine."
-            mc "Oh thanks, I wasn't"
+            mc "Oh thanks, I didn't."
             r "Jeez you don't have to be mean about it, man."
             mc "Whatever."
             hide rust_angry with dissolve
             "*Rust leaves*"
 
         "Nice response":
+            $ r_rep = reputation(r_rep, 2)
             mc "Yeah I do, my name is [mc], nice to meet you! What major are you?"
             r "*Smiles* I am a computer science major, what about you?"
             mc "Oh man, me too! I am hoping to take programming 1 this semester, are you as well?"
             r "Yes, I have some programming experience from highschool, but I am excited to start learning."
             r "We can totally work on projects and study together! It will be really cool."
             mc "Absolutely! We will probably be spending a lot of time together."
-            r "Yeah I am excited to become better friends with you."
+            r "Yeah, I am excited to become better friends with you."
             r "Well anyway, I have to get back to my room so I can get a good night's sleep."
             r "It was nice to meet you, see you in class!"
             hide rust_normal with dissolve
 
     "*[mc] stands at the vending machine, thinking about what he wants*"
     mc "Hmm they don't have Doritos, I guess I am only getting a Snickers bar tonight."
-    "*gets his snickers bar and heads back up to his room*"
+    "*Gets his snickers bar and heads back up to his room*"
 
 jump w0_d1_End

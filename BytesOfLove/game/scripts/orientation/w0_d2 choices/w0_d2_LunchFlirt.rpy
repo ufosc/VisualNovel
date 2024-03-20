@@ -4,12 +4,14 @@ label w0_d2_LunchFlirt:
         mc "Hmmm who should I flirt with?"
 
         "Python":
+            $ p_rep = reputation(p_rep, -2)
             mc "Especially you Python."
             mc "*winks*"
             p "Wow, way to ruin an apology."
             p "I expected nothing less."
             c "Typical man..."
         "C++":
+            $ c_rep = reputation(c_rep, -2)
             mc "Especially you C++."
             mc "*winks*"
             c "Wow, way to ruin an apology."
@@ -17,6 +19,7 @@ label w0_d2_LunchFlirt:
             js "Typical man..."
 
         "JavaScript":
+            $ js_rep = reputation(js_rep, -2)
             mc "Especially you JavaScript."
             mc "*winks*"
             js "Wow, way to ruin an apology."
@@ -24,6 +27,9 @@ label w0_d2_LunchFlirt:
             c "Typical man..."
 
         "Everyone":
+            $ p_rep = reputation(p_rep, -6)
+            $ js_rep = reputation(js_rep, -6)
+            $ c_rep = reputation(c_rep, -6)
             mc "Maybe I could get to know all of you really well back at my hotel tonight…"
             c "What the actual fuck is wrong with you."
             c "That is so disgusting."

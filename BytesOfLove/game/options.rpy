@@ -24,7 +24,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "BETA v1.3"
+define config.version = "ALPHA v1.4"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -39,6 +39,8 @@ define gui.about = _p("""
 ## or semicolons.
 
 define build.name = "BytesOfLove"
+
+define build.directory_name = "BytesOfLove_v1_4"
 
 
 ## Sounds and music ############################################################

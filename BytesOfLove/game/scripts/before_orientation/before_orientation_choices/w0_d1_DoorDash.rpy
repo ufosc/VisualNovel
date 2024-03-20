@@ -13,6 +13,7 @@ label w0_d1_DoorDash:
         mc "Whatever, at least you finally got here."
 
         "Tip driver":
+            $ pe_rep = reputation(pe_rep, 2)
             u "Your total is 30 Bytecoin."
             mc "*Hands over 35 Bytecoin*"
             mc "Keep the change I guess, have a good one."
@@ -22,6 +23,7 @@ label w0_d1_DoorDash:
             mc "*Closes the door*"
             
         "Don't tip driver":
+            $ pe_rep = reputation(pe_rep, -2)
             u "Your total is 30 Bytecoin."
             mc "*Hands over 30 Bytecoin*"
             mc "Here"   
