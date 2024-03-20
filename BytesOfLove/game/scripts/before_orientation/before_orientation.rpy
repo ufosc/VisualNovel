@@ -28,21 +28,23 @@ label w0_d1:
         mc "Man that hit the spot. What am I going to do with the rest of my night?"
         mc "I know I will play some Valorant, I have been grinding to go from silver to gold."
         scene w0_d1_hotel with shorter_fade
-        "*Time passes it is now 11:30*"
-        mc "Now I am Silver III! I just have to win a few more games to push to gold!"
-        mc "Do I play one more ranked game on Valorant so I can get gold rank?"
+        "*Time passes it's now 11:30PM*"
+        mc "Now I'm Silver III! I just have to win a few more games to push to gold!"
+        mc "Do I play one more ranked game of Valorant so I can get gold?"
         mc "Or do I head to bed early so I'm not late in the morning?"
 
         menu w0_d1_Valorant:
-            mc "I have to make big decisions tomorrow."
+            mc "I have a big day tomorrow."
 
             "Gaming grind": 
+                mc "*4 hours later*"
                 mc "Wow, that was miserable. I went back and forth for 4 hours, and sacrificed my pride and rank."
-                mc "Now It's 3:30, I have deranked to Silver I, and I am so tired. I am literally never going to play this game ever again…"                
+                mc "Now It's 3:30, I have deranked to Silver I, and I am so tired."                
+                mc "I am literally never going to play this game ever again…"
                 mc "*Walks over to bed and falls asleep immediately*"
 
             "Sleeping early":
-                mc "*Shift, turn, shift,..,roll* Jeez, I can't seem to get comfy enough to get some sleep."
+                mc "*Shift, turn, shift, roll* Jeez, I can't seem to get comfy enough to fall asleep."
                 mc "Maybe I'll watch some YouTube until I feel tired…"
 
 jump w0_d2

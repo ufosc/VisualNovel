@@ -1,52 +1,56 @@
 label w0_d2:
     scene w0_d2_sunnyhotel with longer_fade
-    "*You wake up in your hotel room and look at the clock. It's 9:30, orientation started 15 minutes ago.*"
+    "*You wake up in your hotel room and look at the clock. It's 9:30AM, orientation started 15 minutes ago.*"
     mc "WHAT THE HELL?!?!?"
-    "*Checks phone, sees that its dead*"
+    "*Checks phone, sees that it's dead*"
     
     #scene change
     mc "Good going [mc], its not even the first day and you already messed up." 
     #scene is supposed to change for every sentence here
-    mc "Who stays up for hours the night before college orientation??? I should just go back home," 
-    mc "I’m not gonna succeed here." 
+    mc "Who stays up so late the night before college orientation???" 
+    mc "I should just go back home, I’m not gonna succeed here; what was I thinking?" 
     mc "What was I thinking?!?!?"
     mc "Better late than never I guess, DANG IT!"
-    "*Sprinting out the door to the car*"
+    "*Sprints out the door to his car*"
     scene w0_d2_urgentcar with shorter_fade
     mc "What's my excuse, what's my excuse?"
     mc "I was sick? Family emergency? My car wouldn't start?"
     "*Turns key, car struggles*"
-    mc "WAIT WAIT NOT ACTUALLY PLEASE START!!!"
+    mc "WAIT NOT ACTUALLY, PLEASE START!!!"
     scene w0_d2_insidecar with shorter_fade
-    "*Car starts, [mc] sighs from relief, speeds off*"
+    "*Car starts, [mc] sighs from relief and speeds off*"
     mc "And I don't even know where I’m going. This city is all new to me!"
-    mc "I am going to be so late."
+    mc "I'm going to be so late."
     #"*Scene fades to the lecture hall.*" Current one is temporary
     scene w0_d2_lecturehall with longer_fade
-    "*Bursts through the doors into a nearly empty auditorium, looks around frantically, notices a friendly face.*" 
+    "*Bursts through the doors into an nearly empty auditorium, looks around frantically in search of someone*" 
     #Java should not be known yet prob.
 
     #about to meet java on the script document
-    "*Walks up to the lady*"
+    "*Walks up to a person in the middle of the room*"
     show java_normal at right with dissolve 
 
-    mc "Excuse me ma’am, I’m so sorry that I’m late but I don’t know where to go or what to do."
-    mc "My car wouldn't start and I had a family emergency and I got lost and …"
+    mc "Excuse me ma’am, I’m so sorry that I’m late."
+    mc "I don’t know where to go or what to do."
+    mc "My car wouldn't start and I had a family emergency, and I got lost, and…"
     hide java_normal
     show java_happy at right
     u "Hey, it's okay. It's just orientation, calm down." 
-    mc "*Panicked* Yeah but it's my first day and I feel like I am already messing everything up. What am I going to do??"
+    mc "*Panicked* Yeah but it’s my first day and I feel like I am already messing everything up."
     u "Oh sweetie, don’t worry about it. Every journey has its own pace; being late doesn’t mean you won’t reach your destination."
-    mc "*Stunned* Huh I guess you're right. Well, what'd I miss?"
-    u "Sure, well the dean came in and introduced themself to the students"
-    u "They said that everyone here was admitted because they are hard working, responsible, smart, and punctual."
-    mc "Oh. Well that's just great"
-    u "And then he dismissed them to go to all the different rooms where their orientation breakout groups will meet."
-    u "You can go check on the list outside of the auditorium door to see what room you will be in."
-    mc "Well how will I know where the room is? I don’t know anything about this school!"
-    u "I am not sure, but you seem smart. I’m sure you will figure it out."
-    u "Anyway I have to go, it was nice to meet you [mc]."
-    u "*Winks before swiftly turning away and leaving*"
+    mc "*Stunned* Huh, I guess you're right. Well, what'd I miss?"
+    u "Sure, well the dean came in and introduced themself to the students."
+    u "They said that everyone here was admitted because they are hard working, responsible, smart..."
+    u "...and punctual."
+    mc "Oh. Well that's just great."
+    u "And then he dismissed them all to breakout rooms where their orientation groups will meet."
+    u "You can check on the list outside of the auditorium door to see what room you’ll be in."
+    mc "Well how will I know where my room is? I don’t know anything about this school!"
+    u "I am not sure, but you seem smart. I’m sure you'll figure it out."
+    u "Anyway I have to go"
+    u "It was nice to meet you [mc]."
+    u "*Winks*"
+    u "Turns around and leaves*"
     hide java_happy with fade
     mc "*shouts (still flustered)* Thank you!!"
     mc "Man, I hope all of my professors are as nice as her!"
@@ -214,7 +218,7 @@ label w0_d2_AfterStatue:
     mc "Where are the girls I was talking to earlier?"
     mc "I hope I didn’t hurt anyone’s feelings."
     mc "I really don’t want to sit alone at orientation."
-    "[mc] sees 3 tables. One is Python and C++, another is just JavaScript, and the last is a table of one guy."
+    "[mc] sees 2 tables. One is Python and C++, another is just JavaScript."
 
     menu w0_d2_LunchChoice:
         mc "Who should I sit with?"
