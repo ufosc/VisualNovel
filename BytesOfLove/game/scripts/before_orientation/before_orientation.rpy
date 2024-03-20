@@ -2,13 +2,9 @@ label w0_d1:
     scene w0_d1_hotel
 
     mc "Man, I can't believe it, I'm really starting my first day at University of Byteborough!"
-<<<<<<< HEAD
     mc "I can't wait for everything I'm going to experience, all the parties, friends, clubs, and ladies!"
     mc "If I can even talk to them..."
     mc "My real college life starts tomorrow!!"
-=======
-    mc "I can't wait for everything I'm going to experience, all the parties, friends, clubs, and ladies! (...if I can even talk to them), my real college life starts tomorrow!!"
->>>>>>> 7d1a352b5ea7b682dd0afd501f94746cb3ae5be8
     mc "I'm tired from the drive here, 4 hours was brutal."
     mc "I'm glad I didn't have to fly here though, I definitely don't have the money for that."
     mc "I am super grateful my parents gave me this car to take to college, I would be lost without it."
