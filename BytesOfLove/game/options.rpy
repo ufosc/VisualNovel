@@ -26,7 +26,6 @@ define gui.show_name = True
 
 define config.version = "ALPHA v0.5"
 
-
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
