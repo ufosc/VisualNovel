@@ -7,6 +7,9 @@ label w0_d2_StatueSexist:
         p "He didn’t say that anybody was hot or ugly, so let’s all just relax."
 
         "Be sexist":
+            $ p_rep = reputation(p_rep, -4)
+            $ js_rep = reputation(js_rep, -4)
+            $ c_rep = reputation(c_rep, -4)
             mc "Look sweetheart, I don’t need your help here."
             p "I'M SORRY WHAT!?"
             js "There is no way you just said that."

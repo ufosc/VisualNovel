@@ -11,6 +11,9 @@ label w0_d2_LunchApology:
 
     menu w0_d2_LunchApologyC:
         "Collectively apologize and smooth things over":
+            $ c_rep = reputation(c_rep, 2)
+            $ p_rep = reputation(p_rep, 2)
+            $ js_rep = reputation(js_rep, 2)
             mc "Hey, now that we are all together,"
             mc "I just want to apologize one more time for what happened on the tour."
             mc "I think that we could all be good friends."

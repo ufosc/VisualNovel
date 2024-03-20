@@ -9,6 +9,9 @@ define c = Character("C++", color="00599C")
 define j = Character("Java", color="#964000")
 define js = Character("JavaScript", color="#f7df1e")
 define u = Character("???", color="5c5f5d")
+
+#CHANGE PERL COLOR
+define pe = Character("Perl", color="5c5f5d")
 define bsl = Character("Breakout Session Leader", color="5c5f5d")
 
 #Rust
@@ -16,21 +19,21 @@ image rust_normal = "Rust/Rust_Base_1.png"
 image rust_talk = "Rust/Rust_Base_2.png"
 image rust_angry = "Rust/Rust_Angry.png"
 image rust_confused = "Rust/Rust_ConfusedGlare.png"
-default rust_rep = 0
+default r_rep = 50
 
 #Java
 image java_normal = "Java/Java_Base_1.png"
 image java_happy = "Java/Java_Base_2.png"
 image java_uh = "Java/Java_MouthOpen.png"
 image java_wink = "Java/Java_Wink.png"
-default java_rep = 0
+default j_rep = 50
 
 #CPP
 image cpp_normal = "C++/C++_Base_1.png"
 image cpp_happy = "C++/C++_Base_2.png"
 image cpp_talk = "C++/C++_Talking.png"
 
-default cpp_rep = 0
+default c_rep = 50
 
 #Python
 image python_normal = "Python/Python_Base_1.png"
@@ -42,13 +45,14 @@ image python_pocket_happy = "Python/Python_HandsPocket_2.png"
 image python_nojacket_normal = "Python/Python_Base_1.5.png"
 image python_nojacket_happy = "Python/Python_Base_2.5.png"
 
-
-
-default python_rep = 0
+default p_rep = 50
 
 #Javascript
 image js_temp = "tempJS.png"
-default js_rep = 0
+default js_rep = 50
+
+#Perl
+default pe_rep = 50
 
 # Backgrounds
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
@@ -70,6 +74,22 @@ image mine_sweeper = "images/mine_sweeper.png"
 image black = "backgrounds/bg black.jpg"
 
 #Audio
+
+
+init python:
+    def reputation(rep, effect):
+        min = 0
+        max = 100
+        rep = rep + effect
+
+        if rep > max:
+            rep = max
+
+        elif rep < min:
+            rep = min
+
+        return rep
+
 
 # The game starts here.
 

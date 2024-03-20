@@ -1,4 +1,7 @@
 label w0_d2_StatueDB:
+    $ c_rep = reputation(c_rep, -2)
+    $ p_rep = reputation(p_rep, -2)
+    $ js_rep = reputation(js_rep, -2)
     mc "*Distracted* Wait, guys. Look at that girl over there."
     mc "She is actually so hot, should I go talk to her?"
     p "What are you even talking about, [mc]?"
@@ -34,6 +37,9 @@ label w0_d2_StatueDBContinue:
             mc "I hope that is a good enough excuse to not be listening to the conversation."
 
         "Say they're not cute":
+            $ c_rep = reputation(c_rep, -2)
+            $ p_rep = reputation(p_rep, -2)
+            $ js_rep = reputation(js_rep, -2)
             mc "No way! I don’t think that! That’s crazy! I mean-"
             mc "This feels like a trap!"
             mc "I was just looking at that girl, it wasn’t related to you three."

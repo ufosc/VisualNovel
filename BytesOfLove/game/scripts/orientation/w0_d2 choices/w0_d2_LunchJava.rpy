@@ -3,7 +3,7 @@ label w0_d2_LunchJava:
     show js_temp 
     mc "Hey JavaScript, I’m sorry for how I was acting earlier."
     mc "That was mean of me."
-    js "“Oh, it’s okay."
+    js "Oh, it’s okay."
     js "It was really just a misunderstanding."
     mc "Okay, whew. I was scared you would still be mad at me."
     js "No, it’s okay."
