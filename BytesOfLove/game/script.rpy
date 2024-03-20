@@ -98,7 +98,15 @@ label start:
     "Welcome to Bytes of Love! A visual novel currently being developed by the University of Florida's Open Source Club!"
     "This is an educational dating simulator where you romance programming languages that are represented as anime-style characters while learning about multiple programming languages."
     "If you have any questions or comments about the project, please reach out to anyone in the \"Maintainers\" section of the GitHub!"
-    $ mc = renpy.input("Your name: ").strip()
+    default check = True
+    while check:
+        $ mc = renpy.input("Your name: ", length=12).strip()
+        if mc.isalpha():
+            $ check = False
+        elif not mc:
+            "Please enter a name"
+        else:
+            "Please only enter alphabets"
 
     "Your name is [mc]."
 
