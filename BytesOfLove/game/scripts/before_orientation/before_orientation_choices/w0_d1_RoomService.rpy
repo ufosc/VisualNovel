@@ -17,7 +17,7 @@ label w0_d1_RoomService:
         "Pizza":
             $ food_item = "pizza"
 
-    mc "Yeah, I have to get [food_item], you can't go wrong with that."
+    mc "Yeah, I HAVE to get [food_item], you can't go wrong with that."
     scene w0_d1_hotel with shorter_fade
     "*5 minutes pass*"
     mc "I hope this doesn't take too long I am getting pretty hungry here."
