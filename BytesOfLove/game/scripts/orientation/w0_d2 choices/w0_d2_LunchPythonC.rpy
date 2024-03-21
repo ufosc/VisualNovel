@@ -63,5 +63,5 @@ label w0_d2_LunchPythonC:
     p "She is probably feeling lonely."
     p "And we shouldn’t be mean to someone who could be our new friend."
 
-    show js_temp with dissolve
+    show js_normal with dissolve
     jump w0_d2_LunchApology

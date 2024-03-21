@@ -1,6 +1,6 @@
 label w0_d2_LunchJava:
     # I think this should increase JS affection, currently not in script - Lazzy
-    show js_temp 
+    show js_normal 
     mc "Hey JavaScript, I’m sorry for how I was acting earlier."
     mc "That was mean of me."
     js "Oh, it’s okay."
@@ -35,7 +35,7 @@ label w0_d2_LunchJava:
     mc "She definitely wasn’t a student, she looked too old to be anywhere near our age."
     mc "Actually, she kinda reminded me of you…"
     js "Hmm, yeah well actually-"
-    show js_temp at left with move
+    show js_normal at left with move
     show python_happy with dissolve
     show cpp_normal at right with dissolve
     jump w0_d2_LunchApology

@@ -2,6 +2,8 @@
 define longer_fade = Fade(0.5, 1.0, 0.5)
 define shorter_fade = Fade(0.5, 0.5, 0.5)
 
+# Music
+
 # Characters
 define r = Character("Rust", color="#FFA500")
 define p = Character("Python", color="#7DC23B")
@@ -45,10 +47,16 @@ image python_pocket_happy = "Python/Python_HandsPocket_2.png"
 image python_nojacket_normal = "Python/Python_Base_1.5.png"
 image python_nojacket_happy = "Python/Python_Base_2.5.png"
 
+image python_angry_talk = "Python/Python_HandsPocket_Angry.png"
+image python_angry = "Python/Python_HandsPocket_Angry2.png"
+
 default p_rep = 50
 
 #Javascript
-image js_temp = "tempJS.png"
+image js_normal = "JavaScript/JavaScript_Base_1.png"
+image js_smirk = "JavaScript/JavaScript_Smirk.png"
+image js_talk = "JavaScript/JavaScript_Talking.png"
+
 default js_rep = 50
 
 #Perl
@@ -73,9 +81,6 @@ image w0_d2_statue = "backgrounds/statuev1.webp"
 image mine_sweeper = "images/mine_sweeper.png"
 image black = "backgrounds/bg black.jpg"
 
-#Audio
-
-
 init python:
     def reputation(rep, effect):
         min = 0
@@ -94,6 +99,7 @@ init python:
 # The game starts here.
 
 label start:
+    stop music fadeout 4
     # PROLOUGUE
     "Welcome to Bytes of Love! A visual novel currently being developed by the University of Florida's Open Source Club!"
     "This is an educational dating simulator where you fall in love with programming languages that are represented as anime-style characters while learning about multiple programming languages."
