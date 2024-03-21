@@ -37,6 +37,7 @@ label w0_d1:
             mc "I have a big day tomorrow."
 
             "Gaming grind": 
+                scene w0_d1_hotel with shorter_fade
                 mc "*4 hours later*"
                 mc "Wow, that was miserable. I went back and forth for 4 hours, and sacrificed my pride and rank."
                 mc "Now It's 3:30, I have deranked to Silver I, and I am so tired."                

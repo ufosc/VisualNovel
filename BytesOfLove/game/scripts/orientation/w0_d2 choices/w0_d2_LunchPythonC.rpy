@@ -1,10 +1,12 @@
 label w0_d2_LunchPythonC:
     mc "Hey Python and C++, what did you guys get for lunch?"
+    show python_normal at left with easeinleft
     p "*Says nothing*"
     mc "Look, I’m sorry about what happened earlier."
     mc "Do you think we can move past this and start over?"
     p "I guess it would be nice if we all got along."
     p "What do you think, C++?"
+    show cpp_talk at right with easeinright
     c "I don’t care, do whatever you want."
     p "It’s settled then."
     p "No hard feelings, we’re all friends here."
@@ -61,4 +63,5 @@ label w0_d2_LunchPythonC:
     p "She is probably feeling lonely."
     p "And we shouldn’t be mean to someone who could be our new friend."
 
+    show js_temp with dissolve
     jump w0_d2_LunchApology
