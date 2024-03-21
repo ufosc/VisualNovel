@@ -45,10 +45,17 @@ image python_pocket_happy = "Python/Python_HandsPocket_2.png"
 image python_nojacket_normal = "Python/Python_Base_1.5.png"
 image python_nojacket_happy = "Python/Python_Base_2.5.png"
 
+image python_angry_talk = "Python/Python_HandsPocket_Angry.png"
+image python_angry = "Python/Python_HandsPocket_Angry2.png"
+
 default p_rep = 50
 
 #Javascript
 image js_temp = "tempJS.png"
+image js_normal = "JavaScript/JavaScript_Base_1.png"
+image js_smirk = "JavaScript/JavaScript_Smirk.png"
+image js_talk = "JavaScript/JavaScript_Talking.png"
+
 default js_rep = 50
 
 #Perl
