@@ -53,7 +53,6 @@ image python_angry = "Python/Python_HandsPocket_Angry2.png"
 default p_rep = 50
 
 #Javascript
-image js_temp = "tempJS.png"
 image js_normal = "JavaScript/JavaScript_Base_1.png"
 image js_smirk = "JavaScript/JavaScript_Smirk.png"
 image js_talk = "JavaScript/JavaScript_Talking.png"

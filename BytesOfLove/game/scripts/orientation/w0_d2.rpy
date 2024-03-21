@@ -85,13 +85,13 @@ label w0_d2:
     p "I really like playing tennis and reading books."
 
     hide python_normal
-    show js_temp with dissolve
+    show js_normal with dissolve
 
     js "Oh my gosh, that is so cool, Python!"
     js "I am actually from Syntax Springs, but I played tennis in high school!"
     js "I’m also a computer science major, that’s really cool! Slay!"
 
-    hide js_temp
+    hide js_normal
     show cpp_talk with dissolve
 
     c "*grossed out* Uhm, anyway… My name is C++."
@@ -123,7 +123,7 @@ label w0_d2:
     c "I have been coding for as long as I can remember."
 
     hide cpp_talk
-    show js_temp at left with easeinleft
+    show js_normal at left with easeinleft
 
     js "Well aren’t you lucky."
     js "My mom is the worst person in the world."
@@ -198,7 +198,7 @@ label w0_d2:
     hide cpp_normal
     show cpp_talk
     c "Yeah, I wouldn’t expect someone like you to know something like that."
-    show js_temp at right with dissolve
+    show js_normal at right with dissolve
     js "Well I thought he was cool looking too, it was just an honest mistake."
     js "There's no need to be so aggressive C++..."
 
