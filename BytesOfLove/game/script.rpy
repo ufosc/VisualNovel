@@ -79,7 +79,7 @@ image w0_d2_statue = "backgrounds/statuev1.webp"
 
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
-image black = "backgrounds/bg black.jpg"
+image black = "backgrounds/black-background.png"
 
 init python:
     def reputation(rep, effect):
