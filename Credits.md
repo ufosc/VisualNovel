@@ -1,6 +1,6 @@
 # Bytes of Love Credits
 
-Welcome to the credits for our visual novel. We are proud to present the team that brought this project to life. Their hard work and dedication have made this experience possible. 
+Welcome to the credits for our visual novel. We are proud to present the team that brought this Bytes of Love to life. Their hard work and dedication have made this experience possible. 
 
 ## Music
 
@@ -43,7 +43,7 @@ Welcome to the credits for our visual novel. We are proud to present the team th
 
 ## Special Thanks
 
-- Mathew Alangadan, Kaniel V, Mohammed Ali, Joseph Cabezas, Jonathan Mesa
+- Mathew Alangadan, Kaniel V, Mohammed Ali, Joseph Cabezas, Jonathan Mesa, and UFOSC
 
 Thank you to everyone who contributed to Bytes of Love, including those whose names may not have been mentioned. This is an open source visual novel so anyone is welcome to help! LGTM.
 
