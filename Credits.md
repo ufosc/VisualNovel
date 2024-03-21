@@ -2,10 +2,6 @@
 
 Welcome to the credits for our visual novel. We are proud to present the team that brought this Bytes of Love to life. Their hard work and dedication have made this experience possible. 
 
-## Music
-
-- **Shimtone （シムトーン）** - [Default Music](https://dova-s.jp/bgm/play20356.html)
-
 ## Artists
 
 - **Lead Artist**: Tyra Pasion
@@ -41,6 +37,10 @@ Welcome to the credits for our visual novel. We are proud to present the team th
   - Overall project oversight, quality assurance
 - **Assistant Project Manager**: Nick Valiente
   - Scheduling, resource allocation
+
+## Music
+
+- **Shimtone （シムトーン）** - [Menu Music](https://dova-s.jp/bgm/play20356.html)
 
 ## Special Thanks
 
