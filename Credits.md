@@ -24,6 +24,7 @@ Welcome to the credits for our visual novel. We are proud to present the team th
 - **Editor**: Sarah Tran
   - Proofreading, consistency checks
 - **SME**: Tikiri Ekanayake
+  - Consultant and story developer
 
 ## Developers
 
