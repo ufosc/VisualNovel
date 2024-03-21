@@ -23,7 +23,7 @@ Welcome to the credits for our visual novel. We are proud to present the team th
   - Dialogue, secondary storylines
 - **Editor**: Sarah Tran
   - Proofreading, consistency checks
-- **SME** Tikiri Ekanayake
+- **SME**: Tikiri Ekanayake
 
 ## Developers
 
