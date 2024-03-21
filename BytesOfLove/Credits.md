@@ -34,7 +34,7 @@ Welcome to the credits for our visual novel. We are proud to present the team th
 ## Project Managers
 
 - **Project Lead**: Jake Malegni
-  - Overall project oversight, quality assurance
+  - Overall project oversight, quality assurance, PR review
 - **Assistant Project Manager**: Nick Valiente
   - Scheduling, resource allocation
 
