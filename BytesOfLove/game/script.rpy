@@ -20,7 +20,7 @@ define r = Character("Rust", color="#FFA500")
 define p = Character("Python", color="#7DC23B")
 define c = Character("C++", color="00599C")
 define j = Character("Java", color="#964000")
-define js = Character("JavaScript", color="#f7df1e")
+define js = Character("JavaScript", color="#FFD700")
 define u = Character("???", color="5c5f5d")
 
 #CHANGE PERL COLOR
