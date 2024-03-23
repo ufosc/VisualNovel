@@ -2,6 +2,17 @@
 define longer_fade = Fade(0.5, 1.0, 0.5)
 define shorter_fade = Fade(0.5, 0.5, 0.5)
 
+# Transformations
+transform speaking:
+    zoom 1.0 # The character is in their normal state when speaking
+
+transform not_speaking:
+    zoom 0.95 # Slightly smaller
+    xalign 0.5
+    yalign 0.5
+ 
+    #EX: show python_normal at speaking
+
 # Music
 
 # Characters
