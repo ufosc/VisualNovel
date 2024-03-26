@@ -92,6 +92,9 @@ image w0_d2_statue = "backgrounds/statuev1.webp"
 image mine_sweeper = "images/mine_sweeper.png"
 image black = "backgrounds/black-background.png"
 
+# Bytecoin
+default byte = 50
+
 init python:
     def reputation(rep, effect):
         min = 0
@@ -105,6 +108,15 @@ init python:
             rep = min
 
         return rep
+
+    def bytecoin(bytecoin, effect):
+        min = 0
+        bytecoin = bytecoin + effect
+
+        if bytecoin < min:
+            bytecoin = min
+
+        return bytecoin
 
 
 # The game starts here.
