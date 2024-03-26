@@ -47,7 +47,7 @@ label w0_d1_VendingMachine:
             hide rust_normal with dissolve
             "*Rust leaves"
 
-    "*[mc] stands at the vending machine, thinking about what he wants*"
+    "*[mc] stands at the vending machine, thinking about what they want*"
     mc "Hmm they don't have Doritos, I guess I am only getting a Snickers bar tonight."
     "*Gets his snickers bar and heads back up to his room*"
 
