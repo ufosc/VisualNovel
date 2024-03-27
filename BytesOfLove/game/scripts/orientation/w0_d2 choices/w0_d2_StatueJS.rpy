@@ -13,7 +13,7 @@ label w0_d2_StatueJS:
     js "You are being so mean right now, C++"
     js "There is no need to be nasty!"
     js "I bet you’re just mad because [mc] doesn’t agree with you."
-    c "Well [mc] is only agreeing with you because he thinks you are cute."
+    c "Well [mc] is only agreeing with you because they think you are cute."
     mc "*flustered* Whoa whoa whoa, that is not what I said."
 
     menu w0_d2_CuteJS:
@@ -29,7 +29,7 @@ label w0_d2_StatueJS:
             c "So typical of boys to only care about looks."
             c "JavaScript, don’t think you are right just because this guy agrees with you"
             js "And what would you know about being right?"
-            js "You’re just mad because he didn’t take your side!"
+            js "You’re just mad because they didn’t take your side!"
             c "I wouldn’t want someone so superficial to agree with me anyway!"
             mc "Woah, I’m not superficial, I just think-"
 
@@ -44,8 +44,8 @@ label w0_d2_StatueJS:
             c "This isn’t about you, it’s about the statue."
             c "Or did you forget why you were mad already?"
             js "Okay lamp shade, no one asked you for your input."
-            js "You’re just mad because he didn’t take your side."
-            c "At least he doesn’t think I’m ugly…"
+            js "You’re just mad because they didn’t take your side."
+            c "At least they don’t think I’m ugly…"
             js "Excuse me!?"
             mc "I never said-"
     
