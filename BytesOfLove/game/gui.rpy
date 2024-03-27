@@ -50,9 +50,10 @@ define gui.muted_color = '#003d51'
 define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#333333'
-define gui.interface_text_color = '#333333'
-
+#define gui.text_color = '#333333'
+#define gui.interface_text_color = '#333333'
+define gui.text_color = '#ffffff'
+define gui.interface_text_color = '#ffffff'
 
 ## Fonts and Font Sizes ########################################################
 
@@ -211,7 +212,8 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = '#ffffff'
+define gui.choice_button_text_idle_color = '#888888'
+#define gui.choice_button_text_idle_color = '#ffffff'
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = '#8888887f'
 
