@@ -79,6 +79,10 @@ image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
 image w0_d2_sunnyhotel = "backgrounds/w1_d1_sunnyhotel.webp"
 image w0_d2_lecturehall = "backgrounds/w1_d1_lecturehall.webp"
 
+image test = "backgrounds/IMG_3556.jpg"
+image test2 = "backgrounds/IMG_3563.jpg"
+image test3 = "backgrounds/IMG_3595.jpg"
+
 image w0_d2_insidecar = "backgrounds/w1_d1_insidecar.webp"
 image w0_d2_urgentcar = "backgrounds/w1_d1_urgentcar.webp"
 
