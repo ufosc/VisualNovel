@@ -5,8 +5,8 @@ label w0_d1_VendingMachine:
 
     scene w0_d1_vending
 
-    "{i}*[mc] walks downstairs to find a vending machine*{/i}"
-    "{i}*On his way to the vending machines he sees someone*{/i}"
+    "{i}*You walk downstairs to find a vending machine*{/i}"
+    "{i}*On your way to the vending machines you see someone*{/i}"
     show rust_normal at right with fade
 
     r "\"Hey there! I’m Rust! Do you go to UB?\""
@@ -47,9 +47,9 @@ label w0_d1_VendingMachine:
             hide rust_normal with dissolve
             "{i}*Rust leaves*{/i}"
 
-    "{i}*[mc] stands at the vending machine, thinking about what he wants*{/i}"
+    "{i}*You stand at the vending machine, thinking about what you want*{/i}"
     $ byte = bytecoin(byte, -5)
     mc "Hmm, they don’t have Doritos, I guess I’m only getting a Snickers tonight."
-    "{i}*Gets his snickers bar and heads back up to his room*{/i}"
+    "{i}*You get a snickers bar and heads back up to your room*{/i}"
 
 jump w0_d1_End

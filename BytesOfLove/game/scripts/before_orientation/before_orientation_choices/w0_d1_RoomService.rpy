@@ -23,7 +23,7 @@ label w0_d1_RoomService:
     scene w0_d1_hotel with shorter_fade
     "{i}*5 minutes pass*{/i}"
     mc "I hope this doesn’t take too long, I’m getting pretty hungry here."
-    "{i}*[mc] hears a knock on the door*{/i}"
+    "{i}*You hear a knock on the door*{/i}"
     mc "Oh, thank god."
     "{i}*Opens door*{/i}"
     mc "\"Thanks man, that was fast!\""

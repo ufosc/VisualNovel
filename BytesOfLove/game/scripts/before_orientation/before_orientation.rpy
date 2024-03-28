@@ -44,7 +44,7 @@ label w0_d1:
                 mc "Wow, that was miserable. I went back and forth for 4 hours, and sacrificed my pride and rank."
                 mc "Now it’s 3:30 AM, I deranked to Silver I, and I am so tired."                
                 mc "I am literally never going to play this game ever again…"
-                "{i}*[mc] walks over to his bed and falls asleep immediately*{/i}"
+                "{i}*You walk over to your bed and fall asleep immediately*{/i}"
 
             "Sleeping early":
                 mc "{i}*Shift, turn, shift, roll*{/i}"
