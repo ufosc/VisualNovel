@@ -72,11 +72,15 @@ label w0_d2:
     show cpp_talk
     c "*interrupting* Shut up, did it ever occur to you that maybe everyone is quiet for a reason?"
     mc "*Obediently stops talking and sits down, flustered.*"
+    hide cpp_talk
+    show cpp_normal
     bsl "Alright, it looks like everyone is here."
     bsl "Go ahead and take some time to introduce yourself to those around you."
 
-    hide cpp_talk
+    hide cpp_normal
     show python_normal with dissolve
+    hide python_normal
+    show python_happy
 
     p "Hi guys!"
     p "My name is Python."
@@ -84,27 +88,32 @@ label w0_d2:
     p "I’m a computer science major."
     p "I really like playing tennis and reading books."
 
-    hide python_normal
+    hide python_happy
     show js_normal with dissolve
-
+    hide js_normal
+    show js_talk
     js "Oh my gosh, that is so cool, Python!"
     js "I am actually from Syntax Springs, but I played tennis in high school!"
+    hide js_talk
+    show js_smirk
     js "I’m also a computer science major, that’s really cool! Slay!"
 
-    hide js_normal
+    hide js_smirk
     show cpp_talk with dissolve
 
     c "*grossed out* Uhm, anyway… My name is C++."
     c "I’m a computer science major with a lot of experience."
     c "I did a lot of coding in high school so I’m probably a lot better than you guys."
     c "What about you?"
-    
     # Short interaction decided not to put in choices lmk if this is changed - Lazzy
     menu w0_d2_LateReason:
-        c "Why were you so late?"
+        c "Why were you so late?" 
 
         "Honest":
+            hide cpp_talk
+            show cpp_normal
             mc "I was up really late last night and my phone died before I fell asleep, so I missed my alarm."
+
             mc "Then this morning, I got lost on the way here and struggled to find the room."
             mc "It was a mess."
 
@@ -119,29 +128,54 @@ label w0_d2:
     mc "Anyway, my name is [mc]."
     mc "I’m also a computer science major, and I’m really excited to get my college experience started."
     mc "Why do you guys want to do computer science?"
+    
+    hide cpp_normal
+    show cpp_talk
+
     c "My mom is a software developer for iClicker and my Dad is a software developer for MentiMeter, so you could say it’s in my blood."
     c "I have been coding for as long as I can remember."
 
     hide cpp_talk
+    show cpp_normal
     show js_normal at left with easeinleft
 
     js "Well aren’t you lucky."
+    hide js_normal
+    show js_talk at left
     js "My mom is the worst person in the world."
     js "She is such a helicopter Mom, and won’t leave me alone."
     js "Even though I’m in college now she still won’t butt out of my life."
     js "She even came here with me."
+    hide js_talk
+    show js_normal at left
 
-    show python_normal at right with easeinright
+    show python_pocket at right with easeinright
+    hide python_pocket
+    show python_pocket_happy at right
     p "I mean at least you moved out of Syntax Springs, right?"
+    hide python_pocket_happy
+    show python_pocket at right
+
+    hide js_normal
+    show js_talk at left
     js "That’s just it! She’s here in Byteborough with me! UGH!!!"
     js "Anyway that’s irrelevant, I’m in computer science because of its recent growth in popularity!"
     js "I’m so excited to meet new people and make a lot of friends!"
     js "What about you tennis queen?"
+    
+    hide js_talk
+    show js_normal at left
+
+    hide python_pocket
+    show python_pocket_happy at right
+
     p "Well it’s nice that your mom loves you that much. But I definitely get how that is."
     p "I think it is the future and I like learning new stuff."
     p "I’m not super passionate about a career in it but, I bet I will grow to love it."
     p "I think it will be a good choice."
-    
+    hide python_pocket_happy
+    show python_pocket at right
+
     # Another short interaction not worth seperating files. Temporarily named everything "Respond to X" since I didnt know what to put - Lazzy
     menu w0_d2_BreakoutResponse1:
         "Respond to Javascript":
@@ -149,7 +183,11 @@ label w0_d2:
             mc "Yeah, it is pretty annoying that your mom won’t leave you alone."
             mc "Parents can be so annoying."
             mc "I wish my mom had cared enough to come with me to orientation though."
+            hide js_normal
+            show js_talk at left
             js "Well actually…"
+            hide js_talk
+            show js_normal at left
 
         "Respond to Python":
             $ p_rep = reputation(p_rep, 2)
