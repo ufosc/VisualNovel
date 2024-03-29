@@ -16,7 +16,7 @@ transform not_speaking:
 # Music
 
 # Characters
-define r = Character("Rust", color="#FFA500")
+define r = Character("Rust", color="#B27300")
 define p = Character("Python", color="#7DC23B")
 define c = Character("C++", color="00599C")
 define j = Character("Java", color="#964000")
