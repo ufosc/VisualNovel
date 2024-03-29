@@ -6,8 +6,8 @@ Welcome to the credits for our visual novel. We are proud to present the team th
 
 - **Lead Artist**: Tyra Pasion
   - Character design
-- **Background Artist**: Chat GPT4
-  - UI elements, additional character design
+- **Background Artist**: Gianna E. Fernandez
+  - Background design and edits
 - **UX/UI Lead**: Ryder Keeny
   - Game map
 
