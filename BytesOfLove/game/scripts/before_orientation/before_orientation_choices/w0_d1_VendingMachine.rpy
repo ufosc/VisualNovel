@@ -36,7 +36,6 @@ label w0_d1_VendingMachine:
             mc "\"Whatever.\""
             hide rust_angry with dissolve
             "{i}*Rust leaves*{/i}"
-
         "Nice response":
             $ r_rep = reputation(r_rep, 2)
             mc "\"Yeah I do, my name is [mc]. What’s your major?\""

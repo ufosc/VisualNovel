@@ -36,22 +36,40 @@ label w0_d2:
     hide java_normal
     show java_happy at right
     u "Hey, it's okay. It's just orientation, calm down." 
+    hide java_happy
+    show java_normal at right
     mc "*Panicked* Yeah but it’s my first day and I feel like I am already messing everything up."
+    hide java_normal
+    show java_happy at right
     u "Oh sweetie, don’t worry about it. Every journey has its own pace; being late doesn’t mean you won’t reach your destination."
+    hide java_happy
+    show java_normal at right
     mc "*Stunned* Huh, I guess you're right. Well, what'd I miss?"
+    hide java_normal
+    show java_happy at right
     u "Sure, well the dean came in and introduced themself to the students."
     u "They said that everyone here was admitted because they are hard working, responsible, smart..."
     u "...and punctual."
+    hide java_happy
+    show java_normal at right
     mc "Oh. Well that's just great."
+    hide java_normal
+    show java_happy at right
     u "And then he dismissed them all to breakout rooms where their orientation groups will meet."
     u "You can check on the list outside of the auditorium door to see what room you’ll be in."
+    hide java_happy
+    show java_normal at right
     mc "Well how will I know where my room is? I don’t know anything about this school!"
+    hide java_normal
+    show java_happy at right
     u "I am not sure, but you seem smart. I’m sure you'll figure it out."
     u "Anyway I have to go"
     u "It was nice to meet you [mc]."
+    hide java_happy
+    show java_normal at right
     u "*Winks*"
     u "Turns around and leaves*"
-    hide java_happy with fade
+    hide java_normal with fade
     mc "*shouts (still flustered)* Thank you!!"
     mc "Man, I hope all of my professors are as nice as her!"
     mc "So, where am I supposed to be…"
@@ -71,9 +89,9 @@ label w0_d2:
     hide cpp_normal
     show cpp_talk
     c "*interrupting* Shut up, did it ever occur to you that maybe everyone is quiet for a reason?"
-    mc "*Obediently stops talking and sits down, flustered.*"
     hide cpp_talk
     show cpp_normal
+    mc "*Obediently stops talking and sits down, flustered.*"
     bsl "Alright, it looks like everyone is here."
     bsl "Go ahead and take some time to introduce yourself to those around you."
 
@@ -113,11 +131,12 @@ label w0_d2:
             hide cpp_talk
             show cpp_normal
             mc "I was up really late last night and my phone died before I fell asleep, so I missed my alarm."
-
             mc "Then this morning, I got lost on the way here and struggled to find the room."
             mc "It was a mess."
 
         "Cool":
+            hide cpp_talk
+            show cpp_normal
             mc "So, I was on the way here this morning, and as I was getting to my car I heard a faint meow."
             mc "I looked up and saw a cat 20 feet up a tree."
             mc "I had to help this cat get down so I climbed the tree."
@@ -137,11 +156,8 @@ label w0_d2:
 
     hide cpp_talk
     show cpp_normal
-    show js_normal at left with easeinleft
-
+    show js_talk at left with easeinleft
     js "Well aren’t you lucky."
-    hide js_normal
-    show js_talk at left
     js "My mom is the worst person in the world."
     js "She is such a helicopter Mom, and won’t leave me alone."
     js "Even though I’m in college now she still won’t butt out of my life."
