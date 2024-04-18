@@ -312,6 +312,5 @@ label w0_d2_AfterLunch:
     js "I’m sure we won’t need luck, we all seem pretty smart!"
     bsl "Okay here is the first question"
 
-
 jump w0_d3
 

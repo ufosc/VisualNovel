@@ -15,13 +15,13 @@ label w0_d1:
     menu w0_d1_BeforeFood:
         mc "What should I get to eat?"
 
-        "Vending Machine":
+        "Food from vending machine":
             jump w0_d1_VendingMachine
 
-        "Room Service":
+        "Get room service":
             jump w0_d1_RoomService
 
-        "Doordash":
+        "Order Doordash":
             jump w0_d1_DoorDash
   
     label w0_d1_End:
@@ -38,7 +38,7 @@ label w0_d1:
         menu w0_d1_Valorant:
             mc "I have a big day tomorrow."
 
-            "Gaming grind": 
+            "Grind Valorant": 
                 scene w0_d1_hotel with shorter_fade
                 mc "{i}*4 hours later*{/i}"
                 mc "Wow, that was miserable. I went back and forth for 4 hours, and sacrificed my pride and rank."
@@ -46,7 +46,7 @@ label w0_d1:
                 mc "I am literally never going to play this game ever again…"
                 "{i}*You walk over to your bed and fall asleep immediately*{/i}"
 
-            "Sleeping early":
+            "Go to sleep early":
                 mc "{i}*Shift, turn, shift, roll*{/i}"
                 mc "Jeez, I can't seem to get comfy enough to fall asleep."
                 mc "Maybe I'll watch some YouTube until I feel tired…"

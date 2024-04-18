@@ -129,9 +129,9 @@ label start:
     stop music fadeout 4
     # PROLOUGUE
     "Welcome to Bytes of Love! A visual novel currently being developed by the University of Florida's Open Source Club!"
-    "This is an educational dating simulator where you fall in love with programming languages that are represented as anime-style characters while learning about multiple programming languages."
-    "The choices you make when interacting with other characters will influence your relationships, significantly affecting the course of your gameplay."
-    "If you have any questions or comments about the project, please reach out to anyone in the \"Maintainers\" section of the GitHub!"
+    "This is an educational dating simulator where you build relationships with other programming languages that are represented as anime-style characters."
+    "Throughout the game, these characters will immerse you into computer science and the college experience."
+    "The choices you make will affect your standing with other characters and influence the events you experience."
     default check = True
     while check:
         $ mc = renpy.input("Your name: ", length=12).strip()

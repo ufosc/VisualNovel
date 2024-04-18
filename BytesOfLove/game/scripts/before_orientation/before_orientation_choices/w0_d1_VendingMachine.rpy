@@ -12,7 +12,7 @@ label w0_d1_VendingMachine:
     r "\"Hey there! I’m Rust! Do you go to UB?\""
 
     menu w0_d1_Rust:
-        "Mean response":
+        "Be mean":
 
             $ r_rep = reputation(r_rep, -2)
             mc "\"Yeah, I do, my name is [mc].\""
@@ -36,7 +36,7 @@ label w0_d1_VendingMachine:
             mc "\"Whatever.\""
             hide rust_angry with dissolve
             "{i}*Rust leaves*{/i}"
-        "Nice response":
+        "Be nice":
             $ r_rep = reputation(r_rep, 2)
             mc "\"Yeah I do, my name is [mc]. What’s your major?\""
             r "{i}*Smiles*{/i} \"I’m computer engineering. What about you?\""
