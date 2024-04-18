@@ -108,12 +108,13 @@ label start:
     default check = True
     while check:
         $ mc = renpy.input("Your name: ", length=12).strip()
-        if mc.isalpha():
+        if mc.isalpha() and " " not in mc:
+            $ mc = mc.capitalize()
             $ check = False
         elif not mc:
             "Please enter a name"
         else:
-            "Please only enter alphabets"
+            "Please enter a single word name using only alphabetic characters."
 
     "Your name is [mc]."
 
