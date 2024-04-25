@@ -1,40 +1,44 @@
 label w0_d1_DoorDash:
-    mc "I passed Chipotle like fifteen times on the way here, I bet I can order some for delivery…"
+    mc "I passed like 15 Chipotles on the way here, I bet I can order a burrito for dinner..."
+    # Edit transitions below when we have clock - Lazzy
     scene w0_d1_hotel with shorter_fade
-    "*15 minutes later*"
-    mc "This driver sucks! I ordered this 30 minutes ago and he still hasn't picked it up!!!"
+    "{i}*15 minutes later*{/i}"
+    mc "This driver sucks! I ordered this 30 minutes ago, and he still hasn’t picked it up!!!"
     scene w0_d1_hotel with shorter_fade
-    "*20 minutes later*"
-    mc "Uuuugggghhhhh. I'm so hungry. Can this loser hurry up? It isn't that hard to deliver food."
+    "{i}*20 minutes later*{/i}"
+    mc "Uuuugggghhhhh. I’m so hungry. Can this loser hurry up? It isn’t that hard to deliver food."
     scene w0_d1_hotel with shorter_fade
-    "*20 more minutes later, there is a knock at the door*"
-    u "Here you go."
-    mc "*Annoyed* What took you so long."
-    u "*Sigh* Orientation is tomorrow, everyone is ordering food."
+    "{i}*20 more minutes later, there is a knock at the door*{/i}"
+    u "\"Are you [mc]? I’ve got your food.\""
+    mc "{i}*Annoyed*{/i} \"What took you so long?\""
+
+    u "{i}*Sigh*{/i} \"Orientation is tomorrow, so everyone is ordering food right now.\""
 
     menu w0_d1_DoorDashTip:
-        mc "Whatever, at least you finally got here."
+        mc "\"Whatever, at least you finally got here.\""
 
-        "Tip driver":
+        "Tip the driver":
             $ pe_rep = reputation(pe_rep, 2)
-            u "Your total is 30 Bytecoin."
-            mc "*Hands over 35 Bytecoin*"
-            mc "Keep the change, I guess, have a good one."
-            u "Mhm. *Leaves*"
-            mc "*Shouts* You're welcome!"
-            mc "*To themselves* Some people are just awful…"
-            mc "*Closes the door*"
+            $ byte = bytecoin(byte, -35)
+            u "\"Your total is 30 Bytecoin.\""
+            mc "{i}*Hands over 35 Bytecoin*{/i}"
+            mc "\"Keep the change, I guess, have a good one.\""
+            u "\"Thank you.\""
+            mc "\"No problem.\""
+            mc "{i}*Closes the door*{/i}"
             
-        "Don't tip driver":
+        "Don't tip the driver":
             $ pe_rep = reputation(pe_rep, -2)
-            u "Your total is 30 Bytecoin."
-            mc "*Hands over 30 Bytecoin with no tip*"  
-            u "What?! No tip? Are you kidding me?!"
-            mc "You took eight years to get me my food."
-            mc "Get lost, you are lucky I am even paying for this food at all."
-            mc "*Closes the door*"
+            $ byte = bytecoin(byte, -30)
+            u "\"Your total is 30 Bytecoin.\""
+            mc "{i}*Hands over 30 Bytecoin with no tip*{/i}"  
+            u "\"What?! No tip? In this economy! Are you kidding me?!\""
+            u "{i}*in a serious tone*{/i} \"You have no idea how much trouble I went through to get you your stupid Chipotle...\""
+            mc "\"You took eight years to get me my food, which is already cold.\""
+            mc "\"Get lost, you’re lucky I’m even paying for this food at all.\""
+            mc "{i}*Slams the door*{/i}"
             
-    mc "*Looks inside the chipotle bag*"
-    mc "*Shocked and angry* WHERE ARE MY CHIPS AND QUESO????"
+    mc "{i}*Looks inside the chipotle bag*{/i}"
+    mc "{i}*Shocked and angry*{/i} WHERE ARE MY CHIPS AND QUESO????"
 
 jump w0_d1_End

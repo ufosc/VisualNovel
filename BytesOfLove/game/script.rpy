@@ -2,14 +2,25 @@
 define longer_fade = Fade(0.5, 1.0, 0.5)
 define shorter_fade = Fade(0.5, 0.5, 0.5)
 
+# Transformations
+transform speaking:
+    zoom 1.0 # The character is in their normal state when speaking
+
+transform not_speaking:
+    zoom 0.95 # Slightly smaller
+    xalign 0.5
+    yalign 0.5
+ 
+    #EX: show python_normal at speaking
+
 # Music
 
 # Characters
-define r = Character("Rust", color="#FFA500")
+define r = Character("Rust", color="#B27300")
 define p = Character("Python", color="#7DC23B")
 define c = Character("C++", color="00599C")
 define j = Character("Java", color="#964000")
-define js = Character("JavaScript", color="#f7df1e")
+define js = Character("JavaScript", color="#FFD700")
 define u = Character("???", color="5c5f5d")
 
 #CHANGE PERL COLOR
@@ -68,6 +79,10 @@ image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
 image w0_d2_sunnyhotel = "backgrounds/w1_d1_sunnyhotel.webp"
 image w0_d2_lecturehall = "backgrounds/w1_d1_lecturehall.webp"
 
+image test = "backgrounds/IMG_3556.jpg"
+image test2 = "backgrounds/IMG_3563.jpg"
+image test3 = "backgrounds/IMG_3595.jpg"
+
 image w0_d2_insidecar = "backgrounds/w1_d1_insidecar.webp"
 image w0_d2_urgentcar = "backgrounds/w1_d1_urgentcar.webp"
 
@@ -79,7 +94,10 @@ image w0_d2_statue = "backgrounds/statuev1.webp"
 
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
-image black = "backgrounds/bg black.jpg"
+image black = "backgrounds/black-background.png"
+
+# Bytecoin
+default byte = 50
 
 init python:
     def reputation(rep, effect):
@@ -95,6 +113,15 @@ init python:
 
         return rep
 
+    def bytecoin(bytecoin, effect):
+        min = 0
+        bytecoin = bytecoin + effect
+
+        if bytecoin < min:
+            bytecoin = min
+
+        return bytecoin
+
 
 # The game starts here.
 
@@ -102,9 +129,9 @@ label start:
     stop music fadeout 4
     # PROLOUGUE
     "Welcome to Bytes of Love! A visual novel currently being developed by the University of Florida's Open Source Club!"
-    "This is an educational dating simulator where you fall in love with programming languages that are represented as anime-style characters while learning about multiple programming languages."
-    "The choices you make when interacting with other characters will influence your relationships, significantly affecting the course of your gameplay."
-    "If you have any questions or comments about the project, please reach out to anyone in the \"Maintainers\" section of the GitHub!"
+    "This is an educational dating simulator where you build relationships with other programming languages that are represented as anime-style characters."
+    "Throughout the game, these characters will immerse you into computer science and the college experience."
+    "The choices you make will affect your standing with other characters and influence the events you experience."
     default check = True
     while check:
         $ mc = renpy.input("Your name: ", length=12).strip()

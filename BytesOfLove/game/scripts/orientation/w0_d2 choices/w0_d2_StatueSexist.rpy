@@ -4,7 +4,7 @@ label w0_d2_StatueSexist:
     p "[mc]  was just having an opinion about the statue."
     
     menu w0_d2_StatueSexistC:
-        p "He didn’t say that anybody was hot or ugly, so let’s all just relax."
+        p "They didn’t say that anybody was hot or ugly, so let’s all just relax."
 
         "Be sexist":
             $ p_rep = reputation(p_rep, -4)
