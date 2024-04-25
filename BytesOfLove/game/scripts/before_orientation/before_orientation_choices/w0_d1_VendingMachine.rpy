@@ -3,8 +3,8 @@ label w0_d1_VendingMachine:
     mc "And, I will save some money. You never know when you’ll need it."
     mc "I am pretty hungry though, maybe I should eat something more to fuel my body and mind."
 
-    #scene w0_d1_vending
-    scene test
+    scene w0_d1_vending
+    #scene test
     "{i}*You walk downstairs to find a vending machine*{/i}"
     "{i}*On your way to the vending machines you see someone*{/i}"
     show rust_normal at right with fade
@@ -21,13 +21,13 @@ label w0_d1_VendingMachine:
             
             hide rust_normal 
             # hide test
-            scene test2
+            #scene test2
 
             show rust_angry at right
 
             r "{i}*hushed*{/i} \"Damn, I was just wondering.\""
 
-            scene test3
+            # scene test3
             show rust_angry at right
 
             r "\"I’m computer engineering, in case you wanted to know my major.\""

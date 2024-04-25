@@ -1,47 +1,51 @@
 label w0_d2:
     scene w0_d2_sunnyhotel with longer_fade
-    "*You wake up in your hotel room and look at the clock. It's 9:30AM, orientation started 15 minutes ago.*"
+    "You wake up in your room and look at the clock."
+    "{i}It's 9:30AM, orientation started 15 minutes ago.{/i}"
     mc "WHAT THE HELL?!?!?"
-    "*Checks phone, sees that it's dead*"
-    
-    #scene change
-    mc "Good going [mc], its not even the first day and you already messed up." 
-    #scene is supposed to change for every sentence here
-    mc "Who stays up so late the night before college orientation???" 
-    mc "I should just go back home, I’m not gonna succeed here; what was I thinking?" 
-    mc "What was I thinking?!?!?"
-    mc "Better late than never I guess, DANG IT!"
-    "*Sprints out the door to his car*"
+    mc "WHY DIDN’T MY ALARM GO OFF?"
+    mc "Where’s my phone? No no no, please don’t be dead."
+    "{i}*You check your phone*{/i}"
+    mc "Shoot it’s dead."
+    # Add swiftly getting ready - Lazzy
+    mc "Great, it’s not even the first day, and I already messed up."
+    mc "Who stays up so late the night before the first day of orientation???"
+     
+    mc "I should just go back home, I’m not gonna succeed here…" 
+    mc "What was I thinking???"
+    # Sprinting out the door to his car - Lazzy
+    mc "What kind of excuse can I come up with..."
+    mc "I was sick? Family emergency? My car wouldn’t start?"
+    "{i}*You turn the key and the car struggles to start*{/i}"
     scene w0_d2_urgentcar with shorter_fade
-    mc "What's my excuse, what's my excuse?"
-    mc "I was sick? Family emergency? My car wouldn't start?"
-    "*Turns key, car struggles*"
-    mc "WAIT NOT ACTUALLY, PLEASE START!!!"
+    mc "WAIT NOT ACTUALLY! PLEASE START!!!"
     scene w0_d2_insidecar with shorter_fade
-    "*Car starts, [mc] sighs from relief and speeds off*"
-    mc "And I don't even know where I’m going. This city is all new to me!"
-    mc "I'm going to be so late."
+    "*As the car starts, you sign in relief and speed off*"
+    mc "I don’t even know where I’m going. This city is all new to me!"
+    mc "I’m going to be so late..."
+
     #"*Scene fades to the lecture hall.*" Current one is temporary
     scene w0_d2_lecturehall with longer_fade
-    "*Bursts through the doors into an nearly empty auditorium, looks around frantically in search of someone*" 
-    #Java should not be known yet prob.
-
-    #about to meet java on the script document
-    "*Walks up to a person in the middle of the room*"
+    "{i}*You burst through the doors into an nearly empty auditorium, looking around frantically in search of someone*{/i}" 
+    mc "Oh look there’s somebody."
+    mc "She looks old, I wonder if she is a professor..."
     show java_normal at right with dissolve 
-
     mc "Excuse me ma’am, I’m so sorry that I’m late."
     mc "I don’t know where to go or what to do."
-    mc "My car wouldn't start and I had a family emergency, and I got lost, and…"
+    mc "My car wouldn't start and I had a family emergency, and I got lost, and..."
     hide java_normal
     show java_happy at right
-    u "Hey, it's okay. It's just orientation, calm down." 
+    u "Hey, it’s okay. It’s just orientation, calm down." 
     hide java_happy
     show java_normal at right
-    mc "*Panicked* Yeah but it’s my first day and I feel like I am already messing everything up."
+    mc "{i}*Panicked*{/i} Yeah but it’s my first day and I feel like I am already messing everything up."
     hide java_normal
     show java_happy at right
-    u "Oh sweetie, don’t worry about it. Every journey has its own pace; being late doesn’t mean you won’t reach your destination."
+    u "Oh sweetie, don’t worry about it."
+    u "Every journey has its own pace; being late doesn’t mean you won’t reach your destination."
+
+    # YOU STOPPED HERE
+    
     hide java_happy
     show java_normal at right
     mc "*Stunned* Huh, I guess you're right. Well, what'd I miss?"
@@ -257,7 +261,7 @@ label w0_d2:
     js "There's no need to be so aggressive C++..."
 
     menu w0_d2_StatueChoice:
-        js "Do you agree with what im saying [mc] or are you on C++’s side?"
+        js "Do you agree with what I'm saying [mc] or are you on C++’s side?"
 
         "Side with C++":
             jump w0_d2_StatueC
