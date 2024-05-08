@@ -315,6 +315,203 @@ label w0_d2_AfterLunch:
     c "We want to win, not get by with luck."
     js "I’m sure we won’t need luck, we all seem pretty smart!"
     bsl "Okay here is the first question"
+    #display on screen
+    #what will the following python code print? ...
+
+    c "Okay guys this one is really easy."
+    c "We have to get this one right, it's obviously-"
+    js "Hey, don't be rude C++."
+    js "Not all of us have programming experience and so it might not be as obvious."
+    c "Whatever, take your time figuring it out."
+    c "I am writing down our answer now because I want to win."
+    p "What are you guys thinking?"
+    p "I can tell that num1 is an integer, but num2 is a string by the single quotations surrounding it."
+    p "That definitely means something."
+
+    menu w0_d2_q1:
+        "Disagree with Python":
+            #tech score goes down
+            mc "No, I don't think so."
+            mc "They are both numbers and the asterisk has to mean multiply."
+            mc "Surely the answer is just 15."
+
+            js "Yeah, I don't know if your guess is as good as mine."
+            js "I trust you to get it right, but what Python said makes sense."
+            js "What do you think we should go with, [mc]?"
+
+
+        "Agree with Python":
+            #tech score +
+            mc "Yeah I definitely agree."
+            mc "I am not sure what it will change, though."
+            mc "What do you think JavaScript?"
+
+            js "Yeah, I am not sure either."
+            js "I think we should leave this one up to you, [mc]."
+
+    menu w0_d2_q1answer:
+        #
+        "15":
+            #techscore -
+            mc "I think it’s 15 because 3 times 5 is 15."
+            mc "It’s as simple as that, let’s not overthink this."
+
+            c "Oh my god."
+            c "There is now way you just said that right now."
+            c "The 5 OBVIOUSLY has quotations around it, making it a string."
+            c "And when you multiply a string and an integer in Python,"
+            c "It just prints the string, integer number of times."
+            c "Literally EVERYONE knows that."
+            js "Hey I didn’t know that."
+            js "C++, you are kind of mean sometimes."
+            js "You should really lay off, we are still going to get the question right."
+            js "Since our string is ‘5’, the asterisk means that we repeat it 3 times making the answer ‘555’."
+            p "C++, just because you have more experience than us doesn’t make you smarter than us."
+            p "You have just been doing it for longer."
+            c "Oh my gosh you guys are so sensitive."
+            c "Whatever, I am sorry you got hurt by me stating facts."
+            c "Let’s just see what everyone else said."
+        "'15'":
+            #tech score -
+            mc "I think it's ‘15’ because 3 times 5 is 15."
+            mc "But since the 5 has quotes around it, the answer will have quotes around it too."
+            mc "It's as simple as that, let's not overthink this."
+
+            c "Oh my god."
+            c "There is now way you just said that right now."
+            c "5 is a STRING, you can’t treat it like an INTEGER!!"
+            c "So when you multiply a string and an integer in Python,"
+            c "It just prints the string, integer number of times."
+            c "Literally EVERYONE knows that."
+
+            js "Hey I didn’t know that."
+            js "C++, you are kind of mean sometimes."
+            js "You should really lay off, we are still going to get the question right."
+            js "Now we know that the answer is ‘555’, since we’re repeating the string ‘5’, 3 times."
+
+            p "C++, just because you have more experience than us doesn’t make you smarter than us."
+            p "You have just been doing it for longer."
+
+            c "Oh my gosh you guys are so sensitive."
+            c "Whatever, I am sorry you got hurt by me stating facts."
+            c "Let’s just see what everyone else said."
+        "'33333'":
+            #tech score -
+            mc "I think it’s ‘33333’ because the 5 has quotes around it and the 3 is just a normal number."
+            mc "So something weird will have to happen."
+            mc "I think that it will print num1, num2 number of times."
+            mc "It’s as simple as that, let’s not overthink this."
+
+            c "Oh my god."
+            c "There is now way you just said that right now."
+            c "The code might look confusing, but it's not trying to trick you."
+            c "5 is a STRING, you can’t treat it like an INTEGER!!"
+            c "And when you multiply a string and an integer in Python,"
+            c "It just prints the string, integer number of times."
+            c "Literally EVERYONE knows that."
+
+            js "Hey I didn’t know that."
+            js "C++, you are kind of mean sometimes."
+            js "You should really lay off, we got the basic idea right."
+            js "Something is getting repeated a number of times."
+            js "We just switch the ‘numbers’ around and get '555'."
+
+            p "C++, just because you have more experience than us doesn’t make you smarter than us."
+            p "You have just been doing it for longer."
+
+            c "Oh my gosh you guys are so sensitive."
+            c "Whatever, I am sorry you got hurt by me stating facts."
+            c "Let’s just see what everyone else said."
+        "'555'":
+            #tech score+ (CORRECT ANSWER)
+            mc "Okay, wait. I think I actually know this one."
+            mc "Since the 5 has quotations around it, the variables won’t just multiply normally."
+            mc "So I think that it will print the variable that is a string once for each time it is multiplied by the integer."
+            mc "So the answer should be ‘555’ since we’ll be printing ‘5’ three times."
+            mc "Does that make sense?"
+
+            js "I don’t really get it, why wouldn’t it be an error?"
+            js "How can you multiply a string and an integer??"
+            "Be Mean":
+                #affects js -2x
+                mc "Jesus Christ, I just explained it."
+                mc "This really isn’t that hard, how do you not understand?"
+                mc "It is just something that programming languages know how to do."
+                mc "It makes printing something repeatedly quick and easy."
+                mc "You really need to study before school even starts."
+                mc "It seems like me and C++ might be the only smart people here..."
+
+                js "Oh sorry..."
+
+            "Be Nice":
+                #affects js +
+                mc "Its okay, I get it. It is a little confusing."
+                mc "It is just something that programming languages know how to do."
+                mc "It makes printing something repeatedly quick and easy."
+                mc "This stuff can be confusing at first."
+                mc "You might be thinking, how would I ever know that"
+                mc "But with practice, and lots of repetition, it will start to click."
+
+                js "Yeah, you’re right."
+                js "Thanks for the explanation, I think I get it now."
+
+            c "Jeez you guys are taking forever."
+            c "Maybe try to think a little faster next round, I don’t want you guys to slow me down."
+            c "Let’s see what everyone else said."
+        "ERROR":
+            #tech score -
+            mc "I think it's going to be an error."
+            mc "There’s no way you can multiply a number by a string."
+            mc "That just doesn’t make any sense."
+            mc "How will the computer know what to do?"
+            mc "It’s as simple as that, let’s not overthink this."
+
+            c "Oh my god."
+            c "There is now way you just said that right now."
+            c "The 5 OBVIOUSLY has quotations around it making it a string."
+            c "And when you multiply a string and an integer in Python,"
+            c "It just prints the string, integer number of times."
+            c "Literally EVERYONE knows that."
+
+            js "Hey I didn’t know that."
+            js "C++, you are kind of mean sometimes."
+            js "You should really lay off, we are still going to get the question right."
+            js "So, now we know that, we need to repeat ‘5’ three times to get the answer ‘555’."
+
+            p "C++, just because you have more experience than us doesn’t make you smarter than us."
+            p "You have just been doing it for longer."
+
+            c "Oh my gosh you guys are so sensitive."
+            c "Whatever, I am sorry you got hurt by me stating facts."
+            c "Let’s just see what everyone else said."
+
+    bsl "Time’s up everyone!"
+    bsl "Write your answers down and hold them up."
+    "..."
+    bsl "Wow! It looks like every team got that first question right!"
+    bsl "This next one will be a little bit harder, get ready."
+    bsl "What does the following Python code print?"
+
+    #DISPLAY:
+     #x = 4
+     #for i in range(x):
+     #x += 1
+     #print(x, end=‘’)
+
+     p "Well I think I have some idea about this one."
+     p "The first thing I see is that this might be an infinite loop."
+     p "Because we iterate x times, but x keeps increasing."
+     p "But, maybe that loop range only references x one time."
+     p "What do you think C++?"
+     p "You seem to know everything..."
+
+     c "Uhm, well actually I am not too sure."
+     c "I was thinking it would be infinite as well."
+     c "But I am really not sure."
+
+
+
+
 
 jump w0_d3
 
