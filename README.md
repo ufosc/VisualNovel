@@ -2,6 +2,8 @@
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)  ![GitHub issues](https://img.shields.io/github/issues/ufosc/VisualNovel)  ![GitHub](https://img.shields.io/github/license/ufosc/VisualNovel) 
 <br/>
 
+![banner](BytesOfLove/game/images/Bytes of Love Logo.png)
+
 A visual novel developed by the UF Open Source Club. Started in the Fall 2023, this game is built and maintained by club members.
 
 **For the latest development version, download here:** [Download Bytes of Love](https://drive.google.com/file/d/1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9/view?usp=sharing)
