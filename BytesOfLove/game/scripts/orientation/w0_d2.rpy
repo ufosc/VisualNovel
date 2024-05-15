@@ -426,8 +426,9 @@ label w0_d2_AfterLunch:
             c "Oh my gosh you guys are so sensitive."
             c "Whatever, I am sorry you got hurt by me stating facts."
             c "Let’s just see what everyone else said."
+
         "'555'":
-            #tech score+ (CORRECT ANSWER)
+            # tech score+ (CORRECT ANSWER)
             mc "Okay, wait. I think I actually know this one."
             mc "Since the 5 has quotations around it, the variables won’t just multiply normally."
             mc "So I think that it will print the variable that is a string once for each time it is multiplied by the integer."
@@ -436,32 +437,34 @@ label w0_d2_AfterLunch:
 
             js "I don’t really get it, why wouldn’t it be an error?"
             js "How can you multiply a string and an integer??"
-            "Be Mean":
-                #affects js -2x
-                mc "Jesus Christ, I just explained it."
-                mc "This really isn’t that hard, how do you not understand?"
-                mc "It is just something that programming languages know how to do."
-                mc "It makes printing something repeatedly quick and easy."
-                mc "You really need to study before school even starts."
-                mc "It seems like me and C++ might be the only smart people here..."
 
-                js "Oh sorry..."
+            menu w0_d2_meanOrNice:
 
-            "Be Nice":
-                #affects js +
-                mc "Its okay, I get it. It is a little confusing."
-                mc "It is just something that programming languages know how to do."
-                mc "It makes printing something repeatedly quick and easy."
-                mc "This stuff can be confusing at first."
-                mc "You might be thinking, how would I ever know that"
-                mc "But with practice, and lots of repetition, it will start to click."
+                "Be Mean":
+                    #affects js -2x
+                    mc "Jesus Christ, I just explained it."
+                    mc "This really isn’t that hard, how do you not understand?"
+                    mc "It is just something that programming languages know how to do."
+                    mc "It makes printing something repeatedly quick and easy."
+                    mc "You really need to study before school even starts."
+                    mc "It seems like me and C++ might be the only smart people here..."
+                    js "Oh sorry..."
 
-                js "Yeah, you’re right."
-                js "Thanks for the explanation, I think I get it now."
+                "Be Nice":
+                    #affects js +
+                    mc "Its okay, I get it. It is a little confusing."
+                    mc "It is just something that programming languages know how to do."
+                    mc "It makes printing something repeatedly quick and easy."
+                    mc "This stuff can be confusing at first."
+                    mc "You might be thinking, how would I ever know that"
+                    mc "But with practice, and lots of repetition, it will start to click."
+                    js "Yeah, you’re right."
+                    js "Thanks for the explanation, I think I get it now."
 
             c "Jeez you guys are taking forever."
             c "Maybe try to think a little faster next round, I don’t want you guys to slow me down."
             c "Let’s see what everyone else said."
+
         "ERROR":
             #tech score -
             mc "I think it's going to be an error."
@@ -502,16 +505,16 @@ label w0_d2_AfterLunch:
      #x += 1
      #print(x, end=‘’)
 
-     p "Well I think I have some idea about this one."
-     p "The first thing I see is that this might be an infinite loop."
-     p "Because we iterate x times, but x keeps increasing."
-     p "But, maybe that loop range only references x one time."
-     p "What do you think C++?"
-     p "You seem to know everything..."
+    p "Well I think I have some idea about this one."
+    p "The first thing I see is that this might be an infinite loop."
+    p "Because we iterate x times, but x keeps increasing."
+    p "But, maybe that loop range only references x one time."
+    p "What do you think C++?"
+    p "You seem to know everything..."
 
-     c "Uhm, well actually I am not too sure."
-     c "I was thinking it would be infinite as well."
-     c "But I am really not sure."
+    c "Uhm, well actually I am not too sure."
+    c "I was thinking it would be infinite as well."
+    c "But I am really not sure."
 
 
 
