@@ -32,7 +32,9 @@ define gui.idle_color = '#888888'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#aaaaaa'
+## define gui.idle_small_color = '#aaaaaa'
+## This seems to control the color of the buttons at the bottom of the screen omegalul
+define gui.idle_small_color = '#ffffff'
 
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = '#66c1e0'
@@ -156,7 +158,9 @@ define gui.button_width = None
 define gui.button_height = None
 
 ## The borders on each side of the button, in left, top, right, bottom order.
-define gui.button_borders = Borders(6, 6, 6, 6)
+## define gui.button_borders = Borders(6, 6, 6, 6)
+## This is another change that I did omegalul
+define gui.button_borders = Borders(6,6,6,6)
 
 ## If True, the background image will be tiled. If False, the background image
 ## will be linearly scaled.
@@ -193,8 +197,15 @@ define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
 
-define gui.quick_button_borders = Borders(15, 6, 15, 0)
-define gui.quick_button_text_size = 21
+#this might be a place to look to edit the quick buttons at the bottom maybe omegalul
+
+## define gui.quick_button_borders = Borders(15, 6, 15, 0)
+## This is definitely the place for the buttons at the bottom of the page omegalul
+
+define gui.quick_button_borders = Borders(15 , 6, 15, 20)
+## I might edit this as well omegalul
+## define gui.quick_button_text_size = 21
+define gui.quick_button_text_size = 15
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
 
