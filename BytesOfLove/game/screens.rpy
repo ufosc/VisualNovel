@@ -269,11 +269,16 @@ default quick_menu = True
 style quick_button is default
 style quick_button_text is button_text
 
+# Define a new style for the quick button background
 style quick_button:
     properties gui.button_properties("quick_button")
+    background Solid((255, 105, 180, 192))  # Opaque pink color
+    xpadding 10
+    ypadding 5
 
 style quick_button_text:
-    properties gui.button_text_properties("quick_button")
+    properties gui.text_properties("quick_button")
+    color "#FFFFFF"  # White text color
 
 
 ################################################################################
