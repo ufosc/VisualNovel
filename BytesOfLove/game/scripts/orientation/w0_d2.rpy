@@ -307,6 +307,10 @@ label w0_d2_AfterStatue:
 label w0_d2_AfterLunch:
     bsl "Okay guys, lunch is over."
     bsl "Everyone, make sure you get back to Room 283 in 10 minutes."
+
+
+    scene w0_d2_breakout with fade 
+
     bsl "Okay guys, we are now going to be playing a fun game to test your knowledge."
     bsl "Since The University of ByteBorough is renowned for the College of Computing..."
     bsl "We’ll be playing a trivia game about computer science!"
@@ -315,10 +319,17 @@ label w0_d2_AfterLunch:
     mc "Okay guys, I am really good at trivia."
     mc "And we are team 1, and one happens to also be my lucky number."
     mc "I don’t know much about computer science stuff yet, but I am really good at guessing."
+    show cpp_talk
     c "Well, we definitely won’t be guessing."
     c "We want to win, not get by with luck."
+    hide cpp_talk
+    show cpp_normal at left
+    show js_talk
     js "I’m sure we won’t need luck, we all seem pretty smart!"
+    hide js_talk
+    show js_smirk
     bsl "Okay here is the first question"
+    hide js_smirk
     #display on screen
     #what will the following python code print? ...
 
