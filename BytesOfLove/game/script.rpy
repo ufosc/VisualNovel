@@ -92,7 +92,7 @@ image w0_d2_cafeteria = "backgrounds/w1_d1_cafeteria.webp"
 
 image w0_d2_statue = "backgrounds/statuev1.webp"
 
-image w0_d3_buffet = "backgrounds/hotelBuffet.jpeg"
+image w0_d3_buffet = "backgrounds/hotelBuffet.jpg"
 
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
