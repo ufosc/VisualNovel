@@ -2,7 +2,7 @@ label w0_d3_MeetingRust:
 
     if r_rep == 50:
         r "\"Hey there! My name is Rust.\""
-        show rust_normal at right with fade
+        show rust_normal at right with dissolve 
 
 
         menu w0_d3_FirstTimeRust:
@@ -49,7 +49,7 @@ label w0_d3_MeetingRust:
     elif r_rep < 50:
         mc "Hey there, your name is..."
         window hide
-        show rust_normal at right with fade
+        show rust_normal at right with dissolve 
         
         menu w0_d3_RustName:
             "Robust":
@@ -76,13 +76,12 @@ label w0_d3_MeetingRust:
             
             "Rust":
                 window show
-                mc "Your name is Robust, right?"
+                mc "Your name is Rust, right?"
                 hide rust_normal
                 show rust_angry at right
                 r "Oh, it’s you."
-                r "Of course you don’t remember."
-                r "My name is Rust."
-                r "Now what do you want?"
+                r "Yeah, that's my name."
+                r "What do you want?"
 
             "Resch":
                 window show
