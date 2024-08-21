@@ -515,10 +515,132 @@ label w0_d2_AfterLunch:
     c "Uhm, well actually I am not too sure."
     c "I was thinking it would be infinite as well."
     c "But I am really not sure."
+    menu w0_d2_loopresponse:
+        #
+        "Rub it in C++'s Face":
+            #techscore -
+            mc "HAH! You don’t know everything!"
+            mc "I knew it, you are actually just as dumb as the rest of us!"
+            mc "Maybe you shouldn’t run your mouth everytime you know the answer"
+            mc "When other people don’t know the answer don’t make them feel stupid, it’s not nice."
 
+            c "Shut up! You don’t know it either."
+            c "And who are you to tell me how to live my life??"
+        "Be Humble":
+            #tech score -
+            mc "It's all good C++, you can't expect to know every question."
+            mc "But maybe in the future you could not be mean about it when we don’t know the answer."
+            mc "It just really isn’t nice and it hurts people’s feelings."
+            
+            c "Whatever."
+            c "You guys didn't know the answer either."
+    p "Alright, well, do we have any ideas?"
+    p "JavaScript? What are you thinking?"
 
+    js "Well after the last question it made me realize that the people who design the programming languages are pretty smart."
+    js "That has made me think that something like this might not be infinite."
+    js "It would make sense that when you initialize the for loop it is referencing the x variable."
+    js "But then afterwards, that value won’t change."
+    js "At the same time I am just guessing."
+    js "You make a decision, [mc]."
+    
+    menu w0_d2_mcdecision:
+        "ERROR":
+            #techScore -= 1
+            mc "Okay I think that this will result in an error."
+            mc "I don’t think it will know to only reference X once, at the start of the loop."
+            mc "Are we all good with this choice?"
 
+            js "I disagree, but I’m not confident enough to say that I am right."
+            js "I say let’s trust your intuition, [mc]."
+            js "Whatever happens, happens, it’s just a game."
+            
+            bsl "Alright, time’s up!"
+            bsl "Everyone, write your answers down and hold them up."
+            "..."
+            bsl "Ooh, it looks like only one group got that right!"
+            bsl "The correct answer was 5678, only team 3 got that correct!"
+            bsl "The reason it was 5678 was because when the loop begins it references the value held in x."
+            bsl "This is the only time x is referenced in relation to the number of iterations, so changing x afterwards has no effect on the amount of iterations."
+            bsl "And before we print x we increment it, which is why the first number is 5, not 4."
 
+            mc "Oh man, that’s my bad guys."
+            mc "I see how that is the answer."
+
+            p "It’s okay we didn’t know either."
+            p "If we did we would have said something."
+        "4567":
+            #techScore -= 1
+            mc "I agree with JavaScript, this won’t be an error."
+            mc "So first it will print out 4, then 5, then 6, then 7."
+            mc "And then after 7 the loop will have iterated four times which was the original value of X."
+            mc "Are we all good with this choice?"
+
+            c "I disagree, but I’m not confident enough to say that I am right."
+            c "I say let’s trust your intuition, [mc]."
+            c "Whatever happens, happens, it’s just a game."            
+
+            bsl "Alright, time’s up!"
+            bsl "Everyone, write your answers down and hold them up."
+            "..."
+            bsl "Ooh, it looks like only one group got that right!"
+            bsl "The correct answer was 5678, only team 3 got that correct!"
+            bsl "The reason it was 5678 was because when the loop begins it references the value held in x."
+            bsl "This is the only time x is referenced in relation to the number of iterations, so changing x afterwards has no effect on the amount of iterations."
+            bsl "And before we print x we increment it, which is why the first number is 5, not 4."
+
+            mc "Oh man, that’s my bad guys."
+            mc "I see how that is the answer."
+
+            p "It’s okay we didn’t know either."
+            p "If we did we would have said something."
+
+        "5678":
+            #techScore += 1
+            mc "I agree with JavaScript, this won’t be an error."
+            mc "So first it will increment x."
+            mc "Then it will print out 5, then 6, then 7, then 8."
+            mc "And then after 7 the loop will have iterated four times which was the original value of X."            
+            mc "Are we all good with this choice?"
+
+            c "I disagree, but I’m not confident enough to say that I am right."
+            c "I say let’s trust your intuition, [mc]."
+            c "Whatever happens, happens, it’s just a game."            
+
+            bsl "Alright, time’s up!"
+            bsl "Everyone, write your answers down and hold them up."
+            "..."
+
+            bsl "Ooh, it looks like only one group got that right!"
+            bsl "The correct answer was 5678, only team 1 got that correct!"
+            bsl "The reason it was 5678 was because when the loop begins it references the value held in x."
+            bsl "This is the only time x is referenced in relation to the number of iterations, so changing x afterwards has no effect on the amount of iterations."
+            bsl "And before we print x we increment it, which is why the first number is 5, not 4."
+            mc "Oh nice, we got it right!"
+            mc "Good job guys, I am glad we were able to work through that!"
+
+            p "Yes! We make such a good team."
+
+    "*some time later...*"
+    bsl "And the team with the most points is..."
+    "..."
+    bsl "Team 1!"
+
+    js "OMG Yes!!!"
+    p "That was so much fun!"
+    c "*smiles*"
+    js "I see that smile, C++..."
+    js "Admit it, you had fun!"
+    c "I guess it wasn’t boring..."
+    "*Everyone laughs.*"
+
+    "*The scene fades away to MC in his hotel room, laying on his bed*"
+    mc "Well, that was a fun day."
+    mc "Those girls were so nice, I hope I can run into them again tomorrow."
+    mc "One thing is for sure, I can’t stay up late again."
+    "*yawns*"
+    mc "I don’t think I could if I wanted to..."
+    "*zzz*"
 
 jump w0_d3
 
