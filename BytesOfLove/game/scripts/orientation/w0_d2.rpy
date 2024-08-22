@@ -372,7 +372,7 @@ label w0_d2_AfterLunch:
             mc "It’s as simple as that, let’s not overthink this."
 
             c "Oh my god."
-            c "There is now way you just said that right now."
+            c "There is no way you just said that right now."
             c "The 5 OBVIOUSLY has quotations around it, making it a string."
             c "And when you multiply a string and an integer in Python,"
             c "It just prints the string, integer number of times."
@@ -393,7 +393,7 @@ label w0_d2_AfterLunch:
             mc "It's as simple as that, let's not overthink this."
 
             c "Oh my god."
-            c "There is now way you just said that right now."
+            c "There is no way you just said that right now."
             c "5 is a STRING, you can’t treat it like an INTEGER!!"
             c "So when you multiply a string and an integer in Python,"
             c "It just prints the string, integer number of times."
@@ -418,7 +418,7 @@ label w0_d2_AfterLunch:
             mc "It’s as simple as that, let’s not overthink this."
 
             c "Oh my god."
-            c "There is now way you just said that right now."
+            c "There is no way you just said that right now."
             c "The code might look confusing, but it's not trying to trick you."
             c "5 is a STRING, you can’t treat it like an INTEGER!!"
             c "And when you multiply a string and an integer in Python,"
@@ -485,7 +485,7 @@ label w0_d2_AfterLunch:
             mc "It’s as simple as that, let’s not overthink this."
 
             c "Oh my god."
-            c "There is now way you just said that right now."
+            c "There is no way you just said that right now."
             c "The 5 OBVIOUSLY has quotations around it making it a string."
             c "And when you multiply a string and an integer in Python,"
             c "It just prints the string, integer number of times."
