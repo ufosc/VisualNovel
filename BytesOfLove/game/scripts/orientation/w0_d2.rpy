@@ -584,7 +584,7 @@ label w0_d2_AfterLunch:
             #techScore -= 1
             mc "I agree with JavaScript, this won’t be an error."
             mc "So first it will print out 4, then 5, then 6, then 7."
-            mc "And then after 7 the loop will have iterated four times which was the original value of X."
+            mc "And then after 7 the loop will have iterated four times which was the original value of x."
             mc "Are we all good with this choice?"
 
             c "I disagree, but I’m not confident enough to say that I am right."
@@ -611,7 +611,7 @@ label w0_d2_AfterLunch:
             mc "I agree with JavaScript, this won’t be an error."
             mc "So first it will increment x."
             mc "Then it will print out 5, then 6, then 7, then 8."
-            mc "And then after 7 the loop will have iterated four times which was the original value of X."            
+            mc "And then after 7 the loop will have iterated four times which was the original value of x."            
             mc "Are we all good with this choice?"
 
             c "I disagree, but I’m not confident enough to say that I am right."
