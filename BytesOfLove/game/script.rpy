@@ -17,10 +17,10 @@ transform not_speaking:
 
 # Characters
 define r = Character("Rust", color="#B27300")
-define p = Character("Python", color="#7DC23B")
-define c = Character("C++", color="00599C")
+define p = Character("???", color="#7DC23B")
+define c = Character("???", color="00599C")
 define j = Character("Java", color="#964000")
-define js = Character("JavaScript", color="#FFD700")
+define js = Character("???", color="#FFD700")
 define u = Character("???", color="5c5f5d")
 
 #CHANGE PERL COLOR
@@ -146,7 +146,7 @@ label start:
             "Please enter a single word name using only alphabetic characters."
 
     "Your name is [mc]."
-
+    
     #jump w1_d1_LunchApology
     
     jump w0_d1
