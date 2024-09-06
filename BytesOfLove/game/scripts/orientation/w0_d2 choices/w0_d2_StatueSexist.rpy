@@ -22,6 +22,6 @@ label w0_d2_StatueSexist:
     bsl "\"Uh... I am not a tour guide, I am just the leader of our breakout session.\""
     bsl "\"Which you guys have really been interrupting.\""
     bsl "\"Could you try to keep it down?\""
-    mc "{i}Disappointed{/i} \"Sorry...\""
+    mc "\"Sorry...\""
 
     jump w0_d2_AfterStatue
