@@ -31,7 +31,7 @@ label w0_d1:
         mc "I know I’ll play some Valorant. I’ve been grinding so I can go from silver to gold."
         #Add clock below when it is made - Lazzy
         scene w0_d1_hotel with shorter_fade
-        "{i}*Time passes it's now 11:30PM*{/i}"
+        "{i}Time passes it's now 11:30PM{/i}"
         mc "Now I’m Silver 3! I just have to win a few more games to push to gold!"
         mc "Do I play one more ranked game so I can get gold, or do I head to bed early so I'm not late in the morning?"
 
