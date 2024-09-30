@@ -55,7 +55,7 @@ define gui.hover_muted_color = '#005b7a'
 
 #for pink text box
 define gui.text_color = '#333333'
-define gui.interface_text_color = '#333333'
+define gui.interface_text_color = '#888888'
 
 #DEFAULT
 #define gui.text_color = '#ffffff'
@@ -76,7 +76,7 @@ define gui.interface_text_font = "DejaVuSans.ttf"
 define gui.text_size = 33
 
 ## The size of character names.
-define gui.name_text_size = 40
+define gui.name_text_size = 42
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 33
