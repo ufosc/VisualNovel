@@ -141,9 +141,34 @@ image w0_d2_statue = "backgrounds/statuev1.webp"
 
 image w0_d3_buffet = "backgrounds/hotelBuffet.jpg"
 
+
 image w0_d3_Advisor = "backgrounds/ciseDungeon.png"
 
 image w0_d3_parkingLot = "backgrounds/IMG_3556.jpg"
+
+
+# Day/Night Cycle
+default energy = 0
+transform morning_tint:
+    matrixcolor TintMatrix("#FFFFFF") # no tint
+transform afternoon_tint:
+    matrixcolor TintMatrix("#FFD700") # afternoon tint
+transform sunset_tint:
+    matrixcolor TintMatrix("#FF4500") # sunset tint
+transform night_tint:
+    matrixcolor TintMatrix("#2C3E50") # night tint
+
+# Code below can be placed at the beginning of scenes to implement tint
+# $ energy = "Insert #"
+# if energy == 0:
+#     show  "Insert Backgound Image" at morning_tint
+# if energy == 1:
+#     show  "Insert Backgound Image" at afternoon_tint
+# if energy == 2:
+#     show  "Insert Backgound Image" at sunset_tint
+# if energy == 3:
+#     show  "Insert Backgound Image" at night_tint
+    
 
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
