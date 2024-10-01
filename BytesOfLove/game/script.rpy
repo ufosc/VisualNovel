@@ -33,6 +33,9 @@ image rust_normal = "Rust/Rust_Base_1.png"
 image rust_talk = "Rust/Rust_Base_2.png"
 image rust_angry = "Rust/Rust_Angry.png"
 image rust_confused = "Rust/Rust_ConfusedGlare.png"
+
+image rust_wave = "Rust/Rust_Wave.png"
+image rust_wave_talking = "Rust/Rust_Wave_1.png"
 default r_rep = 50
 
 #Java
@@ -40,6 +43,12 @@ image java_normal = "Java/Java_Base_1.png"
 image java_happy = "Java/Java_Base_2.png"
 image java_uh = "Java/Java_MouthOpen.png"
 image java_wink = "Java/Java_Wink.png"
+image java_angry = "Java/Java_Angry.png"
+
+image java_glasses_normal = "Java/Java_Base_Glasses.png"
+image java_glasses_happy = "Java/Java_Base_Glasses_2.png"
+image java_glasses_angry = "Java/Java_Angry_Glasses.png"
+image java_glasses_uh = "Java/Java_Glasses_MouthOpen.png"
 default j_rep = 50
 
 #CPP
@@ -47,6 +56,11 @@ image cpp_normal = "C++/C++_Base_1.png"
 image cpp_happy = "C++/C++_Base_2.png"
 image cpp_talk = "C++/C++_Talking.png"
 
+image cpp_angry = "C++/C++_Angry.png"
+image cpp_angry_talk = "C++/C++_AngryTalking.png"
+
+image cpp_handhip_talk = "C++/C++_Base_HandHip.png"
+image cpp_handhip_normal = "C++/C++_Base_HandHip_1.png"
 default c_rep = 50
 
 #Python
@@ -68,6 +82,8 @@ default p_rep = 50
 image js_normal = "JavaScript/JavaScript_Base_1.png"
 image js_smirk = "JavaScript/JavaScript_Smirk.png"
 image js_talk = "JavaScript/JavaScript_Talking.png"
+image js_blush = "JavaScript/JavaScript_BlushSmile.png"
+image js_angry = "JavaScript/JavaScript_Angry.png"
 
 default js_rep = 50
 
