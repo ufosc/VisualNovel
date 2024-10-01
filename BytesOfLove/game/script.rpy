@@ -81,6 +81,30 @@ image advisor = "SideCharacters/advisor_tempImage.png"
 
 
 # Backgrounds
+'''
+the following structure will be used for each of the images that need a different day image
+all that will need to be added to each of the files is what the global energy variable is set to
+
+while true:
+    if energy == 4: 
+        image image_name = "map_images/image_morning"
+
+
+
+    elif energy == 3:
+        image image_name = "map_images/image_afternoon"
+
+
+    elif energy == 2:
+        image image_name = "map_images/image_evening"
+    
+    
+    elif energy == 1:    
+        image image_name = "map_images/image_night"
+return
+
+'''
+
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
 image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
 image w0_d2_sunnyhotel = "backgrounds/w1_d1_sunnyhotel.webp"
@@ -134,6 +158,8 @@ init python:
             bytecoin = min
 
         return bytecoin
+
+    
 
 
 # The game starts here.
