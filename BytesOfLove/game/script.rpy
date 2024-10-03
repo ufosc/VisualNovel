@@ -90,6 +90,8 @@ default js_rep = 50
 default pe_rep = 50
 
 # Backgrounds
+
+image instruction_screen = "backgrounds/instruction_screen.png"
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
 image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
 image w0_d2_sunnyhotel = "backgrounds/w1_d1_sunnyhotel.webp"
@@ -168,6 +170,7 @@ init python:
 label start:
     stop music fadeout 4
     # PROLOUGUE
+    scene instruction_screen with shorter_fade
     "Welcome to Bytes of Love! A visual novel currently being developed by the University of Florida's Open Source Club!"
     "This is an educational dating simulator where you build relationships with other programming languages that are represented as anime-style characters."
     "Throughout the game, these characters will immerse you into computer science and the college experience."
