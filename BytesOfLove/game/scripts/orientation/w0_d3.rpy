@@ -1,16 +1,16 @@
 label w0_d3:
     scene w0_d1_hotel with longer_fade  
     "{i}You wake up{/i}"
-    mc"\"Uh oh, don’t tell me I slept through my alarm again!\""
+    mc"Uh oh, don’t tell me I slept through my alarm again!"
     "{i}You alarm goes off{/i}"
-    mc"\"...Looks like I woke up right before it.\""
-    mc"\"Much better than yesterday, let me start getting ready...\""
+    mc"...Looks like I woke up right before it."
+    mc"Much better than yesterday, let me start getting ready..."
     "{i}You brush your teeth, take a shower, and get dressed.{/i}"
-    mc"\"All set! And I actually have enough time to eat breakfast this time!\""
+    mc"All set! And I actually have enough time to eat breakfast this time!"
     scene w0_d3_buffet with shorter_fade
-    mc"\"Oh wow! Everything looks so good!\""
+    mc"Oh wow! Everything looks so good!"
     "{i}While holding your food you notice that there is only one seat available, and it’s next to a boy who looks about your age.{/i}"
-    mc"\"Well, I guess I’m eating with him.\""
+    mc"Well, I guess I’m eating with him."
 
     # jump w0_d3_MeetingRust
     
@@ -43,7 +43,7 @@ label w0_d3:
             a"\"You’d be as lost as a fish in a cornfield.\""
             jump choosingFirstClass
 
-        " Data Structures and Algorithms":    
+        " Data Structures and Algorithms":
             mc"\"This class sounds important, I’ll take Data Structures and Algorithms.\""
             a"\"You got that right on the button, sugar!\""
             a"\"That is one of the most important classes!\""
@@ -63,12 +63,12 @@ label w0_d3:
             a"\"This usually doesn’t happen this early, but the class is all full!\""
             a"\"That’s crazy!\""
             mc"\"Aw man!\""
-            mc"\"I was really looking forward to that...\""    
+            mc"\"I was really looking forward to that...\""
             a"\"Well it’s alright sweetheart, don’t get your panties in a twist.\""
             jump choosingFirstClass
 
     a"\"We reckon freshmen best take 4 classes in total.\""
-    a"\"How does that sit with you, sugar?\"" 
+    a"\"How does that sit with you, sugar?\""
     mc"\"Uh, that sounds good to me.\""
     mc"\"I know I also want to take Calculus 1, is that available?\""
     a"\"Well, let’s have a look...\""
@@ -86,25 +86,25 @@ label w0_d3:
     a"\"Pick whichever one tickles your fancy...\""
 
     menu choosingLastClass:
-        "WOMEN IN FRENCH LITERATURE AND CINEMA":
+        "Women in French Literature and Cinema":
             mc"\"Well this seems pretty interesting.\""
             mc"\"I think I’ll take Women in French Literature And/Or Cinema.\""
 
-        "GEOLOGY":
+        "Geology":
             mc"\"Well this seems pretty interesting.\""
             mc"\"I think I’ll take Geology.\""
 
-        "FIRST YEAR BYTEBOROUGH":            
+        "First year Byteborough":
             mc"\"Well this seems pretty interesting.\""
             mc"\"I think I’ll take First Year ByteBorough.\""
 
-        "PHILOSOPHY":
+        "Philosophy":
             mc"\"Well this seems pretty interesting.\""
             mc"\"I think I’ll take Philosophy.\""
 
     a"\"Well that settles it!\""
     a"\"Your classes for your first semester of college are now set!\""
-    mc"\"Awesome!\""    
+    mc"\"Awesome!\""
     mc"\"So these will definitely be my classes?\""
     a"\"That depends, are biscuits supposed to be buttered?\""
     mc"\"Uhm, I think so?\""
@@ -116,13 +116,13 @@ label w0_d3:
 
     scene w0_d3_parkingLot with longer_fade
 
-    mc"\"Wow, what a good day!\""     
+    mc"\"Wow, what a good day!\""
     mc"\"I made it to orientation on time and picked some good classes.\""
     mc"\"I am so excited to start college!\""
     mc"\"Oh, look. There’s Python\""
 
     menu w0d3_talktopython:
-        "TALK TO PYTHON":
+        "Talk to Python":
             mc"\"Hey, Python!\""
 
             show python_pocket at center with dissolve
@@ -134,7 +134,7 @@ label w0_d3:
             mc"\"I obviously am taking Introduction to Programming 1,\""
             mc"\"And then I’m also taking Calculus 1.\""
 
-            hide python_pocket  
+            hide python_pocket
             show python_pocket_happy at center
 
             p"\"Oh, cool.\""
@@ -150,10 +150,10 @@ label w0_d3:
             p"\"Yeah I’m excited.\""
             p"\"Anyway I gotta run, I’ll see you in Fall!\""
             mc"\"Sure thing, bye!\""
-            
+
             hide python_pocket_happy with fade
 
-        "GO HOME":
+        "Go Home":
             mc"\"I can always see her another time, I don’t need to talk to her today.\""
             mc"\"Plus, I’m pretty tired, I just want to go back to the hotel.\""
 
