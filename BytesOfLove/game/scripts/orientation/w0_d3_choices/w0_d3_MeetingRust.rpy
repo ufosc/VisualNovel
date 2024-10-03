@@ -108,8 +108,12 @@ label w0_d3_MeetingRust:
                 $ r_rep = reputation(r_rep, -2)
                 mc "\"Don’t act like you have something I want, this is the only seat left.\""
                 mc "\"If I had it my way, you wouldn’t be here.\""
+                hide rust_angry
+                show rust_confusedglare at right
                 r "\"Dude, what is your problem?\""
                 r "\"I don’t even know you and you’ve been nothing but mean to me.\""
+                hide rust_confusedglare
+                show rust_angry at right
                 mc "\"I told you my problem, the only chair open was the one next to you.\""
                 r "{i}Stands up{i} \"Let me solve that for you, then!\""
                 r "\"I was just leaving anyway!\""
