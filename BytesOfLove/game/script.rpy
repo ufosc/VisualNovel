@@ -21,7 +21,8 @@ define p = Character("???", color="#7DC23B")
 define c = Character("???", color="00599C")
 define j = Character("Java", color="#964000")
 define js = Character("???", color="#FFD700")
-define u = Character("???", color="5c5f5d")
+define u = Character("???", color="#5c5f5d")
+define a = Character("Advisor", color="#f4f880")
 
 #CHANGE PERL COLOR
 define pe = Character("Perl", color="5c5f5d")
@@ -89,7 +90,37 @@ default js_rep = 50
 #Perl
 default pe_rep = 50
 
+
+#background characters with no impact
+#this needs to be changed to the final character image for the advisor
+image advisor = "SideCharacters/advisor_tempImage.png"
+
+
 # Backgrounds
+'''
+the following structure will be used for each of the images that need a different day image
+all that will need to be added to each of the files is what the global energy variable is set to
+
+while true:
+    if energy == 4: 
+        image image_name = "map_images/image_morning"
+
+
+
+    elif energy == 3:
+        image image_name = "map_images/image_afternoon"
+
+
+    elif energy == 2:
+        image image_name = "map_images/image_evening"
+    
+    
+    elif energy == 1:    
+        image image_name = "map_images/image_night"
+return
+
+'''
+
 image w0_d1_hotel = "backgrounds/w0_d1_hotel.webp"
 image w0_d1_vending = "backgrounds/w0_d1_vending.webp"
 image w0_d2_sunnyhotel = "backgrounds/w1_d1_sunnyhotel.webp"
@@ -109,6 +140,12 @@ image w0_d2_cafeteria = "backgrounds/w1_d1_cafeteria.webp"
 image w0_d2_statue = "backgrounds/statuev1.webp"
 
 image w0_d3_buffet = "backgrounds/hotelBuffet.jpg"
+
+
+image w0_d3_Advisor = "backgrounds/ciseDungeon.png"
+
+image w0_d3_parkingLot = "backgrounds/IMG_3556.jpg"
+
 
 # Day/Night Cycle
 default energy = 0
@@ -132,6 +169,7 @@ transform night_tint:
 # if energy == 3:
 #     show  "Insert Backgound Image" at night_tint
     
+
 # Screens
 image mine_sweeper = "images/mine_sweeper.png"
 image black = "backgrounds/black-background.png"
@@ -161,6 +199,8 @@ init python:
             bytecoin = min
 
         return bytecoin
+
+    
 
 
 # The game starts here.
