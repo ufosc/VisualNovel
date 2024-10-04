@@ -218,6 +218,7 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
+define gui.choice_button_text_outlines = [(1, "#000", 1, 1)]
 #define gui.choice_button_text_idle_color = '#888888'
 
 #for the choice box font
@@ -485,3 +486,7 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
+
+## bolds character names
+init python:
+    style.say_label.outlines = [(1, "#000", 0, 0)]
