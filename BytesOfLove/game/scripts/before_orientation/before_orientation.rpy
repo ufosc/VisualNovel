@@ -27,7 +27,7 @@ label w0_d1:
     label w0_d1_End:
         scene w0_d1_hotel with longer_fade
         mc "Man that hit the spot."
-        mc "What am I going to do with the rest of my night?"
+        mc "Now what should I do with the rest of my night?"
         mc "I know I’ll play some Valorant. I’ve been grinding so I can go from silver to gold."
         #Add clock below when it is made - Lazzy
         scene w0_d1_hotel with shorter_fade
