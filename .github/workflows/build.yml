@@ -1,0 +1,50 @@
+name: Build Bytes of Love
+on:
+  - push
+  - pull_request
+
+jobs:
+  renpy-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Extract short commit hash
+        shell: bash
+        run: echo "git_hash=$(git rev-parse --short "$GITHUB_SHA")" >> $GITHUB_OUTPUT
+        id: ref
+
+      - name: Setup Ren'Py and Build
+        run: |
+          wget https://www.renpy.org/dl/8.3.2/renpy-8.3.2-sdk.tar.bz2
+          tar -xf renpy-8.3.2-sdk.tar.bz2
+          ( cd renpy-8.3.2-sdk && ./renpy.sh launcher distribute ../BytesOfLove --destination ../dist --package win --package mac --package linux )
+
+      - name: Process Files
+        run: python .github/workflows/process.py ${{ steps.ref.outputs.git_hash }}
+
+      - name: Upload Linux Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: BytesOfLove-linux-${{ steps.ref.outputs.git_hash }}
+          path: dist/BytesOfLove-linux-${{ steps.ref.outputs.git_hash }}.tar.bz2
+          compression-level: 0
+
+      - name: Upload Mac Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: BytesOfLove-mac-${{ steps.ref.outputs.git_hash }}
+          path: dist/BytesOfLove-mac-${{ steps.ref.outputs.git_hash }}.zip
+          compression-level: 0
+
+      - name: Upload Windows Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: BytesOfLove-win-${{ steps.ref.outputs.git_hash }}
+          path: dist/BytesOfLove-win-${{ steps.ref.outputs.git_hash }}

@@ -25,18 +25,18 @@ define config.check_conflicting_properties = True
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#0099cc'
+define gui.accent_color = '#ffcfb6'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#FFB6C1'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-# //Ryan changed this code changed to Charcoal
-define gui.idle_small_color = '#163D3F'
+# //makes this text more visible
+define gui.idle_small_color = '#f2f2f2'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#00F4FE'#ryan changed it 
+define gui.hover_color = '#f7e2f4' 
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -55,7 +55,8 @@ define gui.hover_muted_color = '#005b7a'
 
 #for pink text box
 define gui.text_color = '#333333'
-define gui.interface_text_color = '#333333'
+#for menu text
+define gui.interface_text_color = '#f7e2f4'
 
 #DEFAULT
 #define gui.text_color = '#ffffff'
@@ -218,6 +219,7 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
+define gui.choice_button_text_outlines = [(1, "#000", 1, 1)]
 #define gui.choice_button_text_idle_color = '#888888'
 
 #for the choice box font
@@ -485,3 +487,7 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
+
+## bolds character names
+init python:
+    style.say_label.outlines = [(1, "#000", 0, 0)]
