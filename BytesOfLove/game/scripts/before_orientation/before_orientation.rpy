@@ -1,5 +1,5 @@
 label w0_d1:
-    scene w0_d1_hotel
+    scene hotel_room_night
 
     mc "Man, I can't believe it, tomorrow is the first day of orientation at the University of Byteborough."
     mc "I can't wait for everything I'm going to experience, all the parties, friends, clubs, and ladies!"
@@ -25,12 +25,12 @@ label w0_d1:
             jump w0_d1_DoorDash
   
     label w0_d1_End:
-        scene w0_d1_hotel with longer_fade
+        scene hotel_room_night with longer_fade
         mc "Man that hit the spot."
         mc "Now what should I do with the rest of my night?"
         mc "I know I’ll play some Valorant. I’ve been grinding so I can go from silver to gold."
         #Add clock below when it is made - Lazzy
-        scene w0_d1_hotel with shorter_fade
+        scene hotel_room_night with shorter_fade
         "{i}Time passes it's now 11:30PM{/i}"
         mc "Now I’m Silver 3! I just have to win a few more games to push to gold!"
         mc "Do I play one more ranked game so I can get gold, or do I head to bed early so I'm not late in the morning?"
@@ -39,7 +39,7 @@ label w0_d1:
             mc "I have a big day tomorrow."
 
             "Grind Valorant": 
-                scene w0_d1_hotel with shorter_fade
+                scene hotel_room_night with shorter_fade
                 mc "{i}*4 hours later*{/i}"
                 mc "Wow, that was miserable. I went back and forth for 4 hours, and sacrificed my pride and rank."
                 mc "Now it’s 3:30 AM, I deranked to Silver I, and I am so tired."                

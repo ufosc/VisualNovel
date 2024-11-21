@@ -1,5 +1,5 @@
 label w0_d3:
-    scene w0_d1_hotel with longer_fade  
+    scene hotel_room_day with longer_fade  
     "{i}You wake up{/i}"
     mc"Uh oh, don’t tell me I slept through my alarm again!"
     "{i}You alarm goes off{/i}"
@@ -7,7 +7,7 @@ label w0_d3:
     mc"Much better than yesterday, let me start getting ready..."
     "{i}You brush your teeth, take a shower, and get dressed.{/i}"
     mc"All set! And I actually have enough time to eat breakfast this time!"
-    scene w0_d3_buffet with shorter_fade
+    scene hotel_buffet with shorter_fade
     mc"Oh wow! Everything looks so good!"
     "{i}While holding your food you notice that there is only one seat available, and it’s next to a boy who looks about your age.{/i}"
     mc"Well, I guess I’m eating with him."
@@ -16,7 +16,7 @@ label w0_d3:
     
 
 
-    scene w0_d3_Advisor with longer_fade
+    scene office with longer_fade
     show advisor at right with dissolve
     a"\"Hey there, sugar!\""
     a"\"Hmmm...\""
@@ -114,7 +114,7 @@ label w0_d3:
 
     hide advisor with dissolve
 
-    scene w0_d3_parkingLot with longer_fade
+    scene parking_lot with longer_fade
 
     mc"\"Wow, what a good day!\""
     mc"\"I made it to orientation on time and picked some good classes.\""

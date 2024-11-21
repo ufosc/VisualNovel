@@ -143,6 +143,7 @@ image w0_d3_buffet = "backgrounds/hotelBuffet.jpg"
 
 
 #new backgrounds 
+image breakout_room = "backgrounds/breakout-room.PNG"
 image campus_pathway = "backgrounds/campus_pathway.PNG"
 image dining_hall = "backgrounds/dining-hall.PNG"
 image driving_car = "backgrounds/driving-car.png"
@@ -150,12 +151,13 @@ image empty_lecture_hall = "backgrounds/empty-lecture-hall.png"
 image full_lecture_hall = "backgrounds/full-lecture-hall.png"
 image hotel_buffet = "backgrounds/hotel-buffet.png"
 image hotel_room_day = "backgrounds/hotel-room-day.png"
-image hotel-room-night = "backgrounds/hotel-room-night.png"
+image hotel_room_night = "backgrounds/hotel-room-night.png"
 image office = "backgrounds/office.PNG"
 image parking_lot = "backgrounds/parking-lot.png"
 image starting_car = "backgrounds/starting-car.png"
 image statue_garden = "backgrounds/statue-garden.PNG"
 image vending_machine = "backgrounds/vending-machine.PNG"
+
 
 
 
@@ -229,7 +231,7 @@ init python:
 label start:
     stop music fadeout 4
     # PROLOUGUE
-    scene instruction_screen with shorter_fade
+    scene campus_pathway with shorter_fade
     "Welcome to Bytes of Love! A visual novel currently being developed by the University of Florida's Open Source Club!"
     "This is an educational dating simulator where you build relationships with other programming languages that are represented as anime-style characters."
     "Throughout the game, these characters will immerse you into computer science and the college experience."

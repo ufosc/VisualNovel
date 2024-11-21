@@ -3,7 +3,7 @@ label w0_d1_VendingMachine:
     mc "And, I will save some money. You never know when you’ll need it."
     mc "I am pretty hungry though, maybe I should eat something more to fuel my body and mind."
 
-    scene w0_d1_vending
+    scene vending_machine
     #scene test
     "{i}*You walk downstairs to find a vending machine*{/i}"
     "{i}*On your way to the vending machines you see someone*{/i}"
