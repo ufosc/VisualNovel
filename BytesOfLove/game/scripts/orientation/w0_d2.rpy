@@ -221,7 +221,11 @@ label w0_d2:
             mc "\"Yeah I agree with Python, computer science definitely seems cool.\""
             mc "\"I’m just like you, I don’t have much experience, but I’m excited to learn.\""
             mc "\"And A.I. is a great field to make money in.\""
+            hide python_pocket
+            show python_pocket_happy at right
             p "\"I don’t care too much about the money, but it definitely won’t hurt!\""
+            hide python_pocket_happy
+            show python_pocket at right
 
         "Respond to C++":
             $ c_rep = reputation(c_rep, 3)
@@ -229,7 +233,11 @@ label w0_d2:
             mc "\"I’ve never heard of iClicker or Mentimeter.\""
             mc "\"I don’t know much when it comes to coding, but you sound really experienced.\""
             mc "\"Maybe you could show me the ropes sometime...?\""
+            hide cpp_normal
+            show cpp_talk
             c "\"Sure, if you can keep up...\""
+            hide cpp_talk
+            show cpp_normal
     
     bsl "\"Alright now, we’re gonna start our guided tour of campus!\""
      
@@ -238,35 +246,34 @@ label w0_d2:
 
     "{i}The group tours campus as the breakout session leader talks about random trivia{/i}"
     bsl "\"And if you look to your left you will see Half-A-Century Tower...\""
+    show cpp_normal with dissolve
     c "\"Gosh, this is so boring.\""
     c "\"Who doesn’t know all of this stuff already?\""
     c "\"I mean did anybody really come to this school without already taking a tour?\""
-    p "\"I didn’t... so this is interesting! I’m really enjoying this tour.\""
-
-
     show python_pocket_happy at left with dissolve
+    p "\"I didn’t... so this is interesting! I’m really enjoying this tour.\""    
     p "\"Like look at that cool statue over there.\""
     p "\"Don’t you guys think he looks cool?\""
     hide python_pocket_happy
     show python_pocket at left
-    show cpp_talk with dissolve
+    hide cpp_normal
+    show cpp_talk
     c "\"Oh? You think that’s cool?\""
     c "\"That statue is actually Thomas ‘Firewall’ Jackson.\""
     c "\"He was a general in a huge war a while ago and the armies he commanded were basically impenetrable.\""
     c "\"But, he killed a lot of people...\""
     c "\"You really think someone like that is cool??\""
-    
     hide cpp_talk
     show cpp_normal
-
     hide python_pocket
     show python_pocket_happy at left
     p "\"Oh, well I didn’t realize that...\""
-
     hide cpp_normal
     show cpp_talk
     c "\"Yeah, I wouldn’t expect someone like you to know basic history...\""
-    show js_normal at right with dissolve
+    hide cpp_talk
+    show cpp_normal
+    show js_talk at right with dissolve
     js "\"Well I thought he was cool looking too, it was just an honest mistake.\""
     js "\"There’s no need to be so aggressive, C++...\""
 
