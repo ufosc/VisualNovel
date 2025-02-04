@@ -1,5 +1,5 @@
 label w0_d2:
-    scene w0_d2_sunnyhotel with longer_fade
+    scene hotel_room_day with longer_fade
     "{i}You wake up in your room and look at the clock.{/i}"
     "{i}It's 9:30AM, orientation started 15 minutes ago.{/i}"
     mc "WHAT THE HELL?!?!?"
@@ -17,15 +17,15 @@ label w0_d2:
     mc "What kind of excuse can I come up with..."
     mc "I was sick? Family emergency? My car wouldn’t start?"
     "{i}You turn the key and the car struggles to start{/i}"
-    scene w0_d2_urgentcar with shorter_fade
+    scene starting_car with shorter_fade
     mc "WAIT NOT ACTUALLY! PLEASE START!!!"
-    scene w0_d2_insidecar with shorter_fade
+    scene driving_car with shorter_fade
     "{i}As the car starts, you sign in relief and speed off.{/i}"
     mc "I don’t even know where I’m going. This city is all new to me!"
     mc "I’m going to be so late..."
 
     #"*Scene fades to the lecture hall.*" Current one is temporary
-    scene w0_d2_lecturehall with longer_fade
+    scene full_lecture_hall with longer_fade
     "{i}You burst through the doors into an nearly empty auditorium, looking around frantically in search of someone.{/i}" 
     mc "Oh look there’s somebody."
     mc "She looks old, I wonder if she is a professor..."
@@ -81,7 +81,7 @@ label w0_d2:
     
     # Insert transition to breakout room - Lazzy
     # currently put a temp one in - Anton
-    scene w0_d2_breakout with fade 
+    scene breakout_room with fade 
 
     mc "Jeez, everyone’s here already, where am I going to sit?"
     mc "Oh! There’s a seat! And the company isn’t that bad either..."
@@ -221,7 +221,11 @@ label w0_d2:
             mc "\"Yeah I agree with Python, computer science definitely seems cool.\""
             mc "\"I’m just like you, I don’t have much experience, but I’m excited to learn.\""
             mc "\"And A.I. is a great field to make money in.\""
+            hide python_pocket
+            show python_pocket_happy at right
             p "\"I don’t care too much about the money, but it definitely won’t hurt!\""
+            hide python_pocket_happy
+            show python_pocket at right
 
         "Respond to C++":
             $ c_rep = reputation(c_rep, 3)
@@ -229,44 +233,47 @@ label w0_d2:
             mc "\"I’ve never heard of iClicker or Mentimeter.\""
             mc "\"I don’t know much when it comes to coding, but you sound really experienced.\""
             mc "\"Maybe you could show me the ropes sometime...?\""
+            hide cpp_normal
+            show cpp_talk
             c "\"Sure, if you can keep up...\""
+            hide cpp_talk
+            show cpp_normal
     
     bsl "\"Alright now, we’re gonna start our guided tour of campus!\""
      
     #tour just started put scene change
-    scene w0_d2_statue with fade
+    scene statue_garden with fade
 
     "{i}The group tours campus as the breakout session leader talks about random trivia{/i}"
     bsl "\"And if you look to your left you will see Half-A-Century Tower...\""
+    show cpp_normal with dissolve
     c "\"Gosh, this is so boring.\""
     c "\"Who doesn’t know all of this stuff already?\""
     c "\"I mean did anybody really come to this school without already taking a tour?\""
-    p "\"I didn’t... so this is interesting! I’m really enjoying this tour.\""
-
-
     show python_pocket_happy at left with dissolve
+    p "\"I didn’t... so this is interesting! I’m really enjoying this tour.\""    
     p "\"Like look at that cool statue over there.\""
     p "\"Don’t you guys think he looks cool?\""
     hide python_pocket_happy
     show python_pocket at left
-    show cpp_talk with dissolve
+    hide cpp_normal
+    show cpp_talk
     c "\"Oh? You think that’s cool?\""
     c "\"That statue is actually Thomas ‘Firewall’ Jackson.\""
     c "\"He was a general in a huge war a while ago and the armies he commanded were basically impenetrable.\""
     c "\"But, he killed a lot of people...\""
     c "\"You really think someone like that is cool??\""
-    
     hide cpp_talk
     show cpp_normal
-
     hide python_pocket
     show python_pocket_happy at left
     p "\"Oh, well I didn’t realize that...\""
-
     hide cpp_normal
     show cpp_talk
     c "\"Yeah, I wouldn’t expect someone like you to know basic history...\""
-    show js_normal at right with dissolve
+    hide cpp_talk
+    show cpp_normal
+    show js_talk at right with dissolve
     js "\"Well I thought he was cool looking too, it was just an honest mistake.\""
     js "\"There’s no need to be so aggressive, C++...\""
 
@@ -286,7 +293,7 @@ label w0_d2_AfterStatue:
     bsl "\"Now we will be taking a break for lunch.\""
 
     #change scene to cafeteria
-    scene w0_d2_cafeteria with longer_fade 
+    scene dining_hall with longer_fade 
 
 
     bsl "\"The different food stations are located around the room.\""
@@ -312,7 +319,7 @@ label w0_d2_AfterLunch:
     bsl "\"Everyone, make sure you get back to Room 283 in 10 minutes.\""
 
 
-    scene w0_d2_breakout with fade 
+    scene breakout_room with fade 
 
     bsl "\"Okay guys, we are now going to be playing a fun game to test your knowledge.\""
     bsl "\"Since The University of ByteBorough is renowned for the College of Computing...\""
@@ -648,7 +655,7 @@ label w0_d2_AfterLunch:
     c "\"I guess it wasn’t boring...\""
     "{i}Everyone laughs.{/i}"
 
-    scene w0_d1_hotel with longer_fade  
+    scene hotel_room_night with longer_fade  
     mc "\"Well, that was a fun day.\""
     mc "\"Those girls were so nice, I hope I can run into them again tomorrow.\""
     mc "\"One thing is for sure, I can’t stay up late again.\""

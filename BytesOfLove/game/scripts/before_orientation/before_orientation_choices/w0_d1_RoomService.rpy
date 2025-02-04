@@ -20,7 +20,7 @@ label w0_d1_RoomService:
 
     mc "Yeah, I HAVE to get [food_item]. You can’t go wrong with that."
     $ byte = bytecoin(byte, -15)
-    scene w0_d1_hotel with shorter_fade
+    scene hotel_room_night with shorter_fade
     "{i}*5 minutes pass*{/i}"
     mc "I hope this doesn’t take too long, I’m getting pretty hungry here."
     "{i}*You hear a knock on the door*{/i}"

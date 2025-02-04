@@ -1,13 +1,13 @@
 label w0_d1_DoorDash:
     mc "I passed like 15 Chipotles on the way here, I bet I can order a burrito for dinner..."
     # Edit transitions below when we have clock - Lazzy
-    scene w0_d1_hotel with shorter_fade
+    scene hotel_room_night with shorter_fade
     "{i}*15 minutes later*{/i}"
     mc "This driver sucks! I ordered this 30 minutes ago, and he still hasn’t picked it up!!!"
-    scene w0_d1_hotel with shorter_fade
+    scene hotel_room_night with shorter_fade
     "{i}*20 minutes later*{/i}"
     mc "Uuuugggghhhhh. I’m so hungry. Can this loser hurry up? It isn’t that hard to deliver food."
-    scene w0_d1_hotel with shorter_fade
+    scene hotel_room_night with shorter_fade
     "{i}*20 more minutes later, there is a knock at the door*{/i}"
     u "\"Are you [mc]? I’ve got your food.\""
     mc "{i}*Annoyed*{/i} \"What took you so long?\""
