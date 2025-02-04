@@ -84,5 +84,7 @@ To contribute, check out the issues for anything that you think you can work on.
 
 Review the Bytes of Love Documentation for any information regarding the game's ideas, progress, and next steps. For edit access, reach out to Nicolas Valiente for approval; you must request the access in person during Casual Coding sessions.
 
+**When making a pull request, feel free to ping Nick on the Discord (@barkvader) to let him know a pull request was made.**
+
 ## License
 [AGPL 2.0](LICENSE.md) <br/>
