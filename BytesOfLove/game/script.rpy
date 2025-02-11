@@ -23,6 +23,7 @@ define j = Character("Java", color="#964000")
 define js = Character("???", color="#FFD700")
 define u = Character("???", color="#5c5f5d")
 define a = Character("Advisor", color="#f4f880")
+define dc = Character("Director of Computing College", color="#10436b")
 
 #CHANGE PERL COLOR
 define pe = Character("Perl", color="5c5f5d")
@@ -249,7 +250,7 @@ label start:
 
     "Your name is [mc]."
     
-    #jump w1_d1_LunchApology
+    #jump w0_d3
 
     jump w0_d1
 
