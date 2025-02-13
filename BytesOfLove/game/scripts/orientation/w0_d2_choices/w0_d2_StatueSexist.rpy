@@ -25,7 +25,7 @@ label w0_d2_StatueSexist:
             js "\"There is no way you just said that.\""
             hide js_talk
             show js_angry at right
-            hide cpp angry
+            hide cpp_handhip_normal
             show cpp_angry_talk
             c "\"Please shut up.\""
             hide cpp_angry_talk
