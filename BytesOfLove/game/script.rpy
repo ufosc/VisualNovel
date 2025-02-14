@@ -240,11 +240,15 @@ label start:
     default check = True
     while check:
         $ mc = renpy.input("Your name: ", length=12).strip()
-        if mc.isalpha() and " " not in mc:
+        $ characterList = ["Python", "C++", "Java", "JavaScript", "HTML", "CSS", "Rust", "Perl", "Fish", "Ruby", "Matlab"]
+
+        if mc.isalpha() and " " not in mc and mc not in characterList:
             $ mc = mc.capitalize()
             $ check = False
         elif not mc:
             "Please enter a name"
+        elif mc in characterList:
+            "Please enter a different name."
         else:
             "Please enter a single word name using only alphabetic characters."
 
