@@ -14,7 +14,51 @@ label w0_d3:
 
     # jump w0_d3_MeetingRust
     
+    scene full_lecture_hall with longer_fade
 
+    dc"\"Welcome to day 2 of orientation!\""
+    dc"\"Yesterday we introduced you to the campus, and you got to meet some of your peers.\""
+    dc"\"Today, you will all be picking your classes!\""
+    dc"\"The choices you make today, will set the tone for the rest of your college career…\""
+    dc"\"So choose wisely!\""
+
+    mc"Oh man, this is a lot of pressure…"
+    mc"I really hope I don’t mess anything up."
+    mc"And I hope I’m able to get classes with all of the people I just met!"
+
+    dc"\"Hello again, students!\""
+    dc"\"If you are NOT in the College of Computing,\""
+    dc"\"You are in the WRONG room!\""
+    dc"\"From here, you will all go to your break out rooms from yesterday.\""
+    dc"\"Then, your breakout room leaders will give you further instructions.\""
+
+    scene empty_lecture_hall with shorter_fade
+
+    mc"Well, at least I know where I’m going this time…"
+    mc"And, I’m not late!"
+    mc"This day is already off to a better start, let’s hope I can get the classes I want."
+
+    scene breakout_room with fade
+
+    bsl"\"Okay, as we found out yesterday, most of us here are computer science majors.\""
+    bsl"\"So, before we go to the administration building, I will give you some tips on picking classes.\""
+
+    c"\"Ugh, I wish we could just pick classes already.\""
+    c"\"I don’t want to sit through this lady talking about stuff I already know.\""
+
+    mc"\"You already know what classes you want to take?\""
+    mc"\"I didn’t realize we were supposed to do research and stuff…\""
+
+    p"\"I didn’t do any research either…\""
+    p"\"I kinda figured they would just tell us what to pick.\""
+
+    c"\"Jeez, you guys are hopeless.\""
+
+    bsl"\"Okay, since most of you are freshmen in computer science, here are the classes you want to take.\""
+
+    mc"I wonder if I really need to pay attention…"
+    mc"Surely, I can just copy whatever C++ does?"
+    mc"It seems like she always has it figured out…"
 
     scene office with longer_fade
     show advisor at right with dissolve
