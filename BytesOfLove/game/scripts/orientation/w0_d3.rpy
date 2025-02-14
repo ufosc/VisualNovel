@@ -22,9 +22,9 @@ label w0_d3:
     dc"\"The choices you make today, will set the tone for the rest of your college career…\""
     dc"\"So choose wisely!\""
 
-    mc"{i}Oh man, this is a lot of pressure…{/i}"
-    mc"{i}I really hope I don’t mess anything up.{/i}"
-    mc"{i}And I hope I’m able to get classes with all of the people I just met!{/i}"
+    mc"Oh man, this is a lot of pressure…"
+    mc"I really hope I don’t mess anything up."
+    mc"And I hope I’m able to get classes with all of the people I just met!"
 
     dc"\"Hello again, students!\""
     dc"\"If you are NOT in the College of Computing,\""
@@ -34,9 +34,9 @@ label w0_d3:
 
     scene empty_lecture_hall with shorter_fade
 
-    mc"{i}Well, at least I know where I’m going this time…{/i}"
-    mc"{i}And, I’m not late!{/i}"
-    mc"{i}This day is already off to a better start, let’s hope I can get the classes I want.{/i}"
+    mc"Well, at least I know where I’m going this time…"
+    mc"And, I’m not late!"
+    mc"This day is already off to a better start, let’s hope I can get the classes I want."
 
     scene breakout_room with fade
 
@@ -56,9 +56,9 @@ label w0_d3:
 
     bsl"\"Okay, since most of you are freshmen in computer science, here are the classes you want to take.\""
 
-    mc"{i}I wonder if I really need to pay attention…{/i}"
-    mc"{i}Surely, I can just copy whatever C++ does?{/i}"
-    mc"{i}It seems like she always has it figured out…{/i}"
+    mc"I wonder if I really need to pay attention…"
+    mc"Surely, I can just copy whatever C++ does?"
+    mc"It seems like she always has it figured out…"
 
     scene office with longer_fade
     show advisor at right with dissolve
