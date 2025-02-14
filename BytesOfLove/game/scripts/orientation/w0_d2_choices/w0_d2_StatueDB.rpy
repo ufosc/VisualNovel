@@ -6,6 +6,8 @@ label w0_d2_StatueDB:
     show python_pocket at left
     hide cpp_talk
     show cpp_normal
+    hide js_talk
+    show js_normal at right
     mc "{i}Distracted{/i} \"Wait, guys. Look at that girl over there.\""
     mc "\"She is actually so hot, should I go talk to her?\""
     hide python_pocket_happy

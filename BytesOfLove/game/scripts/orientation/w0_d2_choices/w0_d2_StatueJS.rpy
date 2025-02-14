@@ -2,6 +2,8 @@ label w0_d2_StatueJS:
     $ p_rep = reputation(p_rep, 2)
     $ js_rep = reputation(js_rep, 2)
     $ c_rep = reputation(c_rep, -2)
+    hide js_talk
+    show js_normal at right
     hide python_pocket_happy
     show python_pocket at left
     mc "\"I agree with JavaScript and Python, you need to take a chill pill C++.\""
