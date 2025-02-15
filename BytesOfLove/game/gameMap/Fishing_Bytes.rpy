@@ -43,7 +43,7 @@ screen fish_Game:
         if (len(fish_list) < 21):
             timer 2 action Function(spawn_fish) repeat True
         for fish in fish_list:
-                add fish.get_transform() at fish_caught
+                add fish.get_transform() at fish.transform
                 
 
 screen instructions_Fishing:
