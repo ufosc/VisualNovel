@@ -338,7 +338,11 @@ label w0_d2_AfterLunch:
     js "\"I’m sure we won’t need luck, we all seem pretty smart!\""
     hide js_talk
     show js_smirk
-    bsl "\"Okay here is the first question\""
+    bsl "\"Okay here is the first question.\""
+    #each question displays twice: once when bsl reads it, then again after
+    #character discussion (while player chooses an answer)
+    bsl "\"What will the following Python code print?\""
+    bsl "num1 = 3\nnum2 = '5'\nprint(num1 * num2)
     hide js_smirk
     #display on screen
     #what will the following python code print? ...
@@ -376,6 +380,7 @@ label w0_d2_AfterLunch:
 
     menu w0_d2_q1answer:
         #
+        "num1 = 3\nnum2 = '5'\nprint(num1 * num2)"
         "15":
             #techscore -
             mc "\"I think it’s 15 because 3 times 5 is 15.\""
@@ -519,12 +524,9 @@ label w0_d2_AfterLunch:
     bsl "\"Wow! It looks like every team got that first question right!\""
     bsl "\"This next one will be a little bit harder, get ready.\""
     bsl "\"What does the following Python code print?\""
-
-    #DISPLAY:
-    #x = 4
-    #for i in range(x):
-    #x += 1
-    #print(x, end=‘’)
+    bsl "x = 4\nfor i in range(x):\n x += 1\n print(x, end='')"
+    #indented lines of code in this question have a space instead
+    #since \t doesn't work on VSCode
 
     p "\"Well I think I have some idea about this one.\""
     p "\"The first thing I see is that this might be an infinite loop.\""
@@ -566,6 +568,7 @@ label w0_d2_AfterLunch:
     js "\"You make a decision, [mc].\""
     
     menu w0_d2_mcdecision:
+        "x = 4\nfor i in range(x):\n x += 1\n print(x, end='')"
         "ERROR":
             #techScore -= 1
             mc "\"Okay I think that this will result in an error.\""
