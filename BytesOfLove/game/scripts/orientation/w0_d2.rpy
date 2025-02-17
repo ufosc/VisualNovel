@@ -517,6 +517,9 @@ label w0_d2_AfterLunch:
             c "\"Whatever, I am sorry you got hurt by me stating facts.\""
             c "\"Let’s just see what everyone else said.\""
 
+    show js_normal
+    show cpp_normal at left
+    show python_pocket at right
     bsl "\"Time’s up everyone!\""
     bsl "\"Write your answers down and hold them up.\""
     "....."
@@ -529,57 +532,80 @@ label w0_d2_AfterLunch:
     #for i in range(x):
     #x += 1
     #print(x, end=‘’)
-
+    hide python_pocket
+    show python_pocket_happy at right
     p "\"Well I think I have some idea about this one.\""
     p "\"The first thing I see is that this might be an infinite loop.\""
     p "\"Because we iterate x times, but x keeps increasing.\""
     p "\"But, maybe that loop range only references x one time.\""
     p "\"What do you think C++?\""
     p "\"You seem to know everything...\""
-
+    hide python_pocket_happy
+    show python_pocket at right
+    hide cpp_normal
+    show cpp_handhip_talk at left
     c "\"Uhm, well actually I am not too sure.\""
     c "\"I was thinking it would be infinite as well.\""
     c "\"But I am really not sure.\""
+    hide cpp_handhip_talk
+    show cpp_normal at left
     menu w0_d2_loopresponse:
         #
         "Rub it in C++'s Face":
             #techscore -
+            hide cpp_normal
+            show cpp_handhip_normal at left
             mc "\"HAH! You don’t know everything!\""
             mc "\"I knew it, you are actually just as dumb as the rest of us!\""
             mc "\"Maybe you shouldn’t run your mouth everytime you know the answer\""
             mc "\"When other people don’t know the answer don’t make them feel stupid, it’s not nice.\""
-
+            hide cpp_handhip_normal
+            show cpp_angry_talk at left
             c "\"Shut up! You don’t know it either.\""
             c "\"And who are you to tell me how to live my life??\""
+            hide cpp_angry_talk
+            
         "Be Humble":
             #tech score -
             mc "\"It's all good C++, you can't expect to know every question.\""
             mc "\"But maybe in the future you could not be mean about it when we don’t know the answer.\""
             mc "\"It just really isn’t nice and it hurts people’s feelings.\""
-            
+            hide cpp_normal
+            show cpp_talk at left
             c "\"Whatever.\""
             c "\"You guys didn't know the answer either.\""
+            hide cpp_talk
+    show cpp_normal at left
+    hide python_pocket
+    show python_pocket_happy at right
     p "\"Alright, well, do we have any ideas?\""
     p "\"JavaScript? What are you thinking?\""
-
+    hide python_pocket_happy
+    show python_pocket at right
+    show js_talk
     js "\"Well after the last question it made me realize that the people who design the programming languages are pretty smart.\""
     js "\"That has made me think that something like this might not be infinite.\""
     js "\"It would make sense that when you initialize the for loop it is referencing the x variable.\""
     js "\"But then afterwards, that value won’t change.\""
     js "\"At the same time I am just guessing.\""
     js "\"You make a decision, [mc].\""
-    
+    hide js_talk
+    show js_normal
+
     menu w0_d2_mcdecision:
         "ERROR":
             #techScore -= 1
+            show js_normal
             mc "\"Okay I think that this will result in an error.\""
             mc "\"I don’t think it will know to only reference X once, at the start of the loop.\""
             mc "\"Are we all good with this choice?\""
-
+            hide js_normal
+            show js_talk
             js "\"I disagree, but I’m not confident enough to say that I am right.\""
             js "\"I say let’s trust your intuition, [mc].\""
             js "\"Whatever happens, happens, it’s just a game.\""
-            
+            hide js_talk
+            show js_normal
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
             "....."
@@ -591,19 +617,27 @@ label w0_d2_AfterLunch:
 
             mc "\"Oh man, that’s my bad guys.\""
             mc "\"I see how that is the answer.\""
-
+            hide python_pocket
+            show python_pocket_happy at right
             p "\"It’s okay we didn’t know either.\""
             p "\"If we did we would have said something.\""
+            hide python_pocket_happy
+            show python_pocket at right
         "4567":
             #techScore -= 1
+            show js_smirk
             mc "\"I agree with JavaScript, this won’t be an error.\""
             mc "\"So first it will print out 4, then 5, then 6, then 7.\""
             mc "\"And then after 7 the loop will have iterated four times which was the original value of x.\""
             mc "\"Are we all good with this choice?\""
-
+            hide js_smirk
+            hide cpp_normal
+            show cpp_talk at left
             c "\"I disagree, but I’m not confident enough to say that I am right.\""
             c "\"I say let’s trust your intuition, [mc].\""
             c "\"Whatever happens, happens, it’s just a game.\""            
+            hide cpp_talk
+            show cpp_normal at left
 
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
@@ -616,22 +650,30 @@ label w0_d2_AfterLunch:
 
             mc "\"Oh man, that’s my bad guys.\""
             mc "\"I see how that is the answer.\""
-
+            
+            hide python_pocket
+            show python_pocket_happy at right
             p "\"It’s okay we didn’t know either.\""
             p "\"If we did we would have said something.\""
+            hide python_pocket_happy
+            show python_pocket at right
 
         "5678":
             #techScore += 1
+            show js_smirk
             mc "\"I agree with JavaScript, this won’t be an error.\""
             mc "\"So first it will increment x.\""
             mc "\"Then it will print out 5, then 6, then 7, then 8.\""
             mc "\"And then after 7 the loop will have iterated four times which was the original value of x.\""            
             mc "\"Are we all good with this choice?\""
-
+            hide js_smirk
+            hide cpp_normal
+            show cpp_talk at left
             c "\"I disagree, but I’m not confident enough to say that I am right.\""
             c "\"I say let’s trust your intuition, [mc].\""
             c "\"Whatever happens, happens, it’s just a game.\""            
-
+            hide cpp_talk
+            show cpp_normal at left
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
             "....."
@@ -643,20 +685,44 @@ label w0_d2_AfterLunch:
             bsl "\"And before we print x we increment it, which is why the first number is 5, not 4.\""
             mc "\"Oh nice, we got it right!\""
             mc "\"Good job guys, I am glad we were able to work through that!\""
-
+            hide python_pocket
+            show python_pocket_happy at right
             p "\"Yes! We make such a good team.\""
+            hide python_pocket_happy
+            show python_pocket at right
 
     "Some time later..."
     bsl "\"And the team with the most points is...\""
     "....."
     bsl "\"Team 1!\""
-
+    hide js_normal
+    show js_talk
     js "\"OMG Yes!!!\""
+    hide js_talk
+    show js_smirk
+    hide python_pocket
+    show python_pocket_happy at right
     p "\"That was so much fun!\""
+    hide python_pocket_happy
+    show python_pocket at right
+    hide cpp_normal
+    show cpp_happy at left
     c "{i}Smiles{/i}"
+    hide js_smirk
+    show js_talk
     js "\"I see that smile, C++...\""
     js "\"Admit it, you had fun!\""
+    hide js_talk
+    show js_smirk
+    hide cpp_happy
+    show cpp_talk at left
     c "\"I guess it wasn’t boring...\""
+    hide cpp_talk
+    hide python_pocket
+
+    show cpp_happy at left
+    show python_pocket_happy at right
+
     "{i}Everyone laughs.{/i}"
 
     scene hotel_room_night with longer_fade  
