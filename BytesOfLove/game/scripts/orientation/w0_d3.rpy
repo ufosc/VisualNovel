@@ -11,11 +11,14 @@ label w0_d3:
     mc"Oh wow! Everything looks so good!"
     "{i}While holding your food you notice that there is only one seat available, and it’s next to a boy who looks about your age.{/i}"
     mc"Well, I guess I’m eating with him."
+    jump w0_d3_MeetingRust
 
-    # jump w0_d3_MeetingRust
-    
+label w0_d3_AfterMeetingRust:
+    # Fade to orientation...
+    # ...It seems like she always has it figured out
+    jump w0_d3_CppCopy
 
-
+label w0_d3_Registration:
     scene office with longer_fade
     show advisor at right with dissolve
     a"\"Hey there, sugar!\""
