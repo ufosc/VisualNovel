@@ -11,9 +11,10 @@ label w0_d3:
     mc"Oh wow! Everything looks so good!"
     "{i}While holding your food you notice that there is only one seat available, and it’s next to a boy who looks about your age.{/i}"
     mc"Well, I guess I’m eating with him."
+    jump w0_d3_MeetingRust
 
-    # jump w0_d3_MeetingRust
-    
+
+label w0_d3_AfterMeetingRust:
     scene full_lecture_hall with longer_fade
 
     dc"\"Welcome to day 2 of orientation!\""
@@ -59,7 +60,10 @@ label w0_d3:
     mc"I wonder if I really need to pay attention…"
     mc"Surely, I can just copy whatever C++ does?"
     mc"It seems like she always has it figured out…"
+    jump w0_d3_CppCopy
+    
 
+label w0_d3_Registration:
     scene office with longer_fade
     show advisor at right with dissolve
     a"\"Hey there, sugar!\""
