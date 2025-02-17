@@ -166,7 +166,7 @@ label w0_d3_MeetingRust:
                 "{i}Rust leaves.{/i}"
             
             "\"I made three friends.\"":
-                $ r_rep = reputation(r_rep, -1)
+                $ r_rep = reputation(r_rep, 1)
                 mc "\"When I eventually made it to my breakout room, there was only one place to sit.\""
                 mc "\"Luckily, that table had 3 girls at it who were really nice.\""
                 r "\"Oh, cool!\""
@@ -183,3 +183,5 @@ label w0_d3_MeetingRust:
                 r "\"I’ll see you later!\""
                 mc "\"Bye!\""
                 "{i}Rust leaves.{/i}"
+    
+    jump w0_d3_AfterMeetingRust
