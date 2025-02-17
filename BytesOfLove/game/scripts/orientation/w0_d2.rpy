@@ -572,9 +572,12 @@ label w0_d2_AfterLunch:
             c "\"You guys didn't know the answer either.\""
             hide cpp_talk
     show cpp_normal at left
+    hide python_pocket
+    show python_pocket_happy at right
     p "\"Alright, well, do we have any ideas?\""
     p "\"JavaScript? What are you thinking?\""
-
+    hide python_pocket_happy
+    show python_pocket at right
     show js_talk
     js "\"Well after the last question it made me realize that the people who design the programming languages are pretty smart.\""
     js "\"That has made me think that something like this might not be infinite.\""
@@ -610,10 +613,12 @@ label w0_d2_AfterLunch:
 
             mc "\"Oh man, that’s my bad guys.\""
             mc "\"I see how that is the answer.\""
-            show python_pocket_happy
+            hide python_pocket
+            show python_pocket_happy at right
             p "\"It’s okay we didn’t know either.\""
             p "\"If we did we would have said something.\""
             hide python_pocket_happy
+            show python_pocket at right
         "4567":
             #techScore -= 1
             show js_smirk
@@ -690,7 +695,7 @@ label w0_d2_AfterLunch:
     show js_talk
     js "\"OMG Yes!!!\""
     hide js_talk
-    show js_normal
+    show js_smirk
     hide python_pocket
     show python_pocket_happy at right
     p "\"That was so much fun!\""
@@ -699,21 +704,19 @@ label w0_d2_AfterLunch:
     hide cpp_normal
     show cpp_happy at left
     c "{i}Smiles{/i}"
-    hide js_normal
+    hide js_smirk
     show js_talk
     js "\"I see that smile, C++...\""
     js "\"Admit it, you had fun!\""
     hide js_talk
-    show js_normal
+    show js_smirk
     hide cpp_happy
     show cpp_talk at left
     c "\"I guess it wasn’t boring...\""
     hide cpp_talk
-    hide js_normal
     hide python_pocket
 
     show cpp_happy at left
-    show js_smirk
     show python_pocket_happy at right
 
     "{i}Everyone laughs.{/i}"
