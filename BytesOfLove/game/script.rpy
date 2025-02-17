@@ -23,6 +23,7 @@ define j = Character("Java", color="#964000")
 define js = Character("???", color="#FFD700")
 define u = Character("???", color="#5c5f5d")
 define a = Character("Advisor", color="#f4f880")
+define dc = Character("Director of Computing College", color="#10436b")
 
 #CHANGE PERL COLOR
 define pe = Character("Perl", color="5c5f5d")
@@ -239,17 +240,21 @@ label start:
     default check = True
     while check:
         $ mc = renpy.input("Your name: ", length=12).strip()
-        if mc.isalpha() and " " not in mc:
+        $ characterList = ["Python", "C++", "Java", "JavaScript", "HTML", "CSS", "Rust", "Perl", "Fish", "Ruby", "Matlab"]
+
+        if mc.isalpha() and " " not in mc and mc not in characterList:
             $ mc = mc.capitalize()
             $ check = False
         elif not mc:
             "Please enter a name"
+        elif mc in characterList:
+            "Please enter a different name."
         else:
             "Please enter a single word name using only alphabetic characters."
 
     "Your name is [mc]."
     
-    #jump w1_d1_LunchApology
+    #jump w0_d3
 
     jump w0_d1
 
