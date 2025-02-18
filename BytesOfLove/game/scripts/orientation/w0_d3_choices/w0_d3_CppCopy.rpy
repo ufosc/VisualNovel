@@ -1,9 +1,8 @@
 label w0_d3_CppCopy:
     mc "\"Definitely no reason to stress myself out, C++ will have me covered.\""
     mc "\"You know, I’m actually getting kind of sleepy…\""
-    # insert transition to empty classroom
-
-    p "\"HEY, [mc]!\""
+    scene empty_lecture_hall with longer_fade
+    p "\"HEY, [mc]!\"" with hpunch
     p "\"Are you coming? Everyone is going to the administrative building to pick their classes.\""
     mc "{i}Sleepy and confused.{/i} \"Woah, what happened?\""
     mc "\"I swear I was listening to the breakout leader talk about Calc 1, and that’s the last thing I remember…\""
@@ -30,7 +29,7 @@ label w0_d3_CppCopy:
         p "\"Also, I can catch you up on what you missed while you were asleep.\""
 
         "Give a friendly compliment":
-            # affects python positively
+            $ r_rep = reputation(r_rep, 1)
             mc "\"Also, I really like your hair today, it looks good.\""
             p "\"Thank you!\""
             p "\"I like your outfit today, you have good style.\""
@@ -39,8 +38,8 @@ label w0_d3_CppCopy:
             mc "\"We should probably get going now, so that we don’t completely miss registration.\""
             p "\"Okay, good idea.\""
 
-        "Give a bold compliment":
-            #affects python negatively 
+        "Give a rude compliment":
+            $ r_rep = reputation(r_rep, -1)
             mc "\"Anywho…\""
             mc "\"I bet you get a lot of guys looking at you dressed like that.\""
             mc "\"I doubt there are many women on campus hotter than you.\""
@@ -56,7 +55,7 @@ label w0_d3_CppCopy:
             mc "\"We should probably get going now, so that we don’t completely miss registration.\""
             p "\"Okay, good idea.\""
 
-
+    # jump to next scene
 
 
 

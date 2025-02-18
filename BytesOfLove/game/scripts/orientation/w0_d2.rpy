@@ -246,10 +246,12 @@ label w0_d2:
 
     "{i}The group tours campus as the breakout session leader talks about random trivia{/i}"
     bsl "\"And if you look to your left you will see Half-A-Century Tower...\""
-    show cpp_normal with dissolve
+    show cpp_talk with dissolve
     c "\"Gosh, this is so boring.\""
     c "\"Who doesn’t know all of this stuff already?\""
     c "\"I mean did anybody really come to this school without already taking a tour?\""
+    hide cpp_talk
+    show cpp_normal
     show python_pocket_happy at left with dissolve
     p "\"I didn’t... so this is interesting! I’m really enjoying this tour.\""    
     p "\"Like look at that cool statue over there.\""
@@ -269,6 +271,8 @@ label w0_d2:
     show python_pocket_happy at left
     p "\"Oh, well I didn’t realize that...\""
     hide cpp_normal
+    hide python_pocket_happy
+    show python_pocket at left
     show cpp_talk
     c "\"Yeah, I wouldn’t expect someone like you to know basic history...\""
     hide cpp_talk
