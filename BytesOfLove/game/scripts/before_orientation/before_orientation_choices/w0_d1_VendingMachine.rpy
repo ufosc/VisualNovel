@@ -16,21 +16,21 @@ label w0_d1_VendingMachine:
 
             $ r_rep = reputation(r_rep, -2)
             mc "\"Yeah, I do, my name is [mc].\""
+            hide rust_normal
+            show rust_talk at right
             r "\"Cool cool. What’s your major?\""
+            hide rust_talk
+            show rust_confused at right
             mc "\"Wouldn’t you like to know...\""
-            
-            hide rust_normal 
-            # hide test
-            #scene test2
-
-            show rust_angry at right
 
             r "{i}*hushed*{/i} \"Damn, I was just wondering.\""
 
-            # scene test3
-            show rust_angry at right
-
+            hide rust_confused
+            show rust_talk at right
             r "\"I’m computer engineering, in case you wanted to know my major.\""
+
+            hide rust_talk
+            show rust_angry at right
             mc "\"Oh thanks, I didn't.\""
             r "\"Jeez... you don’t have to be mean about it, man.\""
             mc "\"Whatever.\""
