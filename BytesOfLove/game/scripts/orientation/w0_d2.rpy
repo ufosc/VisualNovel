@@ -344,8 +344,6 @@ label w0_d2_AfterLunch:
     bsl "\"What will the following Python code print?\""
     bsl "num1 = 3\nnum2 = '5'\nprint(num1 * num2)
     hide js_smirk
-    #display on screen
-    #what will the following python code print? ...
 
     c "\"Okay guys this one is really easy.\""
     c "\"We have to get this one right, it's obviously-\""
