@@ -16,42 +16,62 @@ label w0_d1_VendingMachine:
 
             $ r_rep = reputation(r_rep, -2)
             mc "\"Yeah, I do, my name is [mc].\""
+            hide rust_normal
+            show rust_talk at right
             r "\"Cool cool. What’s your major?\""
+            hide rust_talk
+            show rust_confused at right
             mc "\"Wouldn’t you like to know...\""
-            
-            hide rust_normal 
-            # hide test
-            #scene test2
-
-            show rust_angry at right
 
             r "{i}*hushed*{/i} \"Damn, I was just wondering.\""
 
-            # scene test3
-            show rust_angry at right
-
+            hide rust_confused
+            show rust_talk at right
             r "\"I’m computer engineering, in case you wanted to know my major.\""
+
+            hide rust_talk
+            show rust_angry at right
             mc "\"Oh thanks, I didn't.\""
             r "\"Jeez... you don’t have to be mean about it, man.\""
             mc "\"Whatever.\""
             hide rust_angry with dissolve
             "{i}*Rust leaves*{/i}"
+
         "Be nice":
             $ r_rep = reputation(r_rep, 2)
+
+            hide rust_talk
+            show rust_normal at right
             mc "\"Yeah I do, my name is [mc]. What’s your major?\""
+
+            hide rust_normal
+            show rust_talk at right
             r "{i}*Smiles*{/i} \"I’m computer engineering. What about you?\""
+
+            hide rust_talk
+            show rust_normal at right
             mc "\"Oh, I’m in computer science!\""
             mc "\"We both need to take Programming 1, right?\""
             mc "\"Are you going to be doing it this semester?\""
+
+            hide rust_normal
+            show rust_talk at right
             r "\"Yes, that's what I am planning on doing.\""
             r "\"I have some programming experience from highschool, but I’m excited to learn more.\""
             r "\"We can definitely work on projects and study together! It’ll be pretty cool.\""
+
+            hide rust_talk
+            show rust_normal at right
             mc "\"Absolutely! We’ll probably be spending a lot of time together.\""
+
+            hide rust_normal
+            show rust_talk at right
             r "\"Yeah, I’m excited to get to know you better.\""
             r "\"Well anyway, I have to get back to my room so I can get a good night's sleep.\""
             r "\"You should probably do the same.\""
             r "\"It was nice to meet you, see you in class!\""
-            hide rust_normal with dissolve
+
+            hide rust_talk with dissolve
             "{i}*Rust leaves*{/i}"
 
     "{i}*You stand at the vending machine, thinking about what you want*{/i}"
