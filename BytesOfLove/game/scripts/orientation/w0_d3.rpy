@@ -167,33 +167,50 @@ label w0_d3_Registration:
     mc"\"Wow, what a good day!\""
     mc"\"I made it to orientation on time and picked some good classes.\""
     mc"\"I am so excited to start college!\""
+    show python_pocket   # moved this up to show python instead of later to fit next lines
     mc"\"Oh, look. There’s Python\""
 
     menu w0d3_talktopython:
         "Talk to Python":
             mc"\"Hey, Python!\""
 
-            show python_pocket at center with dissolve
-
-
+            
+            
+            show python_pocket_happy with ease
             p"\"Oh, hey [mc]!\""
             p"\"How are you doing, did you get the classes you wanted?\""
+            hide python_pocket_happy
+            show python_pocket
             mc"\"Yeah, I did!\""
             mc"\"I obviously am taking Introduction to Programming 1,\""
             mc"\"And then I’m also taking Calculus 1.\""
-
             hide python_pocket
-            show python_pocket_happy at center
+            #hide python_pocket
+            #show python_pocket_happy at center
 
+            show python_pocket_happy
             p"\"Oh, cool.\""
             p"\"I am taking those too.\""
+            hide python_pocket_happy
+            show python_pocket
             mc"\"What time is your Calculus 1 class?\""
             mc"\"Maybe we’ll have it together...\""
+            hide python_pocket
+            show python_pocket_happy
+            # show python_pocket  ///should i have her make a neutral face here
             p"\"Hmm, let me check...\""
+            hide python_pocket_happy
+            show python_pocket
+            hide python_pocket
+            show python_pocket_happy
             p"\"Okay, it looks like mine is at 10:40 in Carlington Amphitheater.\""
             p"\"What about you?\""
+            hide python_pocket_happy
+            show python_pocket
             mc"\"No way, mine is too!\""
             mc"\"That’s good, at least I’ll know somebody.\""
+            hide python_pocket
+            show python_pocket_happy
             p "{i}Smiles warmly{i}"
             p"\"Yeah I’m excited.\""
             p"\"Anyway I gotta run, I’ll see you in Fall!\""
