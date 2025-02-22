@@ -210,6 +210,7 @@ label w0_d3_Registration:
             mc"\"No way, mine is too!\""
             mc"\"That’s good, at least I’ll know somebody.\""
             hide python_pocket
+            show python_pocket_happy
             p "{i}Smiles warmly{i}"
             p"\"Yeah I’m excited.\""
             p"\"Anyway I gotta run, I’ll see you in Fall!\""
