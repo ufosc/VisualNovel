@@ -65,7 +65,7 @@ label w0_d3_AfterMeetingRust:
     c"\"Jeez, you guys are hopeless.\""
 
     hide cpp_talk
-    show cpp_normal
+    show cpp_normal at left
     bsl"\"Okay, since most of you are freshmen in computer science, here are the classes you want to take.\""
 
     mc"I wonder if I really need to pay attention…"

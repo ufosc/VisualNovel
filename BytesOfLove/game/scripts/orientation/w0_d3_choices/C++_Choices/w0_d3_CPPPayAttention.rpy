@@ -1,5 +1,4 @@
 label w0_d3_CPPPayAttention:
-    scene
     mc "But on the other hand, I should take classes I’m interested in, not what she’s interested in."
     mc "I guess I’ll pay attention to the recommendations."
     bsl "\"So, since it will be all of your first semester, the classes you take are very important.\""
@@ -14,18 +13,43 @@ label w0_d3_CPPPayAttention:
     bsl "\"There aren’t any classes that computer science students NEED to take.\""
     mc "Nice, so I basically don’t have to pay attention anymore..."
     mc "I mean maybe I should, but-"
+
+    hide cpp_normal
+    hide python_pocket
+    show js_talk
     js "{i}*Whispers*{/i} \"Hey, [mc]!\""
+
+    hide js_talk
+    show js_normal
     mc "{i}*Whispers*{/i} \"Hey, JavaScript.\""
     mc "\"What’s up?\""
+
+    hide js_normal
+    show js_talk
     js "\"This is, like, SO boring.\""
+
+    hide js_talk
+    show js_smirk
     mc "\"Yeah, I get what you mean.\""
     mc "\"But I’m also sort of stressed about getting the right classes, ya know?\""
+
+    hide js_smirk
+    show js_talk
     js "\"OMG, totally.\""
     js "\"It’s like, SO stressful!\""
     js "\"This is our future, it’s kinda scary...\""
+
+    hide js_talk
+    show js_smirk
     mc "\"Yeah, but it sounds like we just need to take Introduction to Programming 1 and Calc 1.\""
     mc "\"And other than that, we can pick whatever.\""
+
+    hide js_smirk
+    show js_talk
     js "\"I wonder what other classes they will have to offer.\""
+
+    hide js_talk
+    show js_smirk
     mc "\"I hope I can take a super niche-interesting class.\""
 
     menu w0_d3_JSClasses:
