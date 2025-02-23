@@ -19,7 +19,7 @@ label w0_d3_JSWomenSuffrage:
 
     hide js_normal
     show js_normal at left
-    show cpp_angry_talk at right
+    show cpp_angry_talk at right with dissolve
     c "\"Oh. My. God.\""
     c "\"...Do you NOT know what suffrage means?\""
 
@@ -41,6 +41,8 @@ label w0_d3_JSWomenSuffrage:
 
             hide cpp_angry_talk
             show cpp_angry at right
+            hide js_normal
+            show js_angry at left
             mc "\"That’s exactly what I want!\""
             mc "\"I’m glad we’re on the same page now.\""
             mc "\"And you know what else? I think that-\""
@@ -51,15 +53,22 @@ label w0_d3_JSWomenSuffrage:
             hide cpp_angry_talk
             show cpp_angry at right
             mc "\"Ohhhh, I didn’t realize that.\""
-            mc "\"I was wondering why people looked at me weird when I said that before...\""
 
             hide js_normal
+            show js_smirk at left
+            hide cpp_angry
+            show cpp_normal at right
+            mc "\"I was wondering why people looked at me weird when I said that before...\""
+
+            hide js_smirk
             show js_blush at left
             js "\"LMAO\""
 
-            hide cpp_angry
+            hide cpp_normal
             show cpp_happy at right
             c "\"You’re so stupid...\""
+            hide js_blush
+            show js_smirk at left
 
     bsl "\"Hey, can you guys be quiet back there?\""
     bsl "\"You have been talking the whole time.\""

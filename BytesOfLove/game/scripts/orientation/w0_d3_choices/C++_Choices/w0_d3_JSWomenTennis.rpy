@@ -38,7 +38,7 @@ label w0_d3_JSWomenTennis:
 
             hide js_talk
             show js_normal at left
-            show cpp_angry_talk at right
+            show cpp_angry_talk at right with dissolve
             c "\"Hey, can you guys be quiet?\""
             c "\"I am trying to hear what the breakout leader is saying,\""
             c "\"And you guys have been talking the entire time.\""
@@ -73,7 +73,7 @@ label w0_d3_JSWomenTennis:
 
             hide js_talk
             show js_normal at left
-            show cpp_angry_talk at right
+            show cpp_angry_talk at right with dissolve
             c "\"Hey, can you guys be quiet?\""
             c "\"I am trying to hear what the breakout leader is saying,\""
             c "\"And you guys have been talking literally the whole time.\""
@@ -97,7 +97,7 @@ label w0_d3_JSWomenTennis:
 
             hide js_talk
             show js_normal at left
-            show cpp_angry_talk at right
+            show cpp_angry_talk at right with dissolve
             c "\"Hey, first of all you guys are being so loud, so you need to be quiet.\""
             c "\"Second, Ada Lovelace isn’t even a tennis player...\""
             c "\"She was one of the first female programmers.\""

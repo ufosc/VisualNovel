@@ -1,6 +1,4 @@
 label w0_d3_CPPPayAttention:
-    scene breakout_room
-
     mc "But on the other hand, I should take classes I’m interested in, not what she’s interested in."
     mc "I guess I’ll pay attention to the recommendations."
     bsl "\"So, since it will be all of your first semester, the classes you take are very important.\""
