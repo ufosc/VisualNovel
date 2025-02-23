@@ -1,4 +1,6 @@
 label w0_d3_CPPPayAttention:
+    scene breakout_room
+
     mc "But on the other hand, I should take classes I’m interested in, not what she’s interested in."
     mc "I guess I’ll pay attention to the recommendations."
     bsl "\"So, since it will be all of your first semester, the classes you take are very important.\""
@@ -51,6 +53,8 @@ label w0_d3_CPPPayAttention:
     hide js_talk
     show js_smirk
     mc "\"I hope I can take a super niche-interesting class.\""
+    hide js_smirk
+    show js_talk
 
     menu w0_d3_JSClasses:
         js "\"Oh yeah? Like what?\""
@@ -63,4 +67,3 @@ label w0_d3_CPPPayAttention:
 
         "Maybe a class on geology":
             jump w0_d3_JSGeology
-
