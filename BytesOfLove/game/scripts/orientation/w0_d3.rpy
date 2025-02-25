@@ -27,7 +27,7 @@ label w0_d3_AfterMeetingRust:
     mc"I really hope I don’t mess anything up."
     mc"And I hope I’m able to get classes with all of the people I just met!"
 
-    dc"\"Hello again, students!\""
+    dc"\"Also-\""
     dc"\"If you are NOT in the College of Computing,\""
     dc"\"You are in the WRONG room!\""
     dc"\"From here, you will all go to your break out rooms from yesterday.\""
@@ -44,23 +44,40 @@ label w0_d3_AfterMeetingRust:
     bsl"\"Okay, as we found out yesterday, most of us here are computer science majors.\""
     bsl"\"So, before we go to the administration building, I will give you some tips on picking classes.\""
 
+    show cpp_talk
     c"\"Ugh, I wish we could just pick classes already.\""
     c"\"I don’t want to sit through this lady talking about stuff I already know.\""
 
+    hide cpp_talk
+    show cpp_normal
     mc"\"You already know what classes you want to take?\""
     mc"\"I didn’t realize we were supposed to do research and stuff…\""
 
+    hide cpp_normal
+    show cpp_normal at left
+    show python_pocket_happy at right
     p"\"I didn’t do any research either…\""
     p"\"I kinda figured they would just tell us what to pick.\""
 
+    hide python_pocket_happy
+    show python_pocket at right
+    show cpp_talk at left
     c"\"Jeez, you guys are hopeless.\""
 
+    hide cpp_talk
+    show cpp_normal
     bsl"\"Okay, since most of you are freshmen in computer science, here are the classes you want to take.\""
 
     mc"I wonder if I really need to pay attention…"
     mc"Surely, I can just copy whatever C++ does?"
     mc"It seems like she always has it figured out…"
-    jump w0_d3_CppCopy
+
+    menu chooseAction:
+        "Copy C++ and Don't Pay Attention":
+            jump w0_d3_CppCopy
+
+        "Be Better Than C++ and Pay Attention":
+            jump w0_d3_CPPPayAttention
     
 
 label w0_d3_Registration:
@@ -167,14 +184,15 @@ label w0_d3_Registration:
     mc"\"Wow, what a good day!\""
     mc"\"I made it to orientation on time and picked some good classes.\""
     mc"\"I am so excited to start college!\""
+
+    show python_normal
     mc"\"Oh, look. There’s Python\""
 
     menu w0d3_talktopython:
         "Talk to Python":
             mc"\"Hey, Python!\""
 
-            show python_pocket at center with dissolve
-
+            show python_pocket
 
             p"\"Oh, hey [mc]!\""
             p"\"How are you doing, did you get the classes you wanted?\""
@@ -199,7 +217,7 @@ label w0_d3_Registration:
             p"\"Anyway I gotta run, I’ll see you in Fall!\""
             mc"\"Sure thing, bye!\""
 
-            hide python_pocket_happy with fade
+            hide python_pocket_happy with dissolve
 
         "Go Home":
             mc"\"I can always see her another time, I don’t need to talk to her today.\""
@@ -207,4 +225,3 @@ label w0_d3_Registration:
 
 
     scene black with longer_fade
-
