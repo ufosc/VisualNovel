@@ -53,11 +53,11 @@ label w0_d2_LunchFlirt:
             $ c_rep = reputation(c_rep, -6)
             mc "\"Maybe I could get to know all of you really well back at my hotel tonight...\""
             hide cpp_normal
-            show cpp_angry_talk at right
+            show cpp_talk at right
             c "\"What the actual fuck is wrong with you.\""
             c "\"That is so disgusting.\""
-            hide cpp_angry_talk
-            show cpp_angry at right
+            hide cpp_talk
+            show cpp_normal at right
             hide python_pocket
             show python_angry_talk at left
             p "\"I can’t believe you, you are despicable.\""
@@ -67,7 +67,7 @@ label w0_d2_LunchFlirt:
             show js_talk
             js "\"I think I might actually throw up...\""
             hide js_talk
-            show js_angry
+            show js_normal
 
     mc "\"Hmm, I thought that would go differently.\""
     mc "\"Can’t blame me, shooters gotta shoot...\""

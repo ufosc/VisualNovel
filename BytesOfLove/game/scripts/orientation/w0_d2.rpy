@@ -347,23 +347,39 @@ label w0_d2_AfterLunch:
     #display on screen
     #what will the following python code print? ...
 
+    show cpp_talk at left
     c "\"Okay guys this one is really easy.\""
     c "\"We have to get this one right, it's obviously-\""
+    hide cpp_talk at left
+    show cpp_normal at left
+    hide js_smirk
+    show js_talk
     js "\"Hey, don't be rude C++.\""
     js "\"Not all of us have programming experience and so it might not be as obvious.\""
+    hide js_talk
+    show js_normal
+    show cpp_angry_talk at left
     c "\"Whatever, take your time figuring it out.\""
     c "\"I am writing down our answer now because I want to win.\""
+    hide cpp_angry_talk at left
+    show cpp_angry at left
+    show python_pocket_happy at right
     p "\"What are you guys thinking?\""
     p "\"I can tell that num1 is an integer, but num2 is a string by the single quotations surrounding it.\""
     p "\"That definitely means something.\""
+    hide python_pocket_happy
+    show python_pocket at right
 
     menu w0_d2_q1:
         "Disagree with Python":
             #tech score goes down
+            hide cpp_angry at left
+            show cpp_normal at left
             mc "\"No, I don't think so.\""
             mc "\"They are both numbers and the asterisk has to mean multiply.\""
             mc "\"Surely the answer is just 15.\""
 
+            show js_talk
             js "\"Yeah, I don't know if your guess is as good as mine.\""
             js "\"I trust you to get it right, but what Python said makes sense.\""
             js "\"What do you think we should go with, [mc]?\""
@@ -371,10 +387,13 @@ label w0_d2_AfterLunch:
 
         "Agree with Python":
             #tech score +
+            hide cpp_angry at left
+            show cpp_normal at left
             mc "\"Yeah I definitely agree.\""
             mc "\"I am not sure what it will change, though.\""
             mc "\"What do you think JavaScript?\""
 
+            show js_talk
             js "\"Yeah, I am not sure either.\""
             js "\"I think we should leave this one up to you, [mc].\""
 
