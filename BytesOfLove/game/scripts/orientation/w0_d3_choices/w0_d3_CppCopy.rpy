@@ -29,7 +29,7 @@ label w0_d3_CppCopy:
         p "\"Also, I can catch you up on what you missed while you were asleep.\""
 
         "Give a friendly compliment":
-            $ r_rep = reputation(r_rep, 1)
+            $ r_rep = reputation(r_rep, int(affection_change * 0.5))
             mc "\"Also, I really like your hair today, it looks good.\""
             p "\"Thank you!\""
             p "\"I like your outfit today, you have good style.\""
@@ -39,7 +39,7 @@ label w0_d3_CppCopy:
             p "\"Okay, good idea.\""
 
         "Give a rude compliment":
-            $ r_rep = reputation(r_rep, -1)
+            $ r_rep = reputation(r_rep, int(-affection_change * 0.5))
             mc "\"Anywho…\""
             mc "\"I bet you get a lot of guys looking at you dressed like that.\""
             mc "\"I doubt there are many women on campus hotter than you.\""

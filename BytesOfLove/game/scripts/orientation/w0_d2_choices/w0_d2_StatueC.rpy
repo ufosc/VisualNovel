@@ -1,7 +1,7 @@
 label w0_d2_StatueC:
-    $ c_rep = reputation(c_rep, 2)
-    $ p_rep = reputation(p_rep, -2)
-    $ js_rep = reputation(js_rep, -2)
+    $ c_rep = reputation(c_rep, affection_change)
+    $ p_rep = reputation(p_rep, -affection_change)
+    $ js_rep = reputation(js_rep, -affection_change)
     hide python_pocket_happy
     show python_angry at left
     hide cpp_talk
@@ -36,7 +36,7 @@ label w0_d2_StatueC:
         c "\"Hm, so you don’t think I’m cute?\""
 
         "Admit C++ is cute":
-            $ c_rep = reputation(c_rep, 2)
+            $ c_rep = reputation(c_rep, affection_change)
             hide cpp_talk
             show cpp_normal
             mc "{i}Flustered{/i}"
@@ -73,7 +73,7 @@ label w0_d2_StatueC:
             show cpp_angry
 
         "Call out C++":
-            $ c_rep = reputation(c_rep, -2)
+            $ c_rep = reputation(c_rep, -affection_change)
             hide cpp_talk
             show cpp_normal
             mc "\"Don’t go fishing for a compliment just because I agreed with you...\""

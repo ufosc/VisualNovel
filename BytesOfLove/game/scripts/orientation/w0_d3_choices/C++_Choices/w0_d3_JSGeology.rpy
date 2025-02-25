@@ -31,13 +31,13 @@ label w0_d3_JSGeology:
                 js "\"He rocks?\""
 
                 "Laugh at the joke":
-                    $ js_rep = reputation(js_rep,2)
+                    $ js_rep = reputation(js_rep,affection_change)
                     mc "{i}*Laughs*{/i} \"Why have I never thought of that?\""
                     mc "\"You’re really funny, you know that?\""
                     js "{i}*Smiles*{/i} \"Thank you, [mc], you’re a good guy.\""
 
                 "Don't laugh at the joke":
-                    $ js_rep = reputation(js_rep,-2)
+                    $ js_rep = reputation(js_rep,-affection_change)
                     mc "\"That was horrible.\""
                     mc "\"You’re trying too hard to be funny, JavaScript.\""
                     js "\"You just don’t know how to be nice, do you?\""
@@ -62,7 +62,7 @@ label w0_d3_JSGeology:
                 js "\"Ah, I would but I am pretty committed to watching One Piece right now.\""
 
                 "One Piece? I prefer two piece swimsuits":
-                    $ js_rep = reputation(js_rep,-2)
+                    $ js_rep = reputation(js_rep,-affection_change)
                     mc "\"One piece? I prefer watching girls in two piece swimsuits...\""
                     js "\"One Piece is an anime, idiot!\""
                     js "\"All you think about is girls!\""

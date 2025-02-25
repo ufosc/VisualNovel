@@ -14,7 +14,7 @@ label w0_d1_VendingMachine:
     menu w0_d1_Rust:
         "Be mean":
 
-            $ r_rep = reputation(r_rep, -2)
+            $ r_rep = reputation(r_rep, -affection_change)
             mc "\"Yeah, I do, my name is [mc].\""
             r "\"Cool cool. What’s your major?\""
             mc "\"Wouldn’t you like to know...\""
@@ -37,7 +37,7 @@ label w0_d1_VendingMachine:
             hide rust_angry with dissolve
             "{i}*Rust leaves*{/i}"
         "Be nice":
-            $ r_rep = reputation(r_rep, 2)
+            $ r_rep = reputation(r_rep, affection_change)
             mc "\"Yeah I do, my name is [mc]. What’s your major?\""
             r "{i}*Smiles*{/i} \"I’m computer engineering. What about you?\""
             mc "\"Oh, I’m in computer science!\""

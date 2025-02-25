@@ -9,7 +9,7 @@ label w0_d3_JSWomenTennis:
         js "\"Who's your favorite player??\""
 
         "Steffi Graf":
-            $ js_rep = reputation(js_rep,2)
+            $ js_rep = reputation(js_rep,affection_change)
             mc "\"Steffi Graf, for sure!\""
             mc "\"She is one of the greatest of all time.\""
             js "\"Oh yea, I do like her.\""
@@ -24,7 +24,7 @@ label w0_d3_JSWomenTennis:
             mc "\"Sorry!\""
 
         "Billie Jean King":
-            $ js_rep = reputation(js_rep,2)
+            $ js_rep = reputation(js_rep,affection_change)
             mc "\"Billie Jean King, for sure!\""
             mc "\"She is one of the greatest of all time.\""
             mc "\"And I loved seeing Emma Stone play her in ‘Battle of the Sexes’.\""
@@ -40,7 +40,7 @@ label w0_d3_JSWomenTennis:
             mc "\"Sorry!\""
 
         "Ada Lovelace":
-            $ js_rep = reputation(js_rep,-2)
+            $ js_rep = reputation(js_rep,-affection_change)
             mc "\"Ada Lovelace, for sure!\""
             mc "\"She is one of the greatest of all time.\""
             js "\"Hm, I’m not sure I know her...\""
@@ -67,7 +67,7 @@ label w0_d3_JSWomenTennis:
                 mc "\"Hm, I definitely can see why you would think that...\""
 
                 "Allow me to explain what actually happened":
-                    $ js_rep = reputation(js_rep,-2)
+                    $ js_rep = reputation(js_rep,-affection_change)
                     mc "\"But, allow me to explain what actually happened.\""
                     mc "\"...\""
                     mc "\"Okay, I thought you would interrupt me, so I actually didn’t think of anything...\""
@@ -76,7 +76,7 @@ label w0_d3_JSWomenTennis:
                     c "\"Typical.\""
 
                 "I'm sorry for lying":
-                    $ js_rep = reputation(js_rep,2)
+                    $ js_rep = reputation(js_rep,affection_change)
                     mc "\"I’m sorry for lying about liking tennis and knowing Ada Lovelace.\""
                     mc "\"That wasn’t cool of me.\""
                     mc "\"I just wanted to be able to relate to you since I remembered you liked tennis.\""
