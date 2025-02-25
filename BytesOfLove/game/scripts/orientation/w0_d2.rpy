@@ -145,9 +145,9 @@ label w0_d2:
         "Make up excuse(s)":
             hide cpp_talk
             show cpp_normal
-            $ p_rep = reputation(r_rep, -1)
-            $ js_rep = reputation(r_rep, -1)
-            $ c_rep = reputation(r_rep, -1)
+            $ p_rep = reputation(r_rep, int(-affection_change * 0.5))
+            $ js_rep = reputation(r_rep, int(-affection_change * 0.5))
+            $ c_rep = reputation(r_rep, int(-affection_change * 0.5))
             mc "\"So, I was about to get in my car this morning, when suddenly I heard a faint meow.\""
             mc "\"Looking up, I was able to see a cat 20 feet up the tree.\""
             mc "\"I had to help this cat get down, so I climbed the tree.\""
@@ -206,7 +206,7 @@ label w0_d2:
     # Another short interaction not worth seperating files. Temporarily named everything "Respond to X" since I didnt know what to put - Lazzy
     menu w0_d2_BreakoutResponse1:
         "Respond to Javascript":
-            $ js_rep = reputation(js_rep, 2)
+            $ js_rep = reputation(js_rep, affection_change)
             mc "\"Yeah, it is pretty annoying that your mom won’t leave you alone.\""
             mc "\"Parents can be so annoying.\""
             mc "\"I wish my mom had cared enough to come with me to orientation though.\""
@@ -217,7 +217,7 @@ label w0_d2:
             show js_normal at left
 
         "Respond to Python":
-            $ p_rep = reputation(p_rep, 2)
+            $ p_rep = reputation(p_rep, affection_change)
             mc "\"Yeah I agree with Python, computer science definitely seems cool.\""
             mc "\"I’m just like you, I don’t have much experience, but I’m excited to learn.\""
             mc "\"And A.I. is a great field to make money in.\""
@@ -228,7 +228,7 @@ label w0_d2:
             show python_pocket at right
 
         "Respond to C++":
-            $ c_rep = reputation(c_rep, 3)
+            $ c_rep = reputation(c_rep, int(affection_change * 1.5))
             mc "\"I think it’s really cool that your parents work for those companies, C++.\""
             mc "\"I’ve never heard of iClicker or Mentimeter.\""
             mc "\"I don’t know much when it comes to coding, but you sound really experienced.\""

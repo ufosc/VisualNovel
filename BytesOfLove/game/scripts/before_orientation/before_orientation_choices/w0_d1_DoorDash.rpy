@@ -18,7 +18,7 @@ label w0_d1_DoorDash:
         mc "\"Whatever, at least you finally got here.\""
 
         "Tip the driver":
-            $ pe_rep = reputation(pe_rep, 2)
+            $ pe_rep = reputation(pe_rep, affection_change)
             $ byte = bytecoin(byte, -35)
             u "\"Your total is 30 Bytecoin.\""
             mc "{i}*Hands over 35 Bytecoin*{/i}"
@@ -28,7 +28,7 @@ label w0_d1_DoorDash:
             mc "{i}*Closes the door*{/i}"
             
         "Don't tip the driver":
-            $ pe_rep = reputation(pe_rep, -2)
+            $ pe_rep = reputation(pe_rep, -affection_change)
             $ byte = bytecoin(byte, -30)
             u "\"Your total is 30 Bytecoin.\""
             mc "{i}*Hands over 30 Bytecoin with no tip*{/i}"  

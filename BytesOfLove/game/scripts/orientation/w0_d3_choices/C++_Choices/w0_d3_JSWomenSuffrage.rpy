@@ -1,5 +1,5 @@
 label w0_d3_JSWomenSuffrage:
-    $ js_rep = reputation(js_rep,-2)
+    $ js_rep = reputation(js_rep,-affection_change)
 
     hide js_talk
     show js_normal
@@ -36,8 +36,8 @@ label w0_d3_JSWomenSuffrage:
         c "\"You are really saying that you don’t want women to vote.\""
 
         "Double Down":
-            $ js_rep = reputation(js_rep,-2)
-            $ c_rep = reputation(c_rep,-2)
+            $ js_rep = reputation(js_rep,-affection_change)
+            $ c_rep = reputation(c_rep,-affection_change)
 
             hide cpp_angry_talk
             show cpp_angry at right
@@ -48,7 +48,7 @@ label w0_d3_JSWomenSuffrage:
             mc "\"And you know what else? I think that-\""
 
         "Admit your mistake":
-            $ js_rep = reputation(js_rep,2)
+            $ js_rep = reputation(js_rep,affection_change)
 
             hide cpp_angry_talk
             show cpp_angry at right

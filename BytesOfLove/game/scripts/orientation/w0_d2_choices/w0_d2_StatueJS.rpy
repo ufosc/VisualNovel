@@ -1,7 +1,7 @@
 label w0_d2_StatueJS:
-    $ p_rep = reputation(p_rep, 2)
-    $ js_rep = reputation(js_rep, 2)
-    $ c_rep = reputation(c_rep, -2)
+    $ p_rep = reputation(p_rep, affection_change)
+    $ js_rep = reputation(js_rep, affection_change)
+    $ c_rep = reputation(c_rep, -affection_change)
     hide js_talk
     show js_normal at right
     hide python_pocket_happy
@@ -47,7 +47,7 @@ label w0_d2_StatueJS:
         js "\"Hm, so do you think I’m cute?\""
 
         "Admit JavaScript is cute":
-            $ js_rep = reputation(js_rep, 2)
+            $ js_rep = reputation(js_rep, affection_change)
             mc "{i}Flustered{/i}"
             mc "\"Well... that’s not exactly what I was saying...\""
             mc "\"But, I do think you’re kind of cute.\""
@@ -75,7 +75,7 @@ label w0_d2_StatueJS:
             mc "\"Woah, I’m not superficial, I just think--\""
 
         "Call out JavaScript":
-            $ js_rep = reputation(js_rep, -2)
+            $ js_rep = reputation(js_rep, -affection_change)
             mc "\"Alright, don’t go fishing for a compliment just because I agreed with you...\""
             mc "\"I agree that Python shouldn’t go around calling statues cool without knowing what they represent.\""
             mc "\"That's it.\""

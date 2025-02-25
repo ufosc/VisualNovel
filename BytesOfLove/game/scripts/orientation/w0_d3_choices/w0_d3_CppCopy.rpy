@@ -65,7 +65,7 @@ label w0_d3_CppCopy:
         p "\"Also, I can catch you up on what you missed while you were asleep.\""
 
         "Give a friendly compliment":
-            $ r_rep = reputation(r_rep, 1)
+            $ r_rep = reputation(r_rep, int(affection_change * 0.5))
             hide python_pocket_happy
             show python_pocket
             mc "\"Also, I really like your hair today, it looks good.\""
@@ -88,7 +88,7 @@ label w0_d3_CppCopy:
             hide python_pocket_happy with dissolve
 
         "Give an offensive compliment":
-            $ r_rep = reputation(r_rep, -1)
+            $ r_rep = reputation(r_rep, int(-affection_change * 0.5))
             hide python_pocket_happy
             show python_pocket
             mc "\"Anywho…\""

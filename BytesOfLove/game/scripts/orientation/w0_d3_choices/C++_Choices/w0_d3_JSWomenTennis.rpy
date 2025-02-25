@@ -14,7 +14,7 @@ label w0_d3_JSWomenTennis:
         js "\"Who's your favorite player??\""
 
         "Steffi Graf":
-            $ js_rep = reputation(js_rep,2)
+            $ js_rep = reputation(js_rep,affection_change)
 
             hide js_talk
             show js_smirk
@@ -48,7 +48,7 @@ label w0_d3_JSWomenTennis:
             mc "\"Sorry!\""
 
         "Billie Jean King":
-            $ js_rep = reputation(js_rep,2)
+            $ js_rep = reputation(js_rep,affection_change)
             
             hide js_talk
             show js_smirk
@@ -83,7 +83,7 @@ label w0_d3_JSWomenTennis:
             mc "\"Sorry!\""
 
         "Ada Lovelace":
-            $ js_rep = reputation(js_rep,-2)
+            $ js_rep = reputation(js_rep,-affection_change)
             
             hide js_talk
             show js_normal
@@ -140,7 +140,7 @@ label w0_d3_JSWomenTennis:
                 mc "\"Hm, I definitely can see why you would think that...\""
 
                 "Allow me to explain what actually happened":
-                    $ js_rep = reputation(js_rep,-2)
+                    $ js_rep = reputation(js_rep,-affection_change)
 
                     mc "\"But, allow me to explain what actually happened...\""
                     mc "\"...\""
@@ -160,7 +160,7 @@ label w0_d3_JSWomenTennis:
                     show cpp_angry at right
 
                 "I'm sorry for lying":
-                    $ js_rep = reputation(js_rep,2)
+                    $ js_rep = reputation(js_rep,affection_change)
                     mc "\"I’m sorry for lying about liking tennis and knowing Ada Lovelace.\""
                     mc "\"That wasn’t cool of me.\""
                     mc "\"I just wanted to be able to relate to you since I remembered you liked tennis.\""

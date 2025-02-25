@@ -12,9 +12,9 @@ label w0_d2_StatueSexist:
         "Say something sexist":
             hide python_angry_talk
             show python_angry at left
-            $ p_rep = reputation(p_rep, -4)
-            $ js_rep = reputation(js_rep, -4)
-            $ c_rep = reputation(c_rep, -4)
+            $ p_rep = reputation(p_rep, -affection_change * 2)
+            $ js_rep = reputation(js_rep, -affection_change * 2)
+            $ c_rep = reputation(c_rep, -affection_change * 2)
             mc "\"Look sweetheart, I don’t need your help here.\""
             hide python_angry
             show python_angry_talk at left

@@ -10,7 +10,7 @@ label w0_d3_MeetingRust:
             r "\"You look about my age, do you go to UB?\""
 
             "Be mean":
-                $ r_rep = reputation(r_rep, -2)
+                $ r_rep = reputation(r_rep, -affection_change)
 
                 hide rust_talk
                 show rust_normal at right
@@ -38,7 +38,7 @@ label w0_d3_MeetingRust:
                 "{i}Rust leaves{/i}"
 
             "Be nice":
-                $ r_rep = reputation(r_rep, 2)
+                $ r_rep = reputation(r_rep, affection_change)
 
                 hide rust_talk
                 show rust_normal at right
@@ -83,7 +83,7 @@ label w0_d3_MeetingRust:
         menu w0_d3_RustName:
             "Robust":
                 window show
-                $ r_rep = reputation(r_rep, -2)
+                $ r_rep = reputation(r_rep, -affection_change)
                 hide rust_normal
                 show rust_angry at right
                 mc "Your name is Robust, right?"
@@ -94,7 +94,7 @@ label w0_d3_MeetingRust:
 
             "Robin":
                 window show
-                $ r_rep = reputation(r_rep, -2)
+                $ r_rep = reputation(r_rep, -affection_change)
                 hide rust_normal
                 show rust_angry at right
                 mc "Your name is Robin, right?"
@@ -114,7 +114,7 @@ label w0_d3_MeetingRust:
 
             "Resch":
                 window show
-                $ r_rep = reputation(r_rep, -2)
+                $ r_rep = reputation(r_rep, -affection_change)
                 hide rust_normal
                 show rust_angry at right
                 mc "Your name is Resch, right?"
@@ -127,7 +127,7 @@ label w0_d3_MeetingRust:
             r "\"Now what do you want?\""
 
             "Be mean":
-                $ r_rep = reputation(r_rep, -2)
+                $ r_rep = reputation(r_rep, -affection_change)
                 hide rust_confused
                 show rust_angry at right
 
@@ -150,7 +150,7 @@ label w0_d3_MeetingRust:
                 "{i}Rust leaves{/i}"
 
             "Be nice":
-                $ r_rep = reputation(r_rep, 1)
+                $ r_rep = reputation(r_rep, int(affection_change * 0.5))
                 mc "\"Listen, Rust...\""
                 mc "\"I’m sorry about our encounter the other day.\""
 
@@ -243,7 +243,7 @@ label w0_d3_MeetingRust:
             mc "\"In fact-\""
 
             "\"I met some baddies!\"":
-                $ r_rep = reputation(r_rep, -1)
+                $ r_rep = reputation(r_rep, int(-affection_change * 0.5))
 
                 mc "\"When I eventually made it to my breakout room, there was only one place to sit.\""
                 mc "\"Luckily, the open table had 3 girls at it\""
@@ -271,7 +271,7 @@ label w0_d3_MeetingRust:
                 "{i}Rust leaves.{/i}"
 
             "\"I made three friends.\"":
-                $ r_rep = reputation(r_rep, 1)
+                $ r_rep = reputation(r_rep, int(affection_change * 0.5))
                 mc "\"When I eventually made it to my breakout room, there was only one place to sit.\""
                 mc "\"Luckily, that table had 3 girls at it who were really nice.\""
 

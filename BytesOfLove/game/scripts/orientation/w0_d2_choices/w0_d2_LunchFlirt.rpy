@@ -1,7 +1,7 @@
 label w0_d2_LunchFlirt:
     menu w0_d2_LunchFlirtC:
         "Flirt with Python":
-            $ p_rep = reputation(p_rep, -2)
+            $ p_rep = reputation(p_rep, -affection_change)
             mc "\"Especially you Python.\""
             mc "{i}Winks{/i}"
             hide python_pocket
@@ -16,7 +16,7 @@ label w0_d2_LunchFlirt:
             hide cpp_talk
             show cpp_normal at right
         "Flirt with C++":
-            $ c_rep = reputation(c_rep, -2)
+            $ c_rep = reputation(c_rep, -affection_change)
             mc "\"Especially you C++.\""
             mc "{i}Winks{/i}"
             hide cpp_normal
@@ -32,7 +32,7 @@ label w0_d2_LunchFlirt:
             show js_normal
 
         "Flirt with JavaScript":
-            $ js_rep = reputation(js_rep, -2)
+            $ js_rep = reputation(js_rep, -affection_change)
             mc "\"Especially you JavaScript.\""
             mc "{i}Winks{/i}"
             hide js_normal
@@ -48,9 +48,9 @@ label w0_d2_LunchFlirt:
             show cpp_normal at right
 
         "Everyone":
-            $ p_rep = reputation(p_rep, -6)
-            $ js_rep = reputation(js_rep, -6)
-            $ c_rep = reputation(c_rep, -6)
+            $ p_rep = reputation(p_rep, -affection_change *3)
+            $ js_rep = reputation(js_rep, -affection_change * 3)
+            $ c_rep = reputation(c_rep, -affection_change * 3)
             mc "\"Maybe I could get to know all of you really well back at my hotel tonight...\""
             hide cpp_normal
             show cpp_talk at right
