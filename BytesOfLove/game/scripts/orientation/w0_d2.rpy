@@ -322,7 +322,6 @@ label w0_d2_AfterLunch:
     bsl "\"Okay guys, lunch is over.\""
     bsl "\"Everyone, make sure you get back to Room 283 in 10 minutes.\""
 
-
     scene breakout_room with fade 
 
     bsl "\"Okay guys, we are now going to be playing a fun game to test your knowledge.\""
@@ -330,32 +329,53 @@ label w0_d2_AfterLunch:
     bsl "\"We’ll be playing a trivia game about computer science!\""
     bsl "\"We are going to be splitting the room up into groups based on the table you’re currently at.\""
     bsl "\"Everybody ready?\""
+    show cpp_normal at right with dissolve
+    show js_normal at center with dissolve
+    show python_pocket at left with dissolve
     mc "\"Okay guys, I am really good at trivia.\""
     mc "\"And we are team 1, and one happens to also be my lucky number.\""
     mc "\"I don’t know much about computer science stuff yet, but I am really good at guessing.\""
-    show cpp_talk
+    hide cpp_normal
+    show cpp_talk at right
     c "\"Well, we definitely won’t be guessing.\""
     c "\"We want to win, not get by with luck.\""
     hide cpp_talk
-    show cpp_normal at left
-    show js_talk
+    show cpp_normal at right
+    hide js_talk
+    show js_talk at center
     js "\"I’m sure we won’t need luck, we all seem pretty smart!\""
     hide js_talk
-    show js_smirk
+    show js_smirk at center
     bsl "\"Okay here is the first question\""
     hide js_smirk
+    show js_normal at center
     #display on screen
     #what will the following python code print? ...
-
+    hide cpp_normal
+    show cpp_talk at right
     c "\"Okay guys this one is really easy.\""
     c "\"We have to get this one right, it's obviously-\""
+    hide cpp_talk
+    show cpp_normal at right
+    hide js_normal
+    show js_talk at center
     js "\"Hey, don't be rude C++.\""
     js "\"Not all of us have programming experience and so it might not be as obvious.\""
+    hide js_talk
+    show js_normal at center
+    hide cpp_normal
+    show cpp_talk at right
     c "\"Whatever, take your time figuring it out.\""
     c "\"I am writing down our answer now because I want to win.\""
+    hide cpp_talk
+    show cpp_normal at right
+    hide python_pocket
+    show python_pocket_happy at left
     p "\"What are you guys thinking?\""
     p "\"I can tell that num1 is an integer, but num2 is a string by the single quotations surrounding it.\""
     p "\"That definitely means something.\""
+    hide python_pocket_happy
+    show python_pocket at left
 
     menu w0_d2_q1:
         "Disagree with Python":
