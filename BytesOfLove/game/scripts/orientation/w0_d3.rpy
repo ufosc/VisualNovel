@@ -194,32 +194,32 @@ label w0_d3_Registration:
         "Talk to Python":
             mc"\"Hey, Python!\""
 
-            show python_pocket
-
             p"\"Oh, hey [mc]!\""
             p"\"How are you doing, did you get the classes you wanted?\""
+
             mc"\"Yeah, I did!\""
             mc"\"I obviously am taking Introduction to Programming 1,\""
             mc"\"And then I’m also taking Calculus 1.\""
 
-            hide python_pocket
-            show python_pocket_happy at center
-
             p"\"Oh, cool.\""
             p"\"I am taking those too.\""
+
             mc"\"What time is your Calculus 1 class?\""
             mc"\"Maybe we’ll have it together...\""
+
             p"\"Hmm, let me check...\""
             p"\"Okay, it looks like mine is at 10:40 in Carlington Amphitheater.\""
             p"\"What about you?\""
+
             mc"\"No way, mine is too!\""
             mc"\"That’s good, at least I’ll know somebody.\""
+
             p "{i}Smiles warmly{i}"
             p"\"Yeah I’m excited.\""
             p"\"Anyway I gotta run, I’ll see you in Fall!\""
-            mc"\"Sure thing, bye!\""
 
-            hide python_pocket_happy with dissolve
+            hide python_normal with dissolve
+            mc"\"Sure thing, bye!\""
 
         "Go Home":
             mc"\"I can always see her another time, I don’t need to talk to her today.\""
