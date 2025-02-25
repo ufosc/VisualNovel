@@ -1,7 +1,8 @@
 label w0_d3_MeetingRust:
 
-    if r_rep == 50:
-        show rust_normal at right with dissolve
+    if r_rep == 50:           
+        hide rust_normal
+        show rust_talk at right
         r "\"Hey there! My name is Rust.\""
 
 
@@ -10,9 +11,16 @@ label w0_d3_MeetingRust:
 
             "Be mean":
                 $ r_rep = reputation(r_rep, -2)
+
+                hide rust_talk
+                show rust_normal at right
                 mc "\"Yeah, I do, my name is [mc].\""
-                r "\"Cool, you seem chill. What’s your major?\""
+
                 hide rust_normal
+                show rust_talk at right
+                r "\"Cool, you seem chill. What’s your major?\""
+
+                hide rust_talk
                 show rust_confused at right
                 mc "\"Wouldn’t you like to know...\""
                 r "\"Damn, I was just wondering.\""
@@ -31,6 +39,9 @@ label w0_d3_MeetingRust:
 
             "Be nice":
                 $ r_rep = reputation(r_rep, 2)
+
+                hide rust_talk
+                show rust_normal at right
                 mc "\"Yeah I do! My name is [mc], nice to meet you!\""
                 mc "\"What major are you?\""
 
@@ -64,7 +75,7 @@ label w0_d3_MeetingRust:
                 hide rust_talk with dissolve
                 "{i}Rust leaves{/i}"
 
-    elif r_rep < 50:
+    elif r_rep < 50:           
         show rust_normal at right with dissolve
         mc "Hey there, your name is..."
         window hide
@@ -134,6 +145,8 @@ label w0_d3_MeetingRust:
                 r "{i}Stands up{i} \"Let me solve that for you, then!\""
                 r "\"I was just leaving anyway!\""
                 mc "\"Cya.\""
+
+                hide rust_angry with dissolve
                 "{i}Rust leaves{/i}"
 
             "Be nice":
@@ -144,11 +157,14 @@ label w0_d3_MeetingRust:
                 hide rust_angry
                 show rust_confused at right
                 mc "\"I was fresh off the drive here and was way too mean to you for no reason.\""
-                mc "\"It was wrong of me and I’m sorry.\""
 
                 hide rust_confused
+                show rust_normal at right
+                mc "\"It was wrong of me and I’m sorry.\""
+
+                hide rust_normal
                 show rust_talk at right
-                r "{i}Sighs{/i} \"That makes sense, I get it.\""
+                r "{i}*Sighs*{/i} \"That makes sense, I get it.\""
                 r "\"No hard feelings.\""
                 r "\"[mc], right? So what is your major?\""
 
@@ -168,7 +184,7 @@ label w0_d3_MeetingRust:
 
                 hide rust_normal
                 show rust_talk at right
-                r "\"Yes, I have some programming experience from highschool, but I am excited to start learning more here.\""
+                r "\"Yeah, I have some programming experience from highschool, but I am excited to start learning more here.\""
                 r "\"We could totally work on projects and study together!\""
 
                 hide rust_talk
@@ -183,8 +199,9 @@ label w0_d3_MeetingRust:
                 r "\"Gotta do a few more things before I leave for orientation.\""
                 r "\"It was nice seeing you again, hope to see you around soon!\""
 
+                hide rust_talk with dissolve
                 "{i}Rust leaves.{/i}"
-    else:
+    elif r_rep > 50:
         show rust_normal at right
         mc "\"Hey, Rust!\""
 
@@ -228,10 +245,11 @@ label w0_d3_MeetingRust:
             "\"I met some baddies!\"":
                 $ r_rep = reputation(r_rep, -1)
 
-                hide rust_normal
-                show rust_confused at right
                 mc "\"When I eventually made it to my breakout room, there was only one place to sit.\""
                 mc "\"Luckily, the open table had 3 girls at it\""
+
+                hide rust_normal
+                show rust_confused at right
                 mc "\"And they were BADDDD!\""
                 r "\"Oh...\""
                 r "\"That's kinda cool, I guess...\""
@@ -241,12 +259,15 @@ label w0_d3_MeetingRust:
                 mc "\"And THEN, we went on a tour around the school…\""
                 mc  "\"The whole time they were just begging for my attention!\""
                 mc "\"They were all over me!\""
+
+                hide rust_confused
+                show rust_angry at right
                 mc "\"They were literally down subterranean...\""
                 r "\"Uh, yeah, I bet...\""
                 r "\"Anyway I have to run, I'll see you later.\""
                 mc "\"Bye!\""
 
-                hide rust_talk with dissolve
+                hide rust_angry with dissolve
                 "{i}Rust leaves.{/i}"
 
             "\"I made three friends.\"":

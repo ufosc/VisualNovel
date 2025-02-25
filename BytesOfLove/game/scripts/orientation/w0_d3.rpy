@@ -9,6 +9,8 @@ label w0_d3:
     mc"All set! And I actually have enough time to eat breakfast this time!"
     scene hotel_buffet with shorter_fade
     mc"Oh wow! Everything looks so good!"
+
+    show rust_normal at right with dissolve
     "{i}While holding your food you notice that there is only one seat available, and it’s next to a boy who looks about your age.{/i}"
     mc"Well, I guess I’m eating with him."
     jump w0_d3_MeetingRust
@@ -30,8 +32,9 @@ label w0_d3_AfterMeetingRust:
     dc"\"Also-\""
     dc"\"If you are NOT in the College of Computing,\""
     dc"\"You are in the WRONG room!\""
-    dc"\"From here, you will all go to your break out rooms from yesterday.\""
-    dc"\"Then, your breakout room leaders will give you further instructions.\"" 
+    dc"\"From here, you will all go to your breakout rooms from yesterday.\""
+    dc"\"Then, your breakout room leaders will give you further instructions.\""
+
     scene empty_lecture_hall with shorter_fade
 
     mc"Well, at least I know where I’m going this time…"
@@ -45,7 +48,7 @@ label w0_d3_AfterMeetingRust:
     bsl"\"So, before we go to the administration building, I will give you some tips on picking classes.\""
     
     hide bsl_talk
-    show cpp_talk
+    show cpp_talk with dissolve
     c"\"Ugh, I wish we could just pick classes already.\""
     c"\"I don’t want to sit through this lady talking about stuff I already know.\""
 
@@ -56,7 +59,7 @@ label w0_d3_AfterMeetingRust:
 
     hide cpp_normal
     show cpp_normal at left
-    show python_pocket_happy at right
+    show python_pocket_happy at right with dissolve
     p"\"I didn’t do any research either…\""
     p"\"I kinda figured they would just tell us what to pick.\""
 
@@ -85,7 +88,7 @@ label w0_d3_AfterMeetingRust:
 
 label w0_d3_Registration:
     scene office with longer_fade
-    show advisor at right with dissolve
+    show advisor with dissolve
     a"\"Hey there, sugar!\""
     a"\"Hmmm...\""
     a"\"Says 'ere your [mc]\""
@@ -195,32 +198,32 @@ label w0_d3_Registration:
         "Talk to Python":
             mc"\"Hey, Python!\""
 
-            show python_pocket
-
             p"\"Oh, hey [mc]!\""
             p"\"How are you doing, did you get the classes you wanted?\""
+
             mc"\"Yeah, I did!\""
             mc"\"I obviously am taking Introduction to Programming 1,\""
             mc"\"And then I’m also taking Calculus 1.\""
 
-            hide python_pocket
-            show python_pocket_happy at center
-
             p"\"Oh, cool.\""
             p"\"I am taking those too.\""
+
             mc"\"What time is your Calculus 1 class?\""
             mc"\"Maybe we’ll have it together...\""
+
             p"\"Hmm, let me check...\""
             p"\"Okay, it looks like mine is at 10:40 in Carlington Amphitheater.\""
             p"\"What about you?\""
+
             mc"\"No way, mine is too!\""
             mc"\"That’s good, at least I’ll know somebody.\""
+
             p "{i}Smiles warmly{i}"
             p"\"Yeah I’m excited.\""
             p"\"Anyway I gotta run, I’ll see you in Fall!\""
-            mc"\"Sure thing, bye!\""
 
-            hide python_pocket_happy with dissolve
+            hide python_normal with dissolve
+            mc"\"Sure thing, bye!\""
 
         "Go Home":
             mc"\"I can always see her another time, I don’t need to talk to her today.\""

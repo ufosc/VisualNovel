@@ -77,8 +77,8 @@ label w0_d3_CppCopy:
 
             hide python_pocket_happy
             show python_pocket
-            mc "{i}Blushing{/i} \"Thanks!\""
-            mc "\"Anywho…\'"
+            mc "{i}*Blushing*{/i} \"Thanks!\""
+            mc "\"Anywho…\""
             mc "\"We should probably get going now, so that we don’t completely miss registration.\""
            
             hide python_pocket

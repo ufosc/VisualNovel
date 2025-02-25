@@ -2,7 +2,7 @@ label w0_d1_DoorDash:
     mc "I passed like 15 Chipotles on the way here, I bet I can order a burrito for dinner..."
     # Edit transitions below when we have clock - Lazzy
     scene hotel_room_night with shorter_fade
-    "{i}*15 minutes later*{/i}"
+    "{i}*30 minutes later*{/i}"
     mc "This driver sucks! I ordered this 30 minutes ago, and he still hasn’t picked it up!!!"
     scene hotel_room_night with shorter_fade
     "{i}*20 minutes later*{/i}"
