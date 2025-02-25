@@ -257,7 +257,4 @@ label start:
 
     "Your name is [mc]."
     
-    #jump w0_d3
-
     jump w0_d1
-

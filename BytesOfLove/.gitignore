@@ -227,3 +227,7 @@ UFOSC/log.txt
 UFOSC/traceback.txt
 
 UFOSC/game/cache
+
+# intellij ignore
+*.iml
+.idea
