@@ -144,9 +144,13 @@ label w0_d3_JSGeology:
                     hide js_smirk
                     show js_normal
 
+    show bsl_normal with dissolve
+    show bsl_talk
     bsl "\"Hey, can you guys be quiet back there?\""
     bsl "\"You have been talking the whole time.\""
     bsl "\"We will be going to the advising building to pick classes soon,\""
     bsl "\"So wait to talk until we leave the classroom please.\""
+    hide bsl_talk
+    show bsl_normal
     mc "\"Sure, sorry.\""
     jump w0_d3_Registration

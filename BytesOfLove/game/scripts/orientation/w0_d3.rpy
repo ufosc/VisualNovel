@@ -43,9 +43,11 @@ label w0_d3_AfterMeetingRust:
 
     scene breakout_room with fade
 
+    show bsl_talk
     bsl"\"Okay, as we found out yesterday, most of us here are computer science majors.\""
     bsl"\"So, before we go to the administration building, I will give you some tips on picking classes.\""
-
+    
+    hide bsl_talk
     show cpp_talk with dissolve
     c"\"Ugh, I wish we could just pick classes already.\""
     c"\"I don’t want to sit through this lady talking about stuff I already know.\""
@@ -67,9 +69,11 @@ label w0_d3_AfterMeetingRust:
     c"\"Jeez, you guys are hopeless.\""
 
     hide cpp_talk
-    show cpp_normal at left
+    show bsl_talk
     bsl"\"Okay, since most of you are freshmen in computer science, here are the classes you want to take.\""
 
+    hide bsl_talk
+    show bsl_normal
     mc"I wonder if I really need to pay attention…"
     mc"Surely, I can just copy whatever C++ does?"
     mc"It seems like she always has it figured out…"
