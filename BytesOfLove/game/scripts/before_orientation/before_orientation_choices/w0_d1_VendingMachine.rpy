@@ -38,7 +38,7 @@ label w0_d1_VendingMachine:
             "{i}*Rust leaves*{/i}"
 
         "Be nice":
-            $ r_rep = reputation(r_rep, 2)
+            $ r_rep = reputation(r_rep, affection_change)
 
             hide rust_talk
             show rust_normal at right
