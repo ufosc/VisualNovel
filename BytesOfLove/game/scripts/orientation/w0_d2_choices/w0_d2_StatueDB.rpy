@@ -1,7 +1,7 @@
 label w0_d2_StatueDB:
-    $ c_rep = reputation(c_rep, -2)
-    $ p_rep = reputation(p_rep, -2)
-    $ js_rep = reputation(js_rep, -2)
+    $ c_rep = reputation(c_rep, -affection_change)
+    $ p_rep = reputation(p_rep, -affection_change)
+    $ js_rep = reputation(js_rep, -affection_change)
     hide python_pocket_happy
     show python_pocket at left
     hide cpp_talk
@@ -62,9 +62,9 @@ label w0_d2_StatueDBContinue:
             mc "\"Well I am not going to sit here and say that you guys aren’t cute...\""
         
         "Deny that they're cute":
-            $ c_rep = reputation(c_rep, -2)
-            $ p_rep = reputation(p_rep, -2)
-            $ js_rep = reputation(js_rep, -2)
+            $ c_rep = reputation(c_rep, -affection_change)
+            $ p_rep = reputation(p_rep, -affection_change)
+            $ js_rep = reputation(js_rep, -affection_change)
             hide python_angry_talk
             show python_angry at left
             mc "\"No way! I don’t think that! That’s crazy! I mean-\""

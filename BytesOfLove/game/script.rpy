@@ -29,6 +29,9 @@ define dc = Character("Director of Computing College", color="#10436b")
 define pe = Character("Perl", color="5c5f5d")
 define bsl = Character("Breakout Session Leader", color="5c5f5d")
 
+#Affection change
+define affection_change = 2
+
 #Rust
 image rust_normal = "Rust/Rust_Base_1.png"
 image rust_talk = "Rust/Rust_Base_2.png"

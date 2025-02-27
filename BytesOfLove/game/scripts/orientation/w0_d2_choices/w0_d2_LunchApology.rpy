@@ -16,9 +16,9 @@ label w0_d2_LunchApology:
         mc "\"Hey guys, about what happened on the campus tour...\""
 
         "Apologize and smooth things over":
-            $ c_rep = reputation(c_rep, 2)
-            $ p_rep = reputation(p_rep, 2)
-            $ js_rep = reputation(js_rep, 2)
+            $ c_rep = reputation(c_rep, affection_change)
+            $ p_rep = reputation(p_rep, affection_change)
+            $ js_rep = reputation(js_rep, affection_change)
             mc "\"I just want to apologize one more time for what happened.\""
             mc "\"I think that we could all be good friends.\""
             mc "\"And I am excited to get to know you guys better in the future.\""
