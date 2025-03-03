@@ -144,6 +144,8 @@ label w0_d3_JSGeology:
                     hide js_smirk
                     show js_normal
 
+    hide js_normal
+    show js_normal at left
     show bsl_normal with dissolve
     show bsl_talk
     bsl "\"Hey, can you guys be quiet back there?\""

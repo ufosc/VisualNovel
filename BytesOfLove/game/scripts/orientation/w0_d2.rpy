@@ -533,7 +533,6 @@ label w0_d2_AfterLunch:
             c "\"Whatever, I am sorry you got hurt by me stating facts.\""
             c "\"Let’s just see what everyone else said.\""
 
-label w0_d2_temp:
     # show js_normal
     # show cpp_normal at left
     # show python_pocket at right
@@ -598,6 +597,7 @@ label w0_d2_temp:
             c "\"Whatever.\""
             c "\"You guys didn't know the answer either.\""
             hide cpp_talk
+    
     show cpp_normal at left
     hide python_pocket
     show python_pocket_happy at right
@@ -618,7 +618,6 @@ label w0_d2_temp:
     menu w0_d2_mcdecision:
         "ERROR":
             #techScore -= 1
-            show js_normal
             mc "\"Okay I think that this will result in an error.\""
             mc "\"I don’t think it will know to only reference X once, at the start of the loop.\""
             mc "\"Are we all good with this choice?\""
@@ -628,7 +627,8 @@ label w0_d2_temp:
             js "\"I say let’s trust your intuition, [mc].\""
             js "\"Whatever happens, happens, it’s just a game.\""
             hide js_talk
-            show js_normal at left
+            hide cpp_normal
+            hide python_pocket
             show bsl_talk
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
@@ -644,6 +644,9 @@ label w0_d2_temp:
             bsl "\"And before we print x we increment it, which is why the first number is 5, not 4.\""
 
             hide bsl_talk
+            show js_normal # if it seems right, feel free to make these angry. i wouldn't know the vibes
+            show python_pocket at right
+            show cpp_normal at left
             mc "\"Oh man, that’s my bad guys.\""
             mc "\"I see how that is the answer.\""
             hide python_pocket
@@ -654,19 +657,22 @@ label w0_d2_temp:
             show python_pocket at right
         "4567":
             #techScore -= 1
-            show js_smirk
+            hide js_normal
+            show js_smirk # might be a good idea to move this forward one?
             mc "\"I agree with JavaScript, this won’t be an error.\""
             mc "\"So first it will print out 4, then 5, then 6, then 7.\""
             mc "\"And then after 7 the loop will have iterated four times which was the original value of x.\""
             mc "\"Are we all good with this choice?\""
             hide js_smirk
+            show js_normal
             hide cpp_normal
             show cpp_talk at left
             c "\"I disagree, but I’m not confident enough to say that I am right.\""
             c "\"I say let’s trust your intuition, [mc].\""
             c "\"Whatever happens, happens, it’s just a game.\""            
             hide cpp_talk
-            show cpp_normal at left
+            hide python_pocket
+            hide js_normal
             show bsl_talk
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
@@ -682,6 +688,9 @@ label w0_d2_temp:
             bsl "\"And before we print x we increment it, which is why the first number is 5, not 4.\""
 
             hide bsl_talk
+            show cpp_normal at left
+            show js_normal
+            show python_pocket at right
             mc "\"Oh man, that’s my bad guys.\""
             mc "\"I see how that is the answer.\""
             
@@ -694,20 +703,23 @@ label w0_d2_temp:
 
         "5678":
             #techScore += 1
-            show js_smirk
+            hide js_normal
+            show js_smirk # read line 660
             mc "\"I agree with JavaScript, this won’t be an error.\""
             mc "\"So first it will increment x.\""
             mc "\"Then it will print out 5, then 6, then 7, then 8.\""
             mc "\"And then after 7 the loop will have iterated four times which was the original value of x.\""            
             mc "\"Are we all good with this choice?\""
             hide js_smirk
+            show js_normal
             hide cpp_normal
             show cpp_talk at left
             c "\"I disagree, but I’m not confident enough to say that I am right.\""
             c "\"I say let’s trust your intuition, [mc].\""
             c "\"Whatever happens, happens, it’s just a game.\""            
             hide cpp_talk
-            show cpp_normal at left
+            hide js_normal
+            hide python_pocket
             show bsl_talk
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
@@ -723,6 +735,9 @@ label w0_d2_temp:
             bsl "\"This is the only time x is referenced in relation to the number of iterations, so changing x afterwards has no effect on the amount of iterations.\""
             bsl "\"And before we print x we increment it, which is why the first number is 5, not 4.\""
             hide bsl_talk
+            show cpp_normal at left
+            show js_normal
+            show python_pocket at right
             mc "\"Oh nice, we got it right!\""
             mc "\"Good job guys, I am glad we were able to work through that!\""
             hide python_pocket
@@ -731,6 +746,10 @@ label w0_d2_temp:
             hide python_pocket_happy
             show python_pocket at right
 
+    hide cpp_normal # if modified above, make sure to change these
+    hide js_normal
+    hide python_pocket
+    with dissolve
     "Some time later..."
     show bsl_talk
     bsl "\"And the team with the most points is...\""
@@ -741,8 +760,9 @@ label w0_d2_temp:
     show bsl_talk
     bsl "\"Team 1!\""
     hide bsl_talk
-    hide js_normal
+    show cpp_normal at left
     show js_talk
+    show python_pocket at right
     js "\"OMG Yes!!!\""
     hide js_talk
     show js_smirk
