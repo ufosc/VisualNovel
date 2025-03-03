@@ -16,6 +16,7 @@ transform not_speaking:
 # Music
 
 # Characters
+define mc = Character("Developer")
 define r = Character("Rust", color="#B27300")
 define p = Character("???", color="#7DC23B")
 define c = Character("???", color="00599C")
@@ -93,6 +94,12 @@ default js_rep = 50
 
 #Perl
 default pe_rep = 50
+
+#Breakout Leader
+image bsl_normal = "SideCharacters/BreakoutLeader/BreakoutLeader_Normal.png"
+image bsl_talk = "SideCharacters/BreakoutLeader/BreakoutLeader_Talking.png"
+
+default bsl_rep = 50
 
 
 #background characters with no impact

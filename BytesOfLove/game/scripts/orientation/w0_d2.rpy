@@ -93,13 +93,17 @@ label w0_d2:
     hide cpp_normal
     show cpp_talk
     c "\"Shut up, did it ever occur to you that maybe everyone is quiet for a reason?\""
+
     hide cpp_talk
     show cpp_normal
     "{i}You obediently sit down, flustered{/i}"
+
+    hide cpp_normal
+    show bsl_talk
     bsl "\"Alright, it looks like everyone is here.\""
     bsl "\"Go ahead and take some time to introduce yourself to those around you.\""
 
-    hide cpp_normal
+    hide bsl_talk
     show python_normal with dissolve
     hide python_normal
     show python_happy
@@ -239,13 +243,18 @@ label w0_d2:
             hide cpp_talk
             show cpp_normal
     
+    show bsl_talk
     bsl "\"Alright now, we’re gonna start our guided tour of campus!\""
      
     #tour just started put scene change
     scene statue_garden with fade
+    show bsl_normal with dissolve
 
     "{i}The group tours campus as the breakout session leader talks about random trivia{/i}"
+    hide bsl_normal
+    show bsl_talk
     bsl "\"And if you look to your left you will see Half-A-Century Tower...\""
+    hide bsl_talk
     show cpp_talk with dissolve
     c "\"Gosh, this is so boring.\""
     c "\"Who doesn’t know all of this stuff already?\""
@@ -294,15 +303,17 @@ label w0_d2:
             jump w0_d2_StatueDB
 
 label w0_d2_AfterStatue:
+    show bsl_talk with dissolve
     bsl "\"Now we will be taking a break for lunch.\""
 
     #change scene to cafeteria
     scene dining_hall with longer_fade 
 
-
+    show bsl_talk with dissolve
     bsl "\"The different food stations are located around the room.\""
     bsl "\"We will be meeting back in Room 283 in one hour.\""
     bsl "\"Feel free to sit wherever you want.\""
+    hide bsl_talk with dissolve
     mc "\"Oh jeez, I was going to the bathroom and now everyone is already sitting with each other.\""
     mc "\"Where are the girls I was talking to earlier?\""
     mc "\"I hope I didn’t hurt anyone’s feelings.\""
@@ -319,17 +330,20 @@ label w0_d2_AfterStatue:
             jump w0_d2_LunchJava
 
 label w0_d2_AfterLunch:
+    show bsl_talk with dissolve
     bsl "\"Okay guys, lunch is over.\""
     bsl "\"Everyone, make sure you get back to Room 283 in 10 minutes.\""
 
-
     scene breakout_room with fade 
 
+    show bsl_talk
     bsl "\"Okay guys, we are now going to be playing a fun game to test your knowledge.\""
     bsl "\"Since The University of ByteBorough is renowned for the College of Computing...\""
     bsl "\"We’ll be playing a trivia game about computer science!\""
     bsl "\"We are going to be splitting the room up into groups based on the table you’re currently at.\""
     bsl "\"Everybody ready?\""
+
+    hide bsl_talk
     mc "\"Okay guys, I am really good at trivia.\""
     mc "\"And we are team 1, and one happens to also be my lucky number.\""
     mc "\"I don’t know much about computer science stuff yet, but I am really good at guessing.\""
@@ -341,8 +355,10 @@ label w0_d2_AfterLunch:
     show js_talk
     js "\"I’m sure we won’t need luck, we all seem pretty smart!\""
     hide js_talk
-    show js_smirk
+    show js_smirk at right
+    show bsl_talk
     bsl "\"Okay here is the first question\""
+    hide bsl_talk
     hide js_smirk
     #display on screen
     #what will the following python code print? ...
@@ -517,15 +533,21 @@ label w0_d2_AfterLunch:
             c "\"Whatever, I am sorry you got hurt by me stating facts.\""
             c "\"Let’s just see what everyone else said.\""
 
-    show js_normal
-    show cpp_normal at left
-    show python_pocket at right
+    # show js_normal
+    # show cpp_normal at left
+    # show python_pocket at right
+    show bsl_talk
     bsl "\"Time’s up everyone!\""
     bsl "\"Write your answers down and hold them up.\""
+    hide bsl_talk
+    show bsl_normal
     "....."
+    hide bsl_normal
+    show bsl_talk
     bsl "\"Wow! It looks like every team got that first question right!\""
     bsl "\"This next one will be a little bit harder, get ready.\""
     bsl "\"What does the following Python code print?\""
+    hide bsl_talk
 
     #DISPLAY:
     #x = 4
@@ -575,6 +597,7 @@ label w0_d2_AfterLunch:
             c "\"Whatever.\""
             c "\"You guys didn't know the answer either.\""
             hide cpp_talk
+    
     show cpp_normal at left
     hide python_pocket
     show python_pocket_happy at right
@@ -595,7 +618,6 @@ label w0_d2_AfterLunch:
     menu w0_d2_mcdecision:
         "ERROR":
             #techScore -= 1
-            show js_normal
             mc "\"Okay I think that this will result in an error.\""
             mc "\"I don’t think it will know to only reference X once, at the start of the loop.\""
             mc "\"Are we all good with this choice?\""
@@ -605,16 +627,26 @@ label w0_d2_AfterLunch:
             js "\"I say let’s trust your intuition, [mc].\""
             js "\"Whatever happens, happens, it’s just a game.\""
             hide js_talk
-            show js_normal
+            hide cpp_normal
+            hide python_pocket
+            show bsl_talk
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
+            hide bsl_talk
+            show bsl_normal
             "....."
+            hide bsl_normal
+            show bsl_talk
             bsl "\"Ooh, it looks like only one group got that right!\""
             bsl "\"The correct answer was 5678, only team 3 got that correct!\""
             bsl "\"The reason it was 5678 was because when the loop begins it references the value held in x.\""
             bsl "\"This is the only time x is referenced in relation to the number of iterations, so changing x afterwards has no effect on the amount of iterations.\""
             bsl "\"And before we print x we increment it, which is why the first number is 5, not 4.\""
 
+            hide bsl_talk
+            show js_normal # if it seems right, feel free to make these angry. i wouldn't know the vibes
+            show python_pocket at right
+            show cpp_normal at left
             mc "\"Oh man, that’s my bad guys.\""
             mc "\"I see how that is the answer.\""
             hide python_pocket
@@ -625,29 +657,40 @@ label w0_d2_AfterLunch:
             show python_pocket at right
         "4567":
             #techScore -= 1
-            show js_smirk
+            hide js_normal
+            show js_smirk # might be a good idea to move this forward one?
             mc "\"I agree with JavaScript, this won’t be an error.\""
             mc "\"So first it will print out 4, then 5, then 6, then 7.\""
             mc "\"And then after 7 the loop will have iterated four times which was the original value of x.\""
             mc "\"Are we all good with this choice?\""
             hide js_smirk
+            show js_normal
             hide cpp_normal
             show cpp_talk at left
             c "\"I disagree, but I’m not confident enough to say that I am right.\""
             c "\"I say let’s trust your intuition, [mc].\""
             c "\"Whatever happens, happens, it’s just a game.\""            
             hide cpp_talk
-            show cpp_normal at left
-
+            hide python_pocket
+            hide js_normal
+            show bsl_talk
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
+            hide bsl_talk
+            show bsl_normal
             "....."
+            hide bsl_normal
+            show bsl_talk
             bsl "\"Ooh, it looks like only one group got that right!\""
             bsl "\"The correct answer was 5678, only team 3 got that correct!\""
             bsl "\"The reason it was 5678 was because when the loop begins it references the value held in x.\""
             bsl "\"This is the only time x is referenced in relation to the number of iterations, so changing x afterwards has no effect on the amount of iterations.\""
             bsl "\"And before we print x we increment it, which is why the first number is 5, not 4.\""
 
+            hide bsl_talk
+            show cpp_normal at left
+            show js_normal
+            show python_pocket at right
             mc "\"Oh man, that’s my bad guys.\""
             mc "\"I see how that is the answer.\""
             
@@ -660,29 +703,41 @@ label w0_d2_AfterLunch:
 
         "5678":
             #techScore += 1
-            show js_smirk
+            hide js_normal
+            show js_smirk # read line 660
             mc "\"I agree with JavaScript, this won’t be an error.\""
             mc "\"So first it will increment x.\""
             mc "\"Then it will print out 5, then 6, then 7, then 8.\""
             mc "\"And then after 7 the loop will have iterated four times which was the original value of x.\""            
             mc "\"Are we all good with this choice?\""
             hide js_smirk
+            show js_normal
             hide cpp_normal
             show cpp_talk at left
             c "\"I disagree, but I’m not confident enough to say that I am right.\""
             c "\"I say let’s trust your intuition, [mc].\""
             c "\"Whatever happens, happens, it’s just a game.\""            
             hide cpp_talk
-            show cpp_normal at left
+            hide js_normal
+            hide python_pocket
+            show bsl_talk
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
+            hide bsl_talk
+            show bsl_normal
             "....."
 
+            hide bsl_normal
+            show bsl_talk
             bsl "\"Ooh, it looks like only one group got that right!\""
             bsl "\"The correct answer was 5678, only team 1 got that correct!\""
             bsl "\"The reason it was 5678 was because when the loop begins it references the value held in x.\""
             bsl "\"This is the only time x is referenced in relation to the number of iterations, so changing x afterwards has no effect on the amount of iterations.\""
             bsl "\"And before we print x we increment it, which is why the first number is 5, not 4.\""
+            hide bsl_talk
+            show cpp_normal at left
+            show js_normal
+            show python_pocket at right
             mc "\"Oh nice, we got it right!\""
             mc "\"Good job guys, I am glad we were able to work through that!\""
             hide python_pocket
@@ -691,12 +746,23 @@ label w0_d2_AfterLunch:
             hide python_pocket_happy
             show python_pocket at right
 
-    "Some time later..."
-    bsl "\"And the team with the most points is...\""
-    "....."
-    bsl "\"Team 1!\""
+    hide cpp_normal # if modified above, make sure to change these
     hide js_normal
+    hide python_pocket
+    with dissolve
+    "Some time later..."
+    show bsl_talk
+    bsl "\"And the team with the most points is...\""
+    hide bsl_talk
+    show bsl_normal
+    "....."
+    hide bsl_normal
+    show bsl_talk
+    bsl "\"Team 1!\""
+    hide bsl_talk
+    show cpp_normal at left
     show js_talk
+    show python_pocket at right
     js "\"OMG Yes!!!\""
     hide js_talk
     show js_smirk
