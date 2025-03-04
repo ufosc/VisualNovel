@@ -62,6 +62,6 @@ label w0_d2_LunchJava:
     js "\"Hmm, maybe-\""
     hide js_talk
     show js_normal
-    show python_pocket at left with dissolve
+    show python_pocket_happy at left with dissolve
     show cpp_normal at right with dissolve
     jump w0_d2_LunchApology
