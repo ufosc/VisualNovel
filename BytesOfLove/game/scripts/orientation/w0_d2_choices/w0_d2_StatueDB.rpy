@@ -89,8 +89,11 @@ label w0_d2_StatueDBContinue:
     hide js_talk
     show js_normal at right
     mc "\"No, that’s not what I was saying-\""
+    show bsl_talk
     bsl "\"Hey you guys are being really loud.\""
     bsl "\"Could you try to keep it down?\""
+    hide bsl_talk
+    show bsl_normal
     mc "\"Sorry...\""
 
     jump w0_d2_AfterStatue

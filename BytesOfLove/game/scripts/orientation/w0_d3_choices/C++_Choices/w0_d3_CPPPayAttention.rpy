@@ -1,18 +1,31 @@
 label w0_d3_CPPPayAttention:
+    show bsl_normal with dissolve
     mc "But on the other hand, I should take classes I’m interested in, not what she’s interested in."
     mc "I guess I’ll pay attention to the recommendations."
+    show bsl_talk
     bsl "\"So, since it will be all of your first semester, the classes you take are very important.\""
     bsl "\"All of you should definitely try to take Introduction to Programming 1.\""
+    hide bsl_talk
+    show bsl_normal
     mc "Okay, l already knew that one."
     mc "I will have the perfect schedule, nobody can stop me!"
+    hide bsl_normal
+    show bsl_talk
     bsl "\"Then, along with Introduction to Programming 1, you guys will want to take Calculus 1.\""
     bsl "\"That class isn’t super challenging, but you definitely want to do it now.\""
+    hide bsl_talk
+    show bsl_normal
     mc "{i}*Writing vigorously*{/i} Great, so I need to take Introduction to Programming 1 and Calculus 1."
     mc "I hope this semester isn’t too hard..."
+    hide bsl_normal
+    show bsl_talk
     bsl "\"Aside from those two classes,\""
     bsl "\"There aren’t any classes that computer science students NEED to take.\""
+    hide bsl_talk
+    show bsl_normal
     mc "Nice, so I basically don’t have to pay attention anymore..."
     mc "I mean maybe I should, but-"
+    hide bsl_normal
 
     hide cpp_normal
     hide python_pocket

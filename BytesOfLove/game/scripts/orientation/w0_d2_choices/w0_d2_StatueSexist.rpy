@@ -38,10 +38,13 @@ label w0_d2_StatueSexist:
             mc "\"Thank you, Python.\""
             mc "\"I wasn’t trying to step on any toes.\""
 
-    
+    show bsl_normal with dissolve
+    show bsl_talk
     bsl "\"Uh... I am not a tour guide, I am just the leader of our breakout session.\""
     bsl "\"Which you guys have really been interrupting.\""
     bsl "\"Could you try to keep it down?\""
+    hide bsl_talk
+    show bsl_normal
     mc "\"Sorry...\""
 
     jump w0_d2_AfterStatue
