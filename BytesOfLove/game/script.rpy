@@ -94,6 +94,8 @@ default js_rep = 50
 
 #Perl
 default pe_rep = 50
+image pe_normal = "Perl/Perl_Base.png"
+image pe_talk = "Perl/Perl_Talking.png"
 
 #Breakout Leader
 image bsl_normal = "SideCharacters/BreakoutLeader/BreakoutLeader_Normal.png"
