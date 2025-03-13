@@ -16,6 +16,7 @@ transform not_speaking:
 # Music
 
 # Characters
+define mc = Character("Developer")
 define r = Character("Rust", color="#B27300")
 define p = Character("???", color="#7DC23B")
 define c = Character("???", color="00599C")
@@ -28,6 +29,9 @@ define dc = Character("Director of Computing College", color="#10436b")
 #CHANGE PERL COLOR
 define pe = Character("Perl", color="5c5f5d")
 define bsl = Character("Breakout Session Leader", color="5c5f5d")
+
+#Affection change
+define affection_change = 2
 
 #Rust
 image rust_normal = "Rust/Rust_Base_1.png"
@@ -90,6 +94,12 @@ default js_rep = 50
 
 #Perl
 default pe_rep = 50
+
+#Breakout Leader
+image bsl_normal = "SideCharacters/BreakoutLeader/BreakoutLeader_Normal.png"
+image bsl_talk = "SideCharacters/BreakoutLeader/BreakoutLeader_Talking.png"
+
+default bsl_rep = 50
 
 
 #background characters with no impact

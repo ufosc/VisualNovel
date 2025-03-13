@@ -12,9 +12,9 @@ label w0_d2_StatueSexist:
         "Say something sexist":
             hide python_angry_talk
             show python_angry at left
-            $ p_rep = reputation(p_rep, -4)
-            $ js_rep = reputation(js_rep, -4)
-            $ c_rep = reputation(c_rep, -4)
+            $ p_rep = reputation(p_rep, -affection_change * 2)
+            $ js_rep = reputation(js_rep, -affection_change * 2)
+            $ c_rep = reputation(c_rep, -affection_change * 2)
             mc "\"Look sweetheart, I don’t need your help here.\""
             hide python_angry
             show python_angry_talk at left
@@ -38,10 +38,13 @@ label w0_d2_StatueSexist:
             mc "\"Thank you, Python.\""
             mc "\"I wasn’t trying to step on any toes.\""
 
-    
+    show bsl_normal with dissolve
+    show bsl_talk
     bsl "\"Uh... I am not a tour guide, I am just the leader of our breakout session.\""
     bsl "\"Which you guys have really been interrupting.\""
     bsl "\"Could you try to keep it down?\""
+    hide bsl_talk
+    show bsl_normal
     mc "\"Sorry...\""
 
     jump w0_d2_AfterStatue

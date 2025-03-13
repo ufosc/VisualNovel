@@ -14,7 +14,7 @@ label w0_d1_VendingMachine:
     menu w0_d1_Rust:
         "Be mean":
 
-            $ r_rep = reputation(r_rep, -2)
+            $ r_rep = reputation(r_rep, -affection_change)
             mc "\"Yeah, I do, my name is [mc].\""
             hide rust_normal
             show rust_talk at right
@@ -38,7 +38,7 @@ label w0_d1_VendingMachine:
             "{i}*Rust leaves*{/i}"
 
         "Be nice":
-            $ r_rep = reputation(r_rep, 2)
+            $ r_rep = reputation(r_rep, affection_change)
 
             hide rust_talk
             show rust_normal at right

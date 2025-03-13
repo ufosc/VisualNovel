@@ -61,7 +61,7 @@ label w0_d3_JSGeology:
                 js "\"He {i}rocks{i}?\""
 
                 "Laugh at the joke":
-                    $ js_rep = reputation(js_rep,2)
+                    $ js_rep = reputation(js_rep,affection_change)
 
                     mc "{i}*Laughs*{/i} \"Why have I never thought of that?\""
                     mc "\"You’re really funny, you know that?\""
@@ -73,7 +73,7 @@ label w0_d3_JSGeology:
                     show js_normal
 
                 "Don't laugh at the joke":
-                    $ js_rep = reputation(js_rep,-2)
+                    $ js_rep = reputation(js_rep,-affection_change)
 
                     hide js_smirk
                     show js_angry
@@ -124,7 +124,7 @@ label w0_d3_JSGeology:
                 js "\"Ah, I would but I am pretty committed to watching One Piece right now.\""
 
                 "One Piece? I prefer two piece swimsuits":
-                    $ js_rep = reputation(js_rep,-2)
+                    $ js_rep = reputation(js_rep,-affection_change)
 
                     hide js_talk
                     show js_angry
@@ -144,9 +144,15 @@ label w0_d3_JSGeology:
                     hide js_smirk
                     show js_normal
 
+    hide js_normal
+    show js_normal at left
+    show bsl_normal with dissolve
+    show bsl_talk
     bsl "\"Hey, can you guys be quiet back there?\""
     bsl "\"You have been talking the whole time.\""
     bsl "\"We will be going to the advising building to pick classes soon,\""
     bsl "\"So wait to talk until we leave the classroom please.\""
+    hide bsl_talk
+    show bsl_normal
     mc "\"Sure, sorry.\""
     jump w0_d3_Registration
