@@ -1,6 +1,4 @@
 label w0_d2_LunchApology:
-    hide python_pocket
-    show python_pocket_happy at left
     p "\"Hey JavaScript!\""
     p "\"Is it okay if we join you?\""
     hide python_pocket_happy
@@ -20,6 +18,11 @@ label w0_d2_LunchApology:
             $ p_rep = reputation(p_rep, affection_change)
             $ js_rep = reputation(js_rep, affection_change)
             mc "\"I just want to apologize one more time for what happened.\""
+
+            hide cpp_normal
+            show cpp_happy at right
+            hide js_normal
+            show js_smirk at center
             mc "\"I think that we could all be good friends.\""
             mc "\"And I am excited to get to know you guys better in the future.\""
 
@@ -27,6 +30,13 @@ label w0_d2_LunchApology:
 
         "Don't apologize":
             mc "\"...\""
+
+            hide python_pocket
+            show python_angry at left
+            hide cpp_normal
+            show cpp_angry at right
+            hide js_normal
+            show js_angry at center
             mc "\"Huh, I totally forgot what I was about to say.\""
             jump w0_d2_AfterLunch
 
@@ -40,7 +50,7 @@ menu w0_d2_LunchFlirtDecision:
         js "\"I totally agree, [mc]!\""
         js "\"I think we can be good friends as well.\""
         hide js_talk
-        show js_normal
+        show js_smirk
         hide python_pocket
         show python_pocket_happy at left
         p "\"Yeah, and it’s so good that we are all computer science majors.\""

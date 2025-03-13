@@ -254,13 +254,13 @@ label w0_d2:
     hide bsl_normal
     show bsl_talk
     bsl "\"And if you look to your left you will see Half-A-Century Tower...\""
+    
     hide bsl_talk
     show cpp_talk with dissolve
+
     c "\"Gosh, this is so boring.\""
     c "\"Who doesn’t know all of this stuff already?\""
     c "\"I mean did anybody really come to this school without already taking a tour?\""
-    hide cpp_talk
-    show cpp_normal
     show python_pocket_happy at left with dissolve
     p "\"I didn’t... so this is interesting! I’m really enjoying this tour.\""    
     p "\"Like look at that cool statue over there.\""
@@ -280,8 +280,6 @@ label w0_d2:
     show python_pocket_happy at left
     p "\"Oh, well I didn’t realize that...\""
     hide cpp_normal
-    hide python_pocket_happy
-    show python_pocket at left
     show cpp_talk
     c "\"Yeah, I wouldn’t expect someone like you to know basic history...\""
     hide cpp_talk
@@ -336,6 +334,9 @@ label w0_d2_AfterLunch:
 
     scene breakout_room with fade 
 
+    show python_normal at right with easeinright
+    show js_normal at left with easeinleft
+    show cpp_normal with dissolve
     show bsl_talk
     bsl "\"Okay guys, we are now going to be playing a fun game to test your knowledge.\""
     bsl "\"Since The University of ByteBorough is renowned for the College of Computing...\""
@@ -347,12 +348,14 @@ label w0_d2_AfterLunch:
     mc "\"Okay guys, I am really good at trivia.\""
     mc "\"And we are team 1, and one happens to also be my lucky number.\""
     mc "\"I don’t know much about computer science stuff yet, but I am really good at guessing.\""
+    hide cpp_normal
     show cpp_talk
     c "\"Well, we definitely won’t be guessing.\""
     c "\"We want to win, not get by with luck.\""
     hide cpp_talk
-    show cpp_normal at left
-    show js_talk
+    show cpp_normal
+    hide js_normal
+    show js_talk at left
     js "\"I’m sure we won’t need luck, we all seem pretty smart!\""
     hide js_talk
     show js_smirk at right
@@ -360,18 +363,34 @@ label w0_d2_AfterLunch:
     bsl "\"Okay here is the first question\""
     hide bsl_talk
     hide js_smirk
+    show js_normal at left
     #display on screen
     #what will the following python code print? ...
-
+    hide cpp_normal
+    show cpp_talk
     c "\"Okay guys this one is really easy.\""
     c "\"We have to get this one right, it's obviously-\""
+    hide cpp_talk
+    show cpp_normal
+    hide js_normal
+    show js_talk at left
     js "\"Hey, don't be rude C++.\""
     js "\"Not all of us have programming experience and so it might not be as obvious.\""
+    hide js_talk
+    show js_normal at left
+    hide cpp_normal
+    show cpp_handhip_talk
     c "\"Whatever, take your time figuring it out.\""
     c "\"I am writing down our answer now because I want to win.\""
+    hide cpp_handhip_talk
+    show cpp_handhip_normal
+    hide python_normal
+    show python_pocket_happy at right
     p "\"What are you guys thinking?\""
     p "\"I can tell that num1 is an integer, but num2 is a string by the single quotations surrounding it.\""
     p "\"That definitely means something.\""
+    hide python_pocket_happy
+    show python_normal at right
 
     menu w0_d2_q1:
         "Disagree with Python":
@@ -379,10 +398,12 @@ label w0_d2_AfterLunch:
             mc "\"No, I don't think so.\""
             mc "\"They are both numbers and the asterisk has to mean multiply.\""
             mc "\"Surely the answer is just 15.\""
-
+            show js_talk at left
             js "\"Yeah, I don't know if your guess is as good as mine.\""
             js "\"I trust you to get it right, but what Python said makes sense.\""
             js "\"What do you think we should go with, [mc]?\""
+            hide js_talk
+            show js_normal at left
 
 
         "Agree with Python":
@@ -391,8 +412,11 @@ label w0_d2_AfterLunch:
             mc "\"I am not sure what it will change, though.\""
             mc "\"What do you think JavaScript?\""
 
+            show js_talk at left
             js "\"Yeah, I am not sure either.\""
             js "\"I think we should leave this one up to you, [mc].\""
+            hide js_talk
+            show js_normal at left
 
     menu w0_d2_q1answer:
         #
@@ -400,53 +424,77 @@ label w0_d2_AfterLunch:
             #techscore -
             mc "\"I think it’s 15 because 3 times 5 is 15.\""
             mc "\"It’s as simple as that, let’s not overthink this.\""
-
+            hide cpp_handhip_normal
+            show cpp_angry_talk
             c "\"Oh my god.\""
             c "\"There is no way you just said that right now.\""
             c "\"The 5 OBVIOUSLY has quotations around it, making it a string.\""
             c "\"And when you multiply a string and an integer in Python,\""
             c "\"It just prints the string, integer number of times.\""
             c "\"Literally EVERYONE knows that.\""
+            hide cpp_angry_talk
+            show cpp_angry
+            show js_talk at left
             js "\"Hey I didn’t know that.\""
             js "\"C++, you are kind of mean sometimes.\""
             js "\"You should really lay off, we are still going to get the question right.\""
             js "\"Since our string is ‘5’, the asterisk means that we repeat it 3 times making the answer ‘555’.\""
+            hide js_talk
+            hide python_normal
+            show python_pocket_happy at right
             p "\"C++, just because you have more experience than us doesn’t make you smarter than us.\""
             p "\"You have just been doing it for longer.\""
+            hide python_pocket_happy
+            show python_normal at right
+            hide cpp_angry
+            show cpp_handhip_talk
             c "\"Oh my gosh you guys are so sensitive.\""
             c "\"Whatever, I am sorry you got hurt by me stating facts.\""
             c "\"Let’s just see what everyone else said.\""
+            hide cpp_handhip_talk
+            show cpp_handhip_normal
         "'15'":
             #tech score -
             mc "\"I think it's ‘15’ because 3 times 5 is 15.\""
             mc "\"But since the 5 has quotes around it, the answer will have quotes around it too.\""
             mc "\"It's as simple as that, let's not overthink this.\""
-
+            hide cpp_handhip_normal
+            show cpp_angry_talk
             c "\"Oh my god.\""
             c "\"There is no way you just said that right now.\""
             c "\"5 is a STRING, you can’t treat it like an INTEGER!!\""
             c "\"So when you multiply a string and an integer in Python,\""
             c "\"It just prints the string, integer number of times.\""
             c "\"Literally EVERYONE knows that.\""
-
+            hide cpp_angry_talk
+            show cpp_angry
+            show js_talk at left
             js "\"Hey I didn’t know that.\""
             js "\"C++, you are kind of mean sometimes.\""
             js "\"You should really lay off, we are still going to get the question right.\""
             js "\"Now we know that the answer is ‘555’, since we’re repeating the string ‘5’, 3 times.\""
-
+            hide js_talk
+            hide python_normal
+            show python_pocket_happy at right
             p "\"C++, just because you have more experience than us doesn’t make you smarter than us.\""
             p "\"You have just been doing it for longer.\""
-
+            hide python_pocket_happy
+            show python_normal at right
+            hide cpp_angry
+            show cpp_handhip_talk
             c "\"Oh my gosh you guys are so sensitive.\""
             c "\"Whatever, I am sorry you got hurt by me stating facts.\""
             c "\"Let’s just see what everyone else said.\""
+            hide cpp_handhip_talk
+            show cpp_handhip_normal
         "'33333'":
             #tech score -
             mc "\"I think it’s ‘33333’ because the 5 has quotes around it and the 3 is just a normal number.\""
             mc "\"So something weird will have to happen.\""
             mc "\"I think that it will print num1, num2 number of times.\""
             mc "\"It’s as simple as that, let’s not overthink this.\""
-
+            hide cpp_handhip_normal
+            show cpp_angry_talk
             c "\"Oh my god.\""
             c "\"There is no way you just said that right now.\""
             c "\"The code might look confusing, but it's not trying to trick you.\""
@@ -454,20 +502,28 @@ label w0_d2_AfterLunch:
             c "\"And when you multiply a string and an integer in Python,\""
             c "\"It just prints the string, integer number of times.\""
             c "\"Literally EVERYONE knows that.\""
-
+            hide cpp_angry_talk
+            show cpp_angry
+            show js_talk at left
             js "\"Hey I didn’t know that.\""
             js "\"C++, you are kind of mean sometimes.\""
             js "\"You should really lay off, we got the basic idea right.\""
             js "\"Something is getting repeated a number of times.\""
             js "\"We just switch the ‘numbers’ around and get '555'.\""
-
+            hide js_talk
+            hide python_normal
+            show python_pocket_happy at right
             p "\"C++, just because you have more experience than us doesn’t make you smarter than us.\""
             p "\"You have just been doing it for longer.\""
-
+            hide python_pocket_happy
+            show python_normal at right
+            hide cpp_angry
+            show cpp_handhip_talk
             c "\"Oh my gosh you guys are so sensitive.\""
             c "\"Whatever, I am sorry you got hurt by me stating facts.\""
             c "\"Let’s just see what everyone else said.\""
-
+            hide cpp_handhip_talk
+            show cpp_handhip_normal
         "'555'":
             # tech score+ (CORRECT ANSWER)
             mc "\"Okay, wait. I think I actually know this one.\""
@@ -475,9 +531,11 @@ label w0_d2_AfterLunch:
             mc "\"So I think that it will print the variable that is a string once for each time it is multiplied by the integer.\""
             mc "\"So the answer should be ‘555’ since we’ll be printing ‘5’ three times.\""
             mc "\"Does that make sense?\""
-
+            show js_talk at left
             js "\"I don’t really get it, why wouldn’t it be an error?\""
             js "\"How can you multiply a string and an integer??\""
+            hide js_talk
+            show js_normal at left
 
             menu w0_d2_meanOrNice:
 
@@ -488,8 +546,11 @@ label w0_d2_AfterLunch:
                     mc "\"It is just something that programming languages know how to do.\""
                     mc "\"It makes printing something repeatedly quick and easy.\""
                     mc "\"You really need to study before school even starts.\""
-                    mc "\"It seems like me and C++ might be the only smart people here...\""
+                    mc "\"It seems like C++ and I might be the only smart people here...\""
+                    show js_talk at left
                     js "\"Oh sorry..."
+                    hide js_talk
+                    show js_angry at left
 
                 "Be Nice":
                     #affects js +
@@ -499,12 +560,20 @@ label w0_d2_AfterLunch:
                     mc "\"This stuff can be confusing at first.\""
                     mc "\"You might be thinking, how would I ever know that.\""
                     mc "\"But with practice, and lots of repetition, it will start to click.\""
+                    show js_talk at left
                     js "\"Yeah, you’re right.\""
                     js "\"Thanks for the explanation, I think I get it now.\""
+                    hide js_talk
+                    show js_normal at left
 
+            show cpp_handhip_talk
             c "\"Jeez you guys are taking forever.\""
             c "\"Maybe try to think a little faster next round, I don’t want you guys to slow me down.\""
             c "\"Let’s see what everyone else said.\""
+            hide cpp_handhip_talk
+            show cpp_handhip_normal
+            hide js_angry
+            show js_normal at left
 
         "ERROR":
             #tech score -
@@ -513,25 +582,35 @@ label w0_d2_AfterLunch:
             mc "\"That just doesn’t make any sense.\""
             mc "\"How will the computer know what to do?\""
             mc "\"It’s as simple as that, let’s not overthink this.\""
-
+            hide cpp_handhip_normal
+            show cpp_angry_talk
             c "\"Oh my god.\""
             c "\"There is no way you just said that right now.\""
             c "\"The 5 OBVIOUSLY has quotations around it making it a string.\""
             c "\"And when you multiply a string and an integer in Python.\""
             c "\"It just prints the string, integer number of times.\""
             c "\"Literally EVERYONE knows that.\""
-
+            hide cpp_angry_talk
+            show cpp_angry
+            show js_talk at left
             js "\"Hey I didn’t know that.\""
             js "\"C++, you are kind of mean sometimes.\""
             js "\"You should really lay off, we are still going to get the question right.\""
             js "\"So, now we know that, we need to repeat ‘5’ three times to get the answer ‘555’.\""
-
+            hide js_talk
+            hide python_normal
+            show python_pocket_happy at right
             p "\"C++, just because you have more experience than us doesn’t make you smarter than us.\""
             p "\"You have just been doing it for longer.\""
-
+            hide python_pocket_happy
+            show python_normal at right
+            hide cpp_angry
+            show cpp_handhip_talk
             c "\"Oh my gosh you guys are so sensitive.\""
             c "\"Whatever, I am sorry you got hurt by me stating facts.\""
             c "\"Let’s just see what everyone else said.\""
+            hide cpp_handhip_talk
+            show cpp_handhip_normal
 
     # show js_normal
     # show cpp_normal at left
@@ -554,46 +633,34 @@ label w0_d2_AfterLunch:
     #for i in range(x):
     #x += 1
     #print(x, end=‘’)
-    hide python_pocket
-    show python_pocket_happy at right
+
     p "\"Well I think I have some idea about this one.\""
     p "\"The first thing I see is that this might be an infinite loop.\""
     p "\"Because we iterate x times, but x keeps increasing.\""
     p "\"But, maybe that loop range only references x one time.\""
     p "\"What do you think C++?\""
     p "\"You seem to know everything...\""
-    hide python_pocket_happy
-    show python_pocket at right
-    hide cpp_normal
-    show cpp_handhip_talk at left
+
     c "\"Uhm, well actually I am not too sure.\""
     c "\"I was thinking it would be infinite as well.\""
     c "\"But I am really not sure.\""
-    hide cpp_handhip_talk
-    show cpp_normal at left
     menu w0_d2_loopresponse:
         #
         "Rub it in C++'s Face":
             #techscore -
-            hide cpp_normal
-            show cpp_handhip_normal at left
             mc "\"HAH! You don’t know everything!\""
             mc "\"I knew it, you are actually just as dumb as the rest of us!\""
             mc "\"Maybe you shouldn’t run your mouth everytime you know the answer\""
             mc "\"When other people don’t know the answer don’t make them feel stupid, it’s not nice.\""
-            hide cpp_handhip_normal
-            show cpp_angry_talk at left
+
             c "\"Shut up! You don’t know it either.\""
             c "\"And who are you to tell me how to live my life??\""
-            hide cpp_angry_talk
-            
         "Be Humble":
             #tech score -
             mc "\"It's all good C++, you can't expect to know every question.\""
             mc "\"But maybe in the future you could not be mean about it when we don’t know the answer.\""
             mc "\"It just really isn’t nice and it hurts people’s feelings.\""
-            hide cpp_normal
-            show cpp_talk at left
+            
             c "\"Whatever.\""
             c "\"You guys didn't know the answer either.\""
             hide cpp_talk
@@ -603,29 +670,25 @@ label w0_d2_AfterLunch:
     show python_pocket_happy at right
     p "\"Alright, well, do we have any ideas?\""
     p "\"JavaScript? What are you thinking?\""
-    hide python_pocket_happy
-    show python_pocket at right
-    show js_talk
+
     js "\"Well after the last question it made me realize that the people who design the programming languages are pretty smart.\""
     js "\"That has made me think that something like this might not be infinite.\""
     js "\"It would make sense that when you initialize the for loop it is referencing the x variable.\""
     js "\"But then afterwards, that value won’t change.\""
     js "\"At the same time I am just guessing.\""
     js "\"You make a decision, [mc].\""
-    hide js_talk
-    show js_normal
-
+    
     menu w0_d2_mcdecision:
         "ERROR":
             #techScore -= 1
             mc "\"Okay I think that this will result in an error.\""
             mc "\"I don’t think it will know to only reference X once, at the start of the loop.\""
             mc "\"Are we all good with this choice?\""
-            hide js_normal
-            show js_talk
+
             js "\"I disagree, but I’m not confident enough to say that I am right.\""
             js "\"I say let’s trust your intuition, [mc].\""
             js "\"Whatever happens, happens, it’s just a game.\""
+
             hide js_talk
             hide cpp_normal
             hide python_pocket
@@ -649,12 +712,9 @@ label w0_d2_AfterLunch:
             show cpp_normal at left
             mc "\"Oh man, that’s my bad guys.\""
             mc "\"I see how that is the answer.\""
-            hide python_pocket
-            show python_pocket_happy at right
+
             p "\"It’s okay we didn’t know either.\""
             p "\"If we did we would have said something.\""
-            hide python_pocket_happy
-            show python_pocket at right
         "4567":
             #techScore -= 1
             hide js_normal
@@ -663,6 +723,9 @@ label w0_d2_AfterLunch:
             mc "\"So first it will print out 4, then 5, then 6, then 7.\""
             mc "\"And then after 7 the loop will have iterated four times which was the original value of x.\""
             mc "\"Are we all good with this choice?\""
+            c "\"I disagree, but I’m not confident enough to say that I am right.\""
+            c "\"I say let’s trust your intuition, [mc].\""
+            c "\"Whatever happens, happens, it’s just a game.\""            
             hide js_smirk
             show js_normal
             hide cpp_normal
@@ -693,13 +756,9 @@ label w0_d2_AfterLunch:
             show python_pocket at right
             mc "\"Oh man, that’s my bad guys.\""
             mc "\"I see how that is the answer.\""
-            
-            hide python_pocket
-            show python_pocket_happy at right
+
             p "\"It’s okay we didn’t know either.\""
             p "\"If we did we would have said something.\""
-            hide python_pocket_happy
-            show python_pocket at right
 
         "5678":
             #techScore += 1
@@ -710,6 +769,11 @@ label w0_d2_AfterLunch:
             mc "\"Then it will print out 5, then 6, then 7, then 8.\""
             mc "\"And then after 7 the loop will have iterated four times which was the original value of x.\""            
             mc "\"Are we all good with this choice?\""
+
+            c "\"I disagree, but I’m not confident enough to say that I am right.\""
+            c "\"I say let’s trust your intuition, [mc].\""
+            c "\"Whatever happens, happens, it’s just a game.\""            
+
             hide js_smirk
             show js_normal
             hide cpp_normal
@@ -740,11 +804,8 @@ label w0_d2_AfterLunch:
             show python_pocket at right
             mc "\"Oh nice, we got it right!\""
             mc "\"Good job guys, I am glad we were able to work through that!\""
-            hide python_pocket
-            show python_pocket_happy at right
+
             p "\"Yes! We make such a good team.\""
-            hide python_pocket_happy
-            show python_pocket at right
 
     hide cpp_normal # if modified above, make sure to change these
     hide js_normal
@@ -764,31 +825,11 @@ label w0_d2_AfterLunch:
     show js_talk
     show python_pocket at right
     js "\"OMG Yes!!!\""
-    hide js_talk
-    show js_smirk
-    hide python_pocket
-    show python_pocket_happy at right
     p "\"That was so much fun!\""
-    hide python_pocket_happy
-    show python_pocket at right
-    hide cpp_normal
-    show cpp_happy at left
     c "{i}Smiles{/i}"
-    hide js_smirk
-    show js_talk
     js "\"I see that smile, C++...\""
     js "\"Admit it, you had fun!\""
-    hide js_talk
-    show js_smirk
-    hide cpp_happy
-    show cpp_talk at left
     c "\"I guess it wasn’t boring...\""
-    hide cpp_talk
-    hide python_pocket
-
-    show cpp_happy at left
-    show python_pocket_happy at right
-
     "{i}Everyone laughs.{/i}"
 
     scene hotel_room_night with longer_fade  
@@ -797,7 +838,6 @@ label w0_d2_AfterLunch:
     mc "\"One thing is for sure, I can’t stay up late again.\""
     "{i}You let out a very, very large yawn.{/i}"
     mc "\"I don’t think I could if I wanted to...\""
-    "{i}zzz{/i}"
+    "{i}zzz...{/i}"
 
 jump w0_d3
-
