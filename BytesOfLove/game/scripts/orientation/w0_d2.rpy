@@ -650,14 +650,13 @@ label w0_d2_AfterLunch:
     
     window show
     pause 2.0 
-    show python_pocket_happy at right 
     p "\"Well I think I have some idea about this one.\""
     p "\"The first thing I see is that this might be an infinite loop.\""
     p "\"Because we iterate x times, but x keeps increasing.\""
     p "\"But, maybe that loop range only references x one time.\""
     p "\"What do you think C++?\""
     p "\"You seem to know everything...\""
-    show cpp_talk at left
+    
     c "\"Uhm, well actually I am not too sure.\""
     c "\"I was thinking it would be infinite as well.\""
     c "\"But I am really not sure.\""
@@ -682,9 +681,7 @@ label w0_d2_AfterLunch:
             c "\"You guys didn't know the answer either.\""
             hide cpp_talk
     
-    show cpp_normal at left
-    hide python_pocket
-    show python_pocket_happy at right
+    
     p "\"Alright, well, do we have any ideas?\""
     p "\"JavaScript? What are you thinking?\""
 
@@ -694,8 +691,7 @@ label w0_d2_AfterLunch:
     js "\"But then afterwards, that value won’t change.\""
     js "\"At the same time I am just guessing.\""
     js "\"You make a decision, [mc].\""
-    hide python_pocket_happy
-    hide cpp_talk
+    
     pause 2.0
     menu w0_d2_mcdecision:
         "ERROR":
@@ -785,7 +781,7 @@ label w0_d2_AfterLunch:
             hide question_2 with dissolve
             #techScore += 1
             hide js_normal
-            show js_smirk # read line 660
+            show js_smirk at left # read line 660
             mc "\"I agree with JavaScript, this won’t be an error.\""
             mc "\"So first it will increment x.\""
             mc "\"Then it will print out 5, then 6, then 7, then 8.\""
@@ -797,15 +793,17 @@ label w0_d2_AfterLunch:
             c "\"Whatever happens, happens, it’s just a game.\""            
 
             hide js_smirk
-            show js_normal
-            hide cpp_normal
-            show cpp_talk at left
+            show js_normal at left
+            hide cpp_talk
+            
             c "\"I disagree, but I’m not confident enough to say that I am right.\""
             c "\"I say let’s trust your intuition, [mc].\""
             c "\"Whatever happens, happens, it’s just a game.\""            
             hide cpp_talk
-            hide js_normal
-            hide python_pocket
+            hide js_normal 
+            hide python_pocket 
+            hide python_normal 
+            hide cpp_handhip_normal 
             show bsl_talk
             bsl "\"Alright, time’s up!\""
             bsl "\"Everyone, write your answers down and hold them up.\""
