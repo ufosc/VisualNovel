@@ -106,7 +106,8 @@ default bsl_rep = 50
 
 #background characters with no impact
 #this needs to be changed to the final character image for the advisor
-image advisor = "SideCharacters/advisor_tempImage.png"
+image advisor = "SideCharacters/Breakout_leader_1.png"
+image advisor_talking = "SideCharacters/Breakout_leader_2.png"
 
 
 # Backgrounds
@@ -173,8 +174,8 @@ image vending_machine = "backgrounds/vending-machine.PNG"
 
 
 
-
-
+image question_1 = "codingImages/coding_question_1.png"
+image question_2 = "codingImages/coding_question_2.png"
 
 
 
