@@ -1,4 +1,7 @@
 default cache_cleaner_count = 0
+default bought_charm_compiler = False
+default bought_cache_cleaner = False
+default bought_syntax_spray = False
 
 screen shop:
     label shop:
@@ -11,6 +14,7 @@ screen shop:
                     $ c_rep = min(c_rep + 10, 100)
                     $ p_rep = min(p_rep + 10, 100)
                     $ j_rep = min(j_rep + 10, 100)
+                    $ bought_charm_compiler = True
                     "You bought a Charm Compiler!"
                 else:
                     "You don't have enough Bytecoin."
@@ -21,6 +25,7 @@ screen shop:
                     $ j_rep = min(j_rep + 20, 100)
                     $ c_rep = min(c_rep + 20, 100)
                     $ cache_cleaner_count += 1
+                    $ bought_cache_cleaner = True
                     "You bought a Cache Cleaner!"
                 elif cache_cleaner_count >= 3:
                     "You've already bought 3 Cache Cleaners."
@@ -33,14 +38,16 @@ screen shop:
                     $ js_rep = min(js_rep + 5, 100)
                     $ p_rep = min(p_rep + 5, 100)
                     $ r_rep = min(r_rep + 5, 100)
+                    $ bought_syntax_spray = True
                     "You bought Syntax Sugar Spray!"
                 else:
                     "You don't have enough Bytecoin."
 
             "Leave Shop":
                 jump after_shop
+
         jump shop 
 
     label after_shop:
         "Thanks for visiting the shop!"
-        return
+        Return()
